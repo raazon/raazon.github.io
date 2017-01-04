@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae7c214c-5974-4248-9475-7b924c049c4b" name="Default" comment="" />
+    <list default="true" id="ae7c214c-5974-4248-9475-7b924c049c4b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+    </list>
     <ignored path="raazon.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -26,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.522604">
-              <caret line="80" column="130" selection-start-line="80" selection-start-column="130" selection-end-line="80" selection-end-column="130" />
+              <caret line="80" column="137" selection-start-line="80" selection-start-column="137" selection-end-line="80" selection-end-column="137" />
               <folding />
             </state>
           </provider>
@@ -178,7 +180,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.522604">
-          <caret line="80" column="130" selection-start-line="80" selection-start-column="130" selection-end-line="80" selection-end-column="130" />
+          <caret line="80" column="137" selection-start-line="80" selection-start-column="137" selection-end-line="80" selection-end-column="137" />
           <folding />
         </state>
       </provider>
