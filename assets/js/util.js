@@ -141,13 +141,10 @@
 					.css('-webkit-overflow-scrolling', 'touch');
 
 			// Hide on click.
-				if (config.hideOnClick) {
-
+				if (config.hideOnClick)
 					$this.find('a')
-						.css('-webkit-tap-highlight-color', 'rgba(0,0,0,0)');
-
-					$this
-						.on('click', 'a', function(event) {
+						.css('-webkit-tap-highlight-color', 'rgba(0,0,0,0)')
+						.on('click', function(event) {
 
 							var $a = $(this),
 								href = $a.attr('href'),
@@ -174,8 +171,6 @@
 								}, config.delay + 10);
 
 						});
-
-				}
 
 			// Event: Touch stuff.
 				$this.on('touchstart', function(event) {
