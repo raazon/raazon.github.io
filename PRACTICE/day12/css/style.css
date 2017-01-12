@@ -1,0 +1,401 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Content planning
+
+
+
+*/
+
+/* Global Style */
+body {
+    color: #545454;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+a:hover img {
+    opacity: 0.8;
+}
+
+.pxlr-section-header h3 {
+    color: #000;
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 25px;
+}
+
+.pxlr-section-header p {
+    padding-bottom: 60px;
+}
+
+.pxlr-content-box {
+    margin: 0 0 30px 0;
+}
+
+h3 {
+    color: #000;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 15px 0;
+}
+
+.pxlr-content-box p {
+    line-height: 22px;
+}
+
+.pxlr-btn-global, .pxlr-btn-global-green {
+    padding: 20px 0;
+}
+
+.pxlr-btn-global a {
+    color: #717171;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 20px;
+    border-radius: 2px;
+    transition: all 0.5s;
+    background: transparent;
+    border: 2px solid #b6b6b6;
+}
+
+.pxlr-btn-global-green a {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 20px;
+    background: #97C03E;
+    border-radius: 2px;
+    transition: all 0.5s;
+    border: 2px solid #97C03E;
+}
+
+.pxlr-btn-global-green a:hover, .pxlr-btn-global-green a:active, .pxlr-btn-global-green a:focus {
+    background: #2098D1;
+    border: 2px solid #fff;
+}
+
+.pxlr-btn-global a:hover, .pxlr-btn-global a:active, .pxlr-btn-global a:focus {
+    color: #ffffff;
+    background: #97C03E;
+    border: 2px solid #97C03E;
+}
+
+/* Theme Style */
+
+/* Navigation */
+.navbar-default {
+    background: #ffffff;
+    border: none;
+    margin: 0;
+    padding: 31px 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-size: 15px;
+    color: #787878;
+    transition: all 0.3s;
+    text-transform: capitalize;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:active,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    color: #000000;
+    background: transparent;
+}
+
+.navbar-default .navbar-right li a {
+    color: #000;
+    font-size: 20px;
+    padding: 15px 10px;
+}
+
+.navbar-default .navbar-right li:last-child a:before {
+    content: "";
+    border-left: 1px solid #000000;
+    padding-right: 10px;
+}
+
+.pxlr-main {
+    overflow: hidden;
+}
+
+/* Main Slider */
+#pxlr-main-slider {
+    background: #018EBB;
+}
+
+.carousel-caption {
+    width: 100%;
+    top: 30%;
+    left: 10%;
+    text-align: left;
+}
+
+.pxlr-slider .pxlr-section-header h3 {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 45px;
+    padding: 0;
+}
+
+.pxlr-slider .pxlr-section-header p {
+    color: #ffffff;
+    font-size: 15px;
+    padding: 16px 0;
+}
+
+.pxlr-slider .pxlr-btn-global-green a {
+    padding: 10px 25px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* Services */
+.pxlr-services-wrap {
+    padding: 60px 0;
+}
+
+.pxlr-services .pxlr-btn-global-green a {
+    padding: 8px 30px;
+}
+
+/* About */
+.pxlr-about .pxlr-content-box {
+    background: #F6F6F6;
+    margin: 0 0 30px 0;
+}
+
+.pxlr-about .pxlr-content-box-wrap {
+    padding: 0 0 15px 25px;
+}
+
+/* Information */
+.pxlr-information .pxlr-content-box {
+    background: #F6F6F6;
+    margin: 0 0 30px 0;
+}
+
+.pxlr-information .pxlr-content-box-wrap {
+    padding: 0 0 15px 25px;
+}
+
+/* Our Doctors */
+.pxlr-doctors {
+    position: relative;
+    background: #fff url('../img/doctors.jpeg') no-repeat fixed center / cover;
+}
+.pxlr-doctors-wrap {
+    padding: 80px 0;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    color: #ffffff;
+}
+.pxlr-doctors-wrap .pxlr-section-header h3{
+    color: #ffffff;
+}
+/* Appointment */
+.pxlr-appointment-wrap {
+    padding: 55px 0;
+    background: #018EBB;
+    color: #fff;
+}
+
+.pxlr-appointment h3 {
+    color: #ffffff;
+}
+
+.pxlr-appointment p {
+    padding-bottom: 35px;
+    line-height: 30px;
+}
+
+.pxlr-appointment .pxlr-btn-global-green {
+    padding: 0;
+}
+
+.pxlr-appointment .pxlr-btn-global-green a {
+    font-size: 20px;
+    padding: 10px 30px;
+}
+
+/* Journal */
+.pxlr-journal-wrap {
+    padding: 55px 0;
+}
+
+/* Journal */
+.pxlr-download-wrap {
+    padding: 55px 0;
+    background: #F6F6F6;
+}
+
+.pxlr-download .pxlr-section-header p {
+    padding-bottom: 40px;
+}
+
+.pxlr-download .pxlr-btn-global a {
+    color: #b5b5b5;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 30px;
+    margin-right: 20px;
+}
+
+.pxlr-download .pxlr-btn-global a:hover {
+    color: #ffffff;
+}
+
+.pxlr-download .pxlr-btn-global i {
+    margin-right: 10px;
+}
+
+/* Footer */
+.pxlr-footer-wrap {
+    padding: 90px 0;
+    background: #191919;
+}
+
+.widgets h3 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.pxlr-footer p {
+    color: #888888;
+}
+
+.pxlr-footer p a {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.social li {
+    width: 42px;
+    height: 42px;
+    margin-right: 8px;
+    border: 1px solid #888888;
+    border-radius: 50px;
+}
+
+.social li:last-child {
+    margin-right: 0;
+}
+
+.widgets .social {
+    padding: 0 0 20px 0;
+}
+
+.widgets .social li a {
+    display: block;
+    padding: 10px;
+}
+
+.widgets .social li a:hover i {
+    color: #95C03B;
+}
+
+.widgets ul li a {
+    display: block;
+    color: #888888;
+    padding: 2px 0;
+}
+
+.widgets ul li a:hover {
+    color: #666666;
+    text-decoration: none;
+}
+
+.pxlr-footer .input-group {
+    padding: 20px 0 5px 0;
+}
+
+.pxlr-footer .input-group input {
+    background: transparent;
+    border-right: none;
+    border-color: #888888;
+    padding: 8px 12px;
+    height: auto;
+}
+
+.pxlr-footer .input-group button {
+    background: transparent;
+    border-left: none;
+    border-color: #888888;
+    padding: 8px 12px;
+}
+
+.copyright {
+    padding-top: 40px;
+}
+
+.pxlr-footer .copyright a {
+    color: #888888;
+    font-weight: 400;
+}
