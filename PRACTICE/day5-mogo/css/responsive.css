@@ -1,0 +1,103 @@
+@media screen and (max-width: 767px) {
+    /* Main carousel */
+    .carousel-caption {
+        top: 25%;
+    }
+    .aboutimg{
+        margin: 10px 0;
+    }
+    .carousel-caption h2 {
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    .carousel-caption h4 {
+        font-size: 35px;
+    }
+    .counter-middle ul{
+        height: auto;
+        padding: 5px 0 35px 0;
+    }
+    .counter-middle li{
+        width: 100%;
+        float: none;
+        padding: 31px 0;
+        border-bottom: 1px solid #ffffffff;
+        border-right: none;
+        border-left: none;
+    }
+    .counter-middle li:last-child{
+        border-right: none;
+    }
+    /* Services */
+    .icon{
+        width: 100%;
+        float: none;
+        margin: 10px 0;
+    }
+    .scontent{
+        width: 100%;
+        float: none;
+    }
+    .service-control{
+        text-align: center;
+        margin: 8px 0;
+    }
+    .upper-image {
+        right: 0;
+    }
+    .upper-image img {
+        width: 100%;
+    }
+    /* comment carousel */
+    #comment-carousel .carousel-control.left{
+        left: 0;
+    }
+    /* Next button  */
+    #comment-carousel .carousel-control.right{
+        right: 0;
+    }
+    #comment-carousel{
+        width: 96%;
+        margin: 0 auto;
+    }
+    #comment-carousel p{
+        text-align: center;
+    }
+    #comment-carousel span{
+        text-align: center;
+    }
+    #comment-carousel .comment-border{
+        float: none;
+        margin: 5px 8px;
+    }
+}
+@media screen and (max-width: 480px) {
+    /* Main carousel */
+    .carousel-caption {
+        top: 25%;
+    }
+    .carousel-caption h2 {
+        font-size: 25px;
+        margin-top: 5px;
+    }
+    .carousel-caption h4 {
+        font-size: 25px;
+    }
+    /* Services */
+    .upper-image {
+        right: 10%;
+        top: 20%;
+    }
+    .design-image img {
+        width: 200px;
+    }
+    .upper-image img {
+        width: 130px;
+    }
+}
+@media screen and (max-width: 320px) {
+    /* Services */
+    .upper-image {
+        right: 0;
+    }
+}
