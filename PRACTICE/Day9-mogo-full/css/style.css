@@ -89,9 +89,12 @@ span.global-border {
     background: #f38181;
 }
 
+.transparent {
+    background: transparent;
+}
+
 /* Header */
 .navbar {
-    background: url('../img/slider-bg.png');
     margin: 0;
     padding: 5px 0;
     border-radius: 0;
@@ -290,8 +293,10 @@ span.global-border {
     width: 100%;
     height: 100%;
     cursor: pointer;
-    background: url("../img/imgbg.png") repeat-x;
-    background-size: 100% 100%;
+    background: -moz-linear-gradient(top, #e68282 0%, #f0d68a 100%);
+    background: -webkit-linear-gradient(top, #e68282 0%, #f0d68a 100%);
+    background: linear-gradient(to bottom, #e68282 0%, #f0d68a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e68282', endColorstr='#f0d68a', GradientType=0);
     opacity: 0;
     transition: 0.9s;
     box-shadow: 6px 6px 4px 1px #95e1d3;
@@ -608,7 +613,6 @@ span.global-border {
 
 .recent-work .row,
 .recent-work .col-md-3 {
-    padding: 0;
     padding: 0;
 }
 
