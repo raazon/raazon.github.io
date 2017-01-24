@@ -17,6 +17,9 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Off-Canvas -->
+    <link href="vendor/css/pushy.css" rel="stylesheet">
+
     <!-- Font awesome -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
 
@@ -28,9 +31,6 @@
 
     <!-- Responsive styles for this template -->
     <link href="css/responsive.css" rel="stylesheet">
-
-    <!-- Animate css -->
-    <link href="vendor/css/animate.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]>
@@ -49,7 +49,7 @@
     <div class="pxlr-main-wrap">
         <div class="pxlr-main-inner">
             <!-- Header Start -->
-            <header>
+            <header class="pxlr-header">
                 <nav class="navbar navbar-default">
                     <div class="container">
                         <div class="navbar-header">
@@ -66,11 +66,13 @@
                         </div>
                         <div id="navbar" class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
-                                <li><a href="index.html">Benian Demo</a>
+                                <li><a href="index.html">Benian Demo <span
+                                        class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                       aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+                                       aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span>
+                                    </a>
                                     <ul class="dropdown-menu">
                                         <li><a href="single.html">Single Page</a></li>
                                         <li><a href="full-width.html">Full Width</a></li>
@@ -78,22 +80,52 @@
                                         <li><a href="right-sidebar.html">Right Sidebar</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="portfolio.html">Portfolios</a></li>
-                                <li><a href="elements.html">Elements</a></li>
+                                <li><a href="our-doctors.html">Our Doctor</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
                                 <li class="active"><a href="shop.html">Shop</a></li>
                                 <li><a href="blog.html">Blog</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-                                <li><a href="#about"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                                <li><a href="#contact"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                <li><a href="#" class="menu-btn"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                                </li>
                             </ul>
                         </div><!--/.nav-collapse -->
                     </div>
                 </nav>
             </header>
             <!-- End of Header -->
+            <!-- Off Canvas -->
+            <div class="pxlr-off-canvas">
+                <!-- Pushy Menu -->
+                <nav class="pushy pushy-right">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo.png" alt="Logo" class="img-responsive">
+                    </a>
+                    <ul>
+                        <li><a href="index.html">Benian Demo </a></li>
+                        <li class="pushy-submenu">
+                            <a href="#">Pages <i class="fa fa-angle-up"></i></a>
+                            <ul>
+                                <li><a href="single.html">Single Page</a></li>
+                                <li><a href="full-width.html">Full Width</a></li>
+                                <li><a href="left-sidebar.html">Left Sidebar</a></li>
+                                <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="our-doctors.html">Our Doctors</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li class="active"><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- Site Overlay -->
+                <div class="site-overlay"></div>
+            </div>
+            <!-- Off Canvas End -->
             <!-- Shop -->
             <div class="pxlr-shop">
                 <div class="pxlr-shop-wrap">
@@ -123,57 +155,39 @@
                             <div class="col-md-8">
                                 <div class="pxlr-shop-content">
                                     <div class="pxlr-shop-content-wrap">
+                                        <div class="row pxlr-woocommerce-result-count">
+                                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                                <div class="form-group">
+                                                    <form class="woocommerce-ordering" method="get">
+                                                        <select name="woocommerce-ordering" class="orderby" title="ordering">
+                                                            <option value="menu_order" selected="selected">Default
+                                                                sorting
+                                                            </option>
+                                                            <option value="popularity">Sort by popularity</option>
+                                                            <option value="rating">Sort by average rating</option>
+                                                            <option value="date">Sort by newness</option>
+                                                            <option value="price">Sort by price: low to high</option>
+                                                            <option value="price-desc">Sort by price: high to low
+                                                            </option>
+                                                        </select>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                                <p class="pxlr-show-result text-right">
+                                                    Showing all 8 results
+                                                </p>
+                                            </div>
+                                        </div>
                                         <div class="row">
                                             <div class="col-xs-12 col-sm-4 col-md-4">
                                                 <div class="pxlr-product-wrap">
                                                     <div class="thumbnail">
                                                         <figure>
-                                                            <a href="single-product.html"><img class="img-responsive" src="img/p1.jpg"
-                                                                             alt="SR D-88"></a>
-                                                            <span class="onsale">Sale!</span>
-                                                        </figure>
-                                                        <div class="pxlr-caption-ratings-wrap">
-                                                            <div class="pxlr-cpation">
-                                                                <h4 class="pull-right">$24.99</h4>
-                                                                <h4><a href="single-product.html">Flaying Ninja</a></h4>
-
-                                                                <p>This is a short description. Lorem ipsum dolor sit
-                                                                    amet, consectetur adipiscing elit.</p>
-                                                            </div>
-                                                            <div class="pxlr-ratings">
-                                                                <p class="pull-right">15 reviews</p>
-
-                                                                <p>
-                                                                    <span class="glyphicon glyphicon-star"></span>
-                                                                    <span class="glyphicon glyphicon-star"></span>
-                                                                    <span class="glyphicon glyphicon-star"></span>
-                                                                    <span class="glyphicon glyphicon-star"></span>
-                                                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                                                </p>
-                                                            </div>
-                                                            <div class="pxlr-add-cart">
-                                                                <div class="row">
-                                                                    <div class="col-md-12">
-                                                                        <div class="btn-add">
-                                                                            <a href="#">
-                                                                                <i class="fa fa-shopping-cart"></i>
-                                                                                Add to cart
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-4 col-md-4">
-                                                <div class="pxlr-product-wrap">
-                                                    <div class="thumbnail">
-                                                        <figure>
-                                                            <a href="single-product.html"><img class="img-responsive" src="img/p1.jpg"
-                                                                             alt="SR D-88"></a>
-                                                            <span class="onsale">Sale!</span>
+                                                            <a href="single-product.html">
+                                                                <img class="img-responsive" src="img/p1.jpg"
+                                                                     alt="SR D-88">
+                                                            </a>
                                                         </figure>
                                                         <div class="pxlr-caption-ratings-wrap">
                                                             <div class="pxlr-cpation">
@@ -214,95 +228,98 @@
                                                 <div class="pxlr-product-wrap">
                                                     <div class="thumbnail">
                                                         <figure>
-                                                            <a href="single-product.html"><img class="img-responsive" src="img/p1.jpg"
-                                                                             alt="SR D-88"></a>
-                                                            <span class="onsale">Sale!</span>
-                                                        </figure>
-                                                        <div class="pxlr-caption-ratings-wrap">
-                                                            <div class="pxlr-cpation">
-                                                                <h4 class="pull-right">$24.99</h4>
-                                                                <h4><a href="single-product.html">Flaying Ninja</a></h4>
-
-                                                                <p>This is a short description. Lorem ipsum dolor sit
-                                                                    amet, consectetur adipiscing elit.</p>
-                                                            </div>
-                                                            <div class="pxlr-ratings">
-                                                                <p class="pull-right">15 reviews</p>
-
-                                                                <p>
-                                                                    <span class="glyphicon glyphicon-star"></span>
-                                                                    <span class="glyphicon glyphicon-star"></span>
-                                                                    <span class="glyphicon glyphicon-star"></span>
-                                                                    <span class="glyphicon glyphicon-star"></span>
-                                                                    <span class="glyphicon glyphicon-star"></span>
-                                                                </p>
-                                                            </div>
-                                                            <div class="pxlr-add-cart">
-                                                                <div class="row">
-                                                                    <div class="col-md-12">
-                                                                        <div class="btn-add">
-                                                                            <a href="#">
-                                                                                <i class="fa fa-shopping-cart"></i>
-                                                                                Add to cart
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-4 col-md-4">
-                                                <div class="pxlr-product-wrap">
-                                                    <div class="thumbnail">
-                                                        <figure>
-                                                            <a href="single-product.html"><img class="img-responsive" src="img/p1.jpg"
-                                                                             alt="SR D-88"></a>
-                                                            <span class="onsale">Sale!</span>
-                                                        </figure>
-                                                        <div class="pxlr-caption-ratings-wrap">
-                                                            <div class="pxlr-cpation">
-                                                                <h4 class="pull-right">$24.99</h4>
-                                                                <h4><a href="single-product.html">Flaying Ninja</a></h4>
-
-                                                                <p>This is a short description. Lorem ipsum dolor sit
-                                                                    amet, consectetur adipiscing elit.</p>
-                                                            </div>
-                                                            <div class="pxlr-ratings">
-                                                                <p class="pull-right">15 reviews</p>
-
-                                                                <p>
-                                                                    <span class="glyphicon glyphicon-star"></span>
-                                                                    <span class="glyphicon glyphicon-star"></span>
-                                                                    <span class="glyphicon glyphicon-star"></span>
-                                                                    <span class="glyphicon glyphicon-star"></span>
-                                                                    <span class="glyphicon glyphicon-star"></span>
-                                                                </p>
-                                                            </div>
-                                                            <div class="pxlr-add-cart">
-                                                                <div class="row">
-                                                                    <div class="col-md-12">
-                                                                        <div class="btn-add">
-                                                                            <a href="#">
-                                                                                <i class="fa fa-shopping-cart"></i>
-                                                                                Add to cart
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-4 col-md-4">
-                                                <div class="pxlr-product-wrap">
-                                                    <div class="thumbnail">
-                                                        <figure>
-                                                            <a href="single-product.html"><img class="img-responsive" src="img/p1.jpg"
+                                                            <a href="single-product.html"><img class="img-responsive"
+                                                                                               src="img/p1.jpg"
                                                                                                alt="SR D-88"></a>
-                                                            <span class="onsale">Sale!</span>
+                                                            <span class="out-of-stock">Out of Sotck</span>
+                                                        </figure>
+                                                        <div class="pxlr-caption-ratings-wrap">
+                                                            <div class="pxlr-cpation">
+                                                                <h4 class="pull-right">$24.99</h4>
+                                                                <h4><a href="single-product.html">Flaying Ninja</a></h4>
+
+                                                                <p>This is a short description. Lorem ipsum dolor sit
+                                                                    amet, consectetur adipiscing elit.</p>
+                                                            </div>
+                                                            <div class="pxlr-ratings">
+                                                                <p class="pull-right">15 reviews</p>
+
+                                                                <p>
+                                                                    <span class="glyphicon glyphicon-star"></span>
+                                                                    <span class="glyphicon glyphicon-star"></span>
+                                                                    <span class="glyphicon glyphicon-star"></span>
+                                                                    <span class="glyphicon glyphicon-star"></span>
+                                                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="pxlr-add-cart">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="btn-add">
+                                                                            <a href="#">
+                                                                                <i class="fa fa-shopping-cart"></i>
+                                                                                Add to cart
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                                <div class="pxlr-product-wrap">
+                                                    <div class="thumbnail">
+                                                        <figure>
+                                                            <a href="single-product.html">
+                                                                <img class="img-responsive" src="img/p1.jpg"
+                                                                     alt="SR D-88">
+                                                            </a>
+                                                        </figure>
+                                                        <div class="pxlr-caption-ratings-wrap">
+                                                            <div class="pxlr-cpation">
+                                                                <h4 class="pull-right">$24.99</h4>
+                                                                <h4><a href="single-product.html">Flaying Ninja</a></h4>
+
+                                                                <p>This is a short description. Lorem ipsum dolor sit
+                                                                    amet, consectetur adipiscing elit.</p>
+                                                            </div>
+                                                            <div class="pxlr-ratings">
+                                                                <p class="pull-right">15 reviews</p>
+
+                                                                <p>
+                                                                    <span class="glyphicon glyphicon-star"></span>
+                                                                    <span class="glyphicon glyphicon-star"></span>
+                                                                    <span class="glyphicon glyphicon-star"></span>
+                                                                    <span class="glyphicon glyphicon-star"></span>
+                                                                    <span class="glyphicon glyphicon-star"></span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="pxlr-add-cart">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="btn-add">
+                                                                            <a href="#">
+                                                                                <i class="fa fa-shopping-cart"></i>
+                                                                                Add to cart
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                                <div class="pxlr-product-wrap">
+                                                    <div class="thumbnail">
+                                                        <figure>
+                                                            <a href="single-product.html"><img class="img-responsive"
+                                                                                               src="img/p1.jpg"
+                                                                                               alt="SR D-88"></a>
+                                                            <span class="onsale">On Sale!</span>
                                                         </figure>
                                                         <div class="pxlr-caption-ratings-wrap">
                                                             <div class="pxlr-cpation">
@@ -343,7 +360,52 @@
                                                 <div class="pxlr-product-wrap">
                                                     <div class="thumbnail">
                                                         <figure>
-                                                            <a href="single-product.html"><img class="img-responsive" src="img/p1.jpg"
+                                                            <a href="single-product.html"><img class="img-responsive"
+                                                                                               src="img/p1.jpg"
+                                                                                               alt="SR D-88"></a>
+                                                            <span class="stock">Stock</span>
+                                                        </figure>
+                                                        <div class="pxlr-caption-ratings-wrap">
+                                                            <div class="pxlr-cpation">
+                                                                <h4 class="pull-right">$24.99</h4>
+                                                                <h4><a href="single-product.html">Flaying Ninja</a></h4>
+
+                                                                <p>This is a short description. Lorem ipsum dolor sit
+                                                                    amet, consectetur adipiscing elit.</p>
+                                                            </div>
+                                                            <div class="pxlr-ratings">
+                                                                <p class="pull-right">15 reviews</p>
+
+                                                                <p>
+                                                                    <span class="glyphicon glyphicon-star"></span>
+                                                                    <span class="glyphicon glyphicon-star"></span>
+                                                                    <span class="glyphicon glyphicon-star"></span>
+                                                                    <span class="glyphicon glyphicon-star"></span>
+                                                                    <span class="glyphicon glyphicon-star"></span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="pxlr-add-cart">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="btn-add">
+                                                                            <a href="#">
+                                                                                <i class="fa fa-shopping-cart"></i>
+                                                                                Add to cart
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                                <div class="pxlr-product-wrap">
+                                                    <div class="thumbnail">
+                                                        <figure>
+                                                            <a href="single-product.html"><img class="img-responsive"
+                                                                                               src="img/p1.jpg"
                                                                                                alt="SR D-88"></a>
                                                             <span class="onsale">Sale!</span>
                                                         </figure>
@@ -392,6 +454,7 @@
                                     <div class="pxlr-sidebar-wrap">
                                         <div class="pxlr-widget-row">
                                             <h3 class="text-capitalize">Search Product</h3>
+
                                             <div class="pxlr-befor-widget">
                                                 <form action="#">
                                                     <div class="input-group">
@@ -974,5 +1037,8 @@
 
 <!-- Custom JS By Theme Developer -->
 <script src="js/script.js"></script>
+
+<!-- Pushy Master off-canvas -->
+<script src="vendor/js/pushy.min.js"></script>
 </body>
 </html>

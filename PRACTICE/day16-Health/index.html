@@ -17,6 +17,9 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Off-Canvas -->
+    <link href="vendor/css/pushy.css" rel="stylesheet">
+
     <!-- Font awesome -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
 
@@ -68,7 +71,8 @@
                                 </li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                       aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+                                       aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span>
+                                    </a>
                                     <ul class="dropdown-menu">
                                         <li><a href="single.html">Single Page</a></li>
                                         <li><a href="full-width.html">Full Width</a></li>
@@ -76,22 +80,52 @@
                                         <li><a href="right-sidebar.html">Right Sidebar</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="portfolio.html">Portfolios</a></li>
-                                <li><a href="elements.html">Elements</a></li>
+                                <li><a href="our-doctors.html">Our Doctor</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
                                 <li><a href="shop.html">Shop</a></li>
                                 <li><a href="blog.html">Blog</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-                                <li><a href="#about"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                                <li><a href="#contact"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                <li><a href="#" class="menu-btn"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                                </li>
                             </ul>
                         </div><!--/.nav-collapse -->
                     </div>
                 </nav>
             </header>
             <!-- End of Header -->
+            <!-- Off Canvas -->
+            <div class="pxlr-off-canvas">
+                <!-- Pushy Menu -->
+                <nav class="pushy pushy-right">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo.png" alt="Logo" class="img-responsive">
+                    </a>
+                    <ul>
+                        <li class="active"><a href="index.html">Benian Demo </a></li>
+                        <li class="pushy-submenu">
+                            <a href="#">Pages <i class="fa fa-angle-up"></i></a>
+                            <ul>
+                                <li><a href="single.html">Single Page</a></li>
+                                <li><a href="full-width.html">Full Width</a></li>
+                                <li><a href="left-sidebar.html">Left Sidebar</a></li>
+                                <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="our-doctors.html">Our Doctors</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- Site Overlay -->
+                <div class="site-overlay"></div>
+            </div>
+            <!-- Off Canvas End -->
             <!-- Main slider -->
             <div class="pxlr-slider">
                 <div class="pxlr-slider-wrap">
@@ -180,7 +214,8 @@
                                                                 aria-label="Close">
                                                             <span aria-hidden="true">&times;</span>
                                                         </button>
-                                                        <h4 class="modal-title" id="gridSystemModalLabel"> Book an Appointment </h4>
+                                                        <h4 class="modal-title" id="gridSystemModalLabel"> Book an
+                                                            Appointment </h4>
                                                     </div>
                                                     <div class="modal-body">
                                                         <!-- Contact form -->
@@ -191,33 +226,72 @@
                                                                         <div class="row">
                                                                             <div class="col-md-6">
                                                                                 <div class="form-group">
-                                                                                    <select name="book-an-appointment" class="form-control">
-                                                                                        <option value="Select doctor">Select doctor</option>
-                                                                                        <option value="Dr. Niamul Hasan">Dr. Niamul Hasan</option>
-                                                                                        <option value="Dr. Aminul Islam">Dr. Aminul Islam</option>
-                                                                                        <option value="Dr. Kamal Hossen">Dr. Kamal Hossen</option>
-                                                                                        <option value="Dr. M.R. Shimul">Dr. M.R. Shimul</option>
-                                                                                        <option value="Dr. Walid Nawaz">Dr. Walid Nawaz</option>
-                                                                                        <option value="Dr. Monzural Karim">Dr. Monzural Karim</option>
+                                                                                    <select title="appointment" name="book-an-appointment"
+                                                                                            class="form-control">
+                                                                                        <option value="Select doctor">
+                                                                                            Select doctor
+                                                                                        </option>
+                                                                                        <option value="Dr. Nick Sims">
+                                                                                            Dr. Nick Sims
+                                                                                        </option>
+                                                                                        <option value="Dr. Michael Linden">
+                                                                                            Dr. Michael Linden
+                                                                                        </option>
+                                                                                        <option value="Dr. Max Turner">
+                                                                                            Dr. Max Turner
+                                                                                        </option>
+                                                                                        <option value="Dr. Amy Adams">
+                                                                                            Dr. Amy Adams
+                                                                                        </option>
+                                                                                        <option value="Dr. Julia Jameson">
+                                                                                            Dr. Julia Jameson
+                                                                                        </option>
                                                                                     </select>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-6">
                                                                                 <div class="form-group">
-                                                                                    <select name="book-time" class="form-control">
-                                                                                        <option value="Select time">Select time</option>
-                                                                                        <option value="9:00 AM">9:00 AM</option>
-                                                                                        <option value="10:00 AM">10:00 AM</option>
-                                                                                        <option value="11:00 AM">11:00 AM</option>
-                                                                                        <option value="12:00 AM">12:00 AM</option>
-                                                                                        <option value="1:00 PM">1:00 PM</option>
-                                                                                        <option value="1:00 PM">1:00 PM</option>
-                                                                                        <option value="2:00 PM">2:00 PM</option>
-                                                                                        <option value="3:00 PM">3:00 PM</option>
-                                                                                        <option value="4:00 PM">4:00 PM</option>
-                                                                                        <option value="5:00 PM">5:00 PM</option>
-                                                                                        <option value="6:00 PM">6:00 PM</option>
-                                                                                        <option value="7:00 PM">7:00 PM</option>
+                                                                                    <select name="book-time"
+                                                                                            class="form-control" title="time">
+                                                                                        <option value="Select time">
+                                                                                            Select time
+                                                                                        </option>
+                                                                                        <option value="9:00 AM">9:00
+                                                                                            AM
+                                                                                        </option>
+                                                                                        <option value="10:00 AM">10:00
+                                                                                            AM
+                                                                                        </option>
+                                                                                        <option value="11:00 AM">11:00
+                                                                                            AM
+                                                                                        </option>
+                                                                                        <option value="12:00 AM">12:00
+                                                                                            AM
+                                                                                        </option>
+                                                                                        <option value="1:00 PM">1:00
+                                                                                            PM
+                                                                                        </option>
+                                                                                        <option value="1:00 PM">1:00
+                                                                                            PM
+                                                                                        </option>
+                                                                                        <option value="2:00 PM">2:00
+                                                                                            PM
+                                                                                        </option>
+                                                                                        <option value="3:00 PM">3:00
+                                                                                            PM
+                                                                                        </option>
+                                                                                        <option value="4:00 PM">4:00
+                                                                                            PM
+                                                                                        </option>
+                                                                                        <option value="5:00 PM">5:00
+                                                                                            PM
+                                                                                        </option>
+                                                                                        <option value="6:00 PM">6:00
+                                                                                            PM
+                                                                                        </option>
+                                                                                        <option value="7:00 PM">7:00
+                                                                                            PM
+                                                                                        </option>
                                                                                     </select>
                                                                                 </div>
                                                                             </div>
@@ -225,27 +299,39 @@
                                                                         <div class="row">
                                                                             <div class="col-md-6">
                                                                                 <div class="form-group">
-                                                                                    <input type="text" class="form-control" id="yourname" placeholder="Your Name">
+                                                                                    <input type="text"
+                                                                                           class="form-control"
+                                                                                           id="yourname"
+                                                                                           placeholder="Your Name">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-6">
-                                                                                <input type="tel" class="form-control" id="phone" placeholder="Phone">
+                                                                                <input type="tel" class="form-control"
+                                                                                       id="phone" placeholder="Phone">
                                                                             </div>
                                                                         </div>
                                                                         <div class="row">
                                                                             <div class="col-md-6">
                                                                                 <div class="form-group">
-                                                                                    <input type="email" class="form-control" id="youremail" placeholder="Your Email">
+                                                                                    <input type="email"
+                                                                                           class="form-control"
+                                                                                           id="youremail"
+                                                                                           placeholder="Your Email">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-6">
-                                                                                <input type="text" class="form-control" id="date" placeholder="2017-01-17">
+                                                                                <input type="text" class="form-control"
+                                                                                       id="date"
+                                                                                       placeholder="2017-01-17">
                                                                             </div>
                                                                         </div>
                                                                         <div class="row">
                                                                             <div class="col-md-12">
                                                                                 <div class="form-group">
-                                                                                    <textarea name="message" class="form-control" id="Inputmessage" placeholder="Message"></textarea>
+                                                                                    <textarea name="message"
+                                                                                              class="form-control"
+                                                                                              id="Inputmessage"
+                                                                                              placeholder="Message"></textarea>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -763,5 +849,8 @@
 
 <!-- Custom JS By Theme Developer -->
 <script src="js/script.js"></script>
+
+<!-- Pushy Master off-canvas -->
+<script src="vendor/js/pushy.min.js"></script>
 </body>
 </html>
