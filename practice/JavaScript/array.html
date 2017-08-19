@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Array</title>
+	<script>
+
+	var person = ['Razon', 32, 'Dhaka'];
+
+	person.push('BD');
+
+	var car = {
+		name  : 'TVS',
+		price : 10009,
+		model : 'TV-120',
+	}
+
+	car.year = 2019;
+
+	var post = [
+		{
+			title   : 'Hello World',
+			author  : 'Razon',
+			comments: ['Nice Post', 'Bad Post']
+		},
+		{
+			title   : 'Another Post',
+			author  : 'Admin',
+			comments: ['<3', 'Go to hell']
+		},
+	]
+
+
+	var movies = [
+		{
+			title  : 'Battelship',
+			hasWatched: true,
+			ratting: 5
+		},
+		{
+			title  : 'Frozen',
+			hasWatched: false,
+			ratting: 4.5
+		},
+		{
+			title  : 'Titanic',
+			hasWatched: true,
+			ratting: 5
+		}
+	]
+
+	movies.forEach( function(movie) {
+		var result = 'You have '
+		// statements
+		if (movie.hasWatched) {
+			result += 'Watched '
+		} else {
+			result += 'Not Seen '
+		}
+		result += '\"' + movie.title + '\" - ';
+		result += movie.ratting + ' stars';
+		console.log(result);		
+	});
+
+
+	// Cleanup
+	function builsString(movie){
+		var result = 'You have '
+		// statements
+		if (movie.hasWatched) {
+			result += 'Watched '
+		} else {
+			result += 'Not Seen '
+		}
+		result += '\"' + movie.title + '\" - ';
+		result += movie.ratting + ' stars';
+		return result;
+	}
+
+	movies.forEach( function(movie) {
+		console.log(builsString(movie));		
+	});	
+
+	</script>
+</head>
+<body>
+	<h1>JS Array</h1>
+</body>
+</html>
