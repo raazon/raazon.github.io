@@ -135,9 +135,9 @@ span.global-border {
 
 .navbar.sticky .navbar-nav li a:focus,
 .navbar.sticky .navbar-nav li a:hover,
-.navbar.sticky .navbar-nav .active a,
-.navbar.sticky .navbar-nav .active a:hover,
-.navbar.sticky .navbar-nav .active a:focus,
+.navbar.sticky .navbar-nav li.active a,
+.navbar.sticky .navbar-nav li.active a:hover,
+.navbar.sticky .navbar-nav li.active a:focus,
 .navbar.sticky .navbar-nav .open a,
 .navbar.sticky .navbar-nav .open a:hover,
 .navbar.sticky .navbar-nav .open a:focus {
