@@ -117,6 +117,10 @@ span.global-border {
     border: none;
 }
 
+.navbar.sticky .navbar-nav li a{
+    background: #333;
+}
+
 .navbar-default .navbar-nav li a:focus,
 .navbar-default .navbar-nav li a:hover,
 .navbar-default .navbar-nav .active a,
