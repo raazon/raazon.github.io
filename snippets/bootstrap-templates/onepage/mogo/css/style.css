@@ -133,6 +133,18 @@ span.global-border {
     background: transparent;
 }
 
+.navbar.sticky .navbar-nav li a:focus,
+.navbar.sticky .navbar-nav li a:hover,
+.navbar.sticky .navbar-nav .active a,
+.navbar.sticky .navbar-nav .active a:hover,
+.navbar.sticky .navbar-nav .active a:focus,
+.navbar.sticky .navbar-nav .open a,
+.navbar.sticky .navbar-nav .open a:hover,
+.navbar.sticky .navbar-nav .open a:focus {
+    color: #fce38a;
+    background: transparent;
+}
+
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #ffffff;
 }
