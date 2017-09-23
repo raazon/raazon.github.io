@@ -93,15 +93,11 @@
 							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
 							fusce hendrerit lacus ridiculus.</p>
 
-
-<div class="info">
-  Images loaded: <b id="loaded-images">0</b>
-</div
 							<div class="row">
 								<div class="4u 12u$(mobile)">
 									<article class="item">
 										<a href="https://www.azkerbazar.com" target="_blank" class="image fit" title="azkerbazar.com">
-		  									<img class="b-lazy" data-src="images/portfolios/azkerbazar.png" src="http://placehold.it/500x250/000000&text=loaded%20image" alt="azkerbazar.com" />
+		  									<img class="b-lazy" data-src="images/portfolios/azkerbazar.png" src="http://placehold.it/500x250/000000&text=loaded%20image" data-src-small="http://placehold.it/100x50" alt="azkerbazar.com" />
 										</a>
 										<header>
 											<h3>Azkerbazar.com</h3>
@@ -228,13 +224,32 @@
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollzer.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.2.0/lazyload.min.js"></script>
+			<script src="assets/js/blazy.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
     
 	<script>
-        var myLazyLoad = new LazyLoad();
+        ;(function() {
+
+            	// Initialize
+			    var bLazy = new Blazy({
+			        breakpoints: [{
+				    width: 420 // Max-width
+			          , src: 'data-src-small'
+				}]
+			      , success: function(element){
+				    setTimeout(function(){
+					// We want to remove the loader gif now.
+					// First we find the parent container
+					// then we remove the "loading" class which holds the loader image
+					var parent = element.parentNode;
+					parent.className = parent.className.replace(/\bloading\b/,'');
+				    }, 200);
+			        }
+			   });
+
+        })();
     </script>
 
 	</body>
