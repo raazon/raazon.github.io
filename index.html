@@ -96,19 +96,19 @@
 							<div class="row">
 								<div class="4u 12u$(mobile)">
 									<article class="item">
+										<a href="http://www.divenow.org" target="_blank" class="image fit" title="divenow.org">
+		  									<img class="b-lazy" src="http://placehold.it/500x250/000000&text=Divenow.org" data-src="images/portfolios/divenow.png" alt="divenow.org" />
+										</a>
+										<header>
+											<h3>pBrokers.com</h3>
+										</header>
+									</article>
+									<article class="item">
 										<a href="https://www.azkerbazar.com" target="_blank" class="image fit" title="azkerbazar.com">
 		  									<img class="b-lazy" src="http://placehold.it/500x250/000000&text=loaded%20image" data-src="images/portfolios/azkerbazar.png" alt="azkerbazar.com" />
 										</a>
 										<header>
 											<h3>Azkerbazar.com</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="http://www.pbrokers.com" target="_blank" class="image fit" title="pbrokers.com">
-		  									<img class="b-lazy" src="http://placehold.it/500x250/000000&text=loaded%20image" data-src="images/portfolios/pbrokers.png" alt="pbrokers.com" />
-										</a>
-										<header>
-											<h3>pBrokers.com</h3>
 										</header>
 									</article>
 								</div>
@@ -154,6 +154,14 @@
 										</a>
 										<header>
 											<h3>Prismerp.com</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="http://www.pbrokers.com" target="_blank" class="image fit" title="pbrokers.com">
+		  									<img class="b-lazy" src="http://placehold.it/500x250/000000&text=loaded%20image" data-src="images/portfolios/pbrokers.png" alt="pbrokers.com" />
+										</a>
+										<header>
+											<h3>pBrokers.com</h3>
 										</header>
 									</article>
 								</div>
@@ -229,28 +237,28 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
     
-	<script>
-        ;(function() {
+			<script>
+		        ;(function() {
 
-            	// Initialize
-			    var bLazy = new Blazy({
-			        breakpoints: [{
-				    width: 420 // Max-width
-			          , src: 'data-src-small'
-				}]
-			      , success: function(element){
-				    setTimeout(function(){
-					// We want to remove the loader gif now.
-					// First we find the parent container
-					// then we remove the "loading" class which holds the loader image
-					var parent = element.parentNode;
-					parent.className = parent.className.replace(/\bloading\b/,'');
-				    }, 200);
-			        }
-			   });
+		            	// Initialize
+					    var bLazy = new Blazy({
+					        breakpoints: [{
+						    width: 420 // Max-width
+					          , src: 'data-src-small'
+						}]
+					      , success: function(element){
+						    setTimeout(function(){
+							// We want to remove the loader gif now.
+							// First we find the parent container
+							// then we remove the "loading" class which holds the loader image
+							var parent = element.parentNode;
+							parent.className = parent.className.replace(/\bloading\b/,'');
+						    }, 200);
+					        }
+					   });
 
-        })();
-    </script>
+		        })();
+		    </script>
 
 	</body>
 </html>

@@ -2538,6 +2538,8 @@
 	}
 
 
+/* http://dinbror.dk/blazy/ */
+
 .b-lazy {
    opacity:0;
    transform: scale(3);
