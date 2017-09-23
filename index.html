@@ -6,9 +6,9 @@
 -->
 <html>
 	<head>
-		<title>Portfolio Website - Razon Komar Pal</title>
+		<title>Razon Komar Pal - Front-End / Wordpress Expert</title>
 		<meta name="description" content="Personal portfolio website by Raaz">
-		<meta name="keywords" content="HTML,CSS,XML,JavaScript,PHP,wordpress,portfolio,website,blog,personal,upwork,fiverr,freelancer">
+		<meta name="keywords" content="html,css,javascript,php,wordpress,portfolio,website,eCommerce,woocommerce,personal">
 		<meta name="author" content="Razon K">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/css/ie/html5shiv.js"></script><![endif]-->
@@ -263,6 +263,27 @@
 
 		        })();
 		    </script>
+  <script language="javascript">
+ 
+  function DisplayVisits() 
+ {   
+  // How many visits so far?
+      var numVisits = GetCookie("numVisits");
+      if (numVisits) numVisits = parseInt(numVisits) + 1;
+      else numVisits = 1; // the value for the new cookie
+ 
+  // Show the number of visits
+      if (numVisits==1) document.write("This is your first visit.");
+      else document.write("You have visited this page " + numVisits + " times.");
+ 
+  // Set the cookie to expire 365 days from now
+      var today = new Date();
+      today.setTime(today.getTime() + 365 /*days*/ * 24 /*hours*/ * 60 /*minutes*/ * 60 /*seconds*/ * 1000 /*milliseconds*/);
+      SetCookie("numVisits", numVisits, today);
+  }
+ 
+  </script>
+    <script language="javascript">DisplayVisits();</script> 
 
 	</body>
 </html>
