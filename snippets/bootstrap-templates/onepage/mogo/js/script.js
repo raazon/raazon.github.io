@@ -37,7 +37,17 @@
             interval: 2000000,
         });
 
-        $(".navbar-default").sticky({topSpacing:0});
+        $(window).scroll(function() {
+            var nav = $('.navbar-default');
+            var top = 200;
+            if ($(window).scrollTop() >= top) {
+
+                nav.addClass('sticky');
+
+            } else {
+                nav.removeClass('sticky');
+            }
+        });        
 
     });
 })(jQuery);
