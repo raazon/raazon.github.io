@@ -36,5 +36,8 @@
             pause: 'hover',
             interval: 2000000,
         });
+
+        $(".navbar-default").sticky({topSpacing:0});
+
     });
 })(jQuery);
