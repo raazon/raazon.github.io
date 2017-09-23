@@ -75,7 +75,7 @@
 							</header>
 
 							<footer>
-								<a href="#portfolio" class="button scrolly">Portfolio</a>
+								<a href="#portfolio" class="button scrolly">See Portfolios</a>
 							</footer>
 
 						</div>
@@ -86,13 +86,13 @@
 						<div class="container">
 
 							<header>
-								<h2>Portfolio</h2>
+								<h2>Recent Portfolios</h2>
 							</header>
 
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
+							<!-- <p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
 							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
 							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-							fusce hendrerit lacus ridiculus.</p>
+							fusce hendrerit lacus ridiculus.</p> -->
 
 							<div class="row">
 								<div class="4u 12u$(mobile)">
@@ -263,27 +263,6 @@
 
 		        })();
 		    </script>
-  <script language="javascript">
- 
-  function DisplayVisits() 
- {   
-  // How many visits so far?
-      var numVisits = GetCookie("numVisits");
-      if (numVisits) numVisits = parseInt(numVisits) + 1;
-      else numVisits = 1; // the value for the new cookie
- 
-  // Show the number of visits
-      if (numVisits==1) document.write("This is your first visit.");
-      else document.write("You have visited this page " + numVisits + " times.");
- 
-  // Set the cookie to expire 365 days from now
-      var today = new Date();
-      today.setTime(today.getTime() + 365 /*days*/ * 24 /*hours*/ * 60 /*minutes*/ * 60 /*seconds*/ * 1000 /*milliseconds*/);
-      SetCookie("numVisits", numVisits, today);
-  }
- 
-  </script>
-    <script language="javascript">DisplayVisits();</script> 
 
 	</body>
 </html>
