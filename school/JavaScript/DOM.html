@@ -6,22 +6,27 @@
 	<script>
 	
 	
-var body = document.querySelector("body");
+		var body = document.querySelector("body");
 
-var isGreen = false;
+		var isGreen = false;
 
-setInterval(function(){
+		setInterval(function(){
 
-	if(isGreen){
-		body.style.background = "#fff";
-	} else {
-		body.style.background = "green";
-	}
+			if(isGreen){
+				body.style.background = "#fff";
+			} else {
+				body.style.background = "green";
+			}
 
-	isGreen = !isGreen;
+			isGreen = !isGreen;
 
-}, 1500);
+		}, 1500);
 	
+		var h1 = document.querySelector('h1');
+
+		h1.addEventListener('click', function(){
+			alert('You click on H1');
+		});	
 
 	</script>
 </head>
