@@ -98,7 +98,8 @@
 								<div class="4u 12u$(mobile)">
 									<article class="item">
 										<a href="http://www.divenow.org" target="_blank" class="image fit" title="divenow.org">
-		  									<img class="b-lazy" src="http://placehold.it/500x250/000000&text=Divenow.org" data-src="images/portfolios/divenow.png" alt="divenow.org" />
+
+											<img class="lazyload" src="http://placehold.it/500x250/000000&text=Divenow.org" data-src="images/portfolios/divenow.png" alt="divenow.org" />
 										</a>
 										<header>
 											<h3>Divenow.org</h3>
@@ -294,32 +295,17 @@ If you have any question, i look forward to hearing​ from you :)
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollzer.min.js"></script>
-			<script src="assets/js/blazy.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<!-- cdnjs -->
+			<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
     
 			<script>
-		        ;(function() {
-
-		            	// Initialize
-					    var bLazy = new Blazy({
-					        breakpoints: [{
-						    width: 420 // Max-width
-					          , src: 'data-src-small'
-						}]
-					      , success: function(element){
-						    setTimeout(function(){
-							// We want to remove the loader gif now.
-							// First we find the parent container
-							// then we remove the "loading" class which holds the loader image
-							var parent = element.parentNode;
-							parent.className = parent.className.replace(/\bloading\b/,'');
-						    }, 200);
-					        }
-					   });
-
-		        })();
+				$(document).ready(function(){
+					$("img.lazyload").lazyload();
+				});
 		    </script>
 
 	</body>
