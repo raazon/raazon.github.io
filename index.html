@@ -31,6 +31,15 @@
 
 	<!-- Custom CSS -->
 	<style>
+		.only-show-on-dark,
+		.dark-mode .only-show-on-light {
+			display: none;
+		}
+
+		.dark-mode .only-show-on-dark {
+			display: inline-block;
+		}
+
 		.profile-teaser .bio img.brand-logo {
 			height: 15px;
 		}
@@ -216,32 +225,41 @@
 							<br>
 							Currently serving as a Senior Web Developer at
 							<a class="text-link text-decoration-none" href="https://www.wpmet.com/" target="_blank">
-								<!-- Wpmet -->
-								<img class="img-fluid brand-logo" src="assets/images/hero/wpmet-logo.svg" alt="Wpmet"
-									title="Wpmet">,
+								<span class="only-show-on-dark">Wpmet,</span>
+								<span class="only-show-on-light">
+									<img class="img-fluid brand-logo" src="assets/images/hero/wpmet-logo.svg"
+										alt="Wpmet" title="Wpmet">,
+								</span>
 							</a>
 							a division of
 							<a class="text-link text-decoration-none" href="https://www.xpeedstudio.com/"
 								target="_blank">
-								<!-- XpeedStudio -->
-								<img class="img-fluid brand-logo" src="assets/images/hero/xpeedstudio-logo.svg"
-									alt="XpeedStudio" title="XpeedStudio">,
+								<span class="only-show-on-dark">XpeedStudio,</span>
+								<span class="only-show-on-light">
+									<img class="img-fluid brand-logo" src="assets/images/hero/xpeedstudio-logo.svg"
+										alt="XpeedStudio" title="XpeedStudio">,
+								</span>
 							</a>
 							where I have taken a leading role in the managing, developing and enhancing impactful
 							plugins, including
 							<!-- I play a key role in the managing, developing and enhancing impactful plugins, including -->
 							<a class="text-link text-decoration-none"
 								href="https://wordpress.org/plugins/elementskit-lite/" target="_blank">
-								<!-- ElementsKit -->
-								<img class="img-fluid brand-logo" src="assets/images/hero/elementskit-logo.svg"
-									alt="ElementsKit Elementor addons" title="ElementsKit Elementor Addons">,
+								<span class="only-show-on-dark">ElementsKit,</span>
+								<span class="only-show-on-light">
+									<img class="img-fluid brand-logo" src="assets/images/hero/elementskit-logo.svg"
+										alt="ElementsKit Elementor addons" title="ElementsKit Elementor Addons">,
+								</span>
 							</a>
 							<a class="text-link text-decoration-none"
 								href="https://wordpress.org/plugins/gutenkit-blocks-addon/" target="_blank">
-								<!-- GutenKit -->
-								<img class="img-fluid brand-logo" src="assets/images/hero/gutenkit-logo.svg"
-									alt="GutenKit – Page Builder Blocks, Patterns, and Templates for Gutenberg Block Editor"
-									title="GutenKit – Page Builder Blocks, Patterns, and Templates for Gutenberg Block Editor">,
+								<span class="only-show-on-dark">GutenKit,</span>
+								<span class="only-show-on-light">
+									<img class="img-fluid brand-logo" src="assets/images/hero/gutenkit-logo.svg"
+										alt="GutenKit – Page Builder Blocks, Patterns, and Templates for Gutenberg Block Editor"
+										title="GutenKit – Page Builder Blocks, Patterns, and Templates for Gutenberg Block Editor">,
+								</span>
+
 							</a>
 							trusted by millions of users worldwide.
 						</div><!--//bio-->
@@ -261,8 +279,8 @@
 					</div><!--//col-->
 
 					<div class="col-md-5 col-lg-5 d-noneX">
-						<img class="profile-image img-fluid mb-3 mb-lg-0 me-md-0 rounded" src="assets/images/profile-lg.jpg"
-							alt="Razon Komar Pal" loading="lazy">
+						<img class="profile-image img-fluid mb-3 mb-lg-0 me-md-0 rounded"
+							src="assets/images/profile-lg.jpg" alt="Razon Komar Pal" loading="lazy">
 					</div>
 				</div>
 			</div>
