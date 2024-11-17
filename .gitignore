@@ -13,7 +13,7 @@ pnpm-debug.log*
 jspm_packages/
 
 # Build output
-# dist/
+dist/
 build/
 
 # Temporary files
