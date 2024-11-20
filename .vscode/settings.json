@@ -63,5 +63,7 @@
 	  "terminal.ansiRed": "#FB543F",
 	  "terminal.ansiWhite": "#A89984",
 	  "terminal.ansiYellow": "#FAC03B"
-	}
+	},
+	"powermode.enabled": true,
+	"powermode.presets": "particles"
   }
