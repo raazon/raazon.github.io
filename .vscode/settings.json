@@ -65,5 +65,8 @@
 	  "terminal.ansiYellow": "#FAC03B"
 	},
 	"powermode.enabled": true,
-	"powermode.presets": "particles"
+	"powermode.presets": "particles",
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	}
   }
