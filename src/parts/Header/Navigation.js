@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from '../../components/Icon';
 
 const Navigation = () => {
 	return (
@@ -6,7 +7,7 @@ const Navigation = () => {
 			<ul className="navbar-nav flex-column text-start">
 				<li className="nav-item">
 					<a className="nav-link active" href="/">
-						<i className="fas fa-user fa-fw me-2"></i>
+						<Icon name='user' className="me-2" />
 						About Me<span className="sr-only">(current)</span>
 					</a>
 				</li>
