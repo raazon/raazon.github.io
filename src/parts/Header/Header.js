@@ -2,6 +2,7 @@
 import React from 'react';
 import Icon from '../../components/Icon';
 import Navigation from './Navigation';
+import './navigation.scss';
 
 const Header = () => {
 	return (
