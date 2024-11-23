@@ -1,6 +1,6 @@
 import React from "react";
 import Icons from "./Icons";
-import './scss/icon.scss';
+import './icon.scss';
 
 const Icon = ({ name, className = "svg-icon", fill = "currentColor", ...props }) => {
 	const icon = Icons[name];
