@@ -1,8 +1,7 @@
 
-import React from 'react';
-import Icon from '../../components/Icon';
+import { Icon } from 'components';
 import Navigation from './Navigation';
-import './navigation.scss';
+import './Navigation.scss';
 
 const Header = () => {
 	return (
@@ -45,32 +44,32 @@ const Header = () => {
 								<ul className="social-list list-inline py-2 mx-auto">
 									<li className="list-inline-item">
 										<a href="https://www.linkedin.com/in/raazon/">
-											<Icon name='linkedin' />
+											<Icon name='linkedin' className='svg-inline--fa' />
 										</a>
 									</li>
 									<li className="list-inline-item">
 										<a href="https://github.com/razon-xs">
-											<Icon name='github' />
+											<Icon name='github' className='svg-inline--fa' />
 										</a>
 									</li>
 									<li className="list-inline-item">
 										<a href="https://x.com/raazzon">
-											<Icon name='x' />
+											<Icon name='x' className='svg-inline--fa' />
 										</a>
 									</li>
 									<li className="list-inline-item">
 										<a href="https://wordpress.stackexchange.com/users/144761/razon-komar-pal">
-											<Icon name='stackexchange' />
+											<Icon name='stackexchange' className='svg-inline--fa' />
 										</a>
 									</li>
 									<li className="list-inline-item">
 										<a href="https://profiles.wordpress.org/raazon/">
-											<Icon name='wordpress' />
+											<Icon name='wordpress' className='svg-inline--fa' />
 										</a>
 									</li>
 									<li className="list-inline-item d-none">
 										<a href="https://codepen.io/raazon/">
-											<Icon name='codepen' />
+											<Icon name='codepen' className='svg-inline--fa' />
 										</a>
 									</li>
 								</ul>
