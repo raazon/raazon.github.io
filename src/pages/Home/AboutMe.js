@@ -1,4 +1,5 @@
 import { Icon } from 'components';
+import { NavLink } from "react-router-dom";
 
 const AboutMe = () => {
 	return (
@@ -55,11 +56,6 @@ const AboutMe = () => {
 								{` and more, trusted by millions of users worldwide.`}
 							</div>
 							<div className="mb-4">
-								<a className="btn btn-primary me-2 mb-3 d-none" href="portfolio.html">
-									<Icon name='circleRight' className='svg-inline--fa me-2' />
-									<span className="d-none d-md-inline">View</span>
-									{` Portfolio `}
-								</a>
 								<a
 									className="btn btn-primary me-2 mb-3 d-noneX"
 									href="https://github.com/raazon/"
@@ -70,11 +66,16 @@ const AboutMe = () => {
 									<span className="d-none d-md-inline">View</span>
 									{` GitHub `}
 								</a>
-								<a className="btn btn-secondary mb-3" href="resume.html">
+								<NavLink to="/resume" className="btn btn-primary me-2 mb-3 d-none">
+									<Icon name='circleRight' className='svg-inline--fa me-2' />
+									<span className="d-none d-md-inline">View</span>
+									{` Portfolio `}
+								</NavLink>
+								<NavLink to="/resume" className="btn btn-secondary mb-3">
 									<Icon name='fileLines' className='svg-inline--fa me-2' />
 									<span className="d-none d-md-inline">View</span>
 									{` Resume `}
-								</a>
+								</NavLink>
 							</div>
 						</div>
 

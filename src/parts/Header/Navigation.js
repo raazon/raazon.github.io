@@ -1,15 +1,16 @@
-import { Icon } from 'components';
+import { CustomNavLink, Icon } from 'components';
 
 const Navigation = () => {
+	const navLinkClass = (isActive) => (isActive ? "nav-link active" : "nav-link");
+
 	return (
 		<>
 			<ul className="navbar-nav flex-column text-start">
 				<li className="nav-item">
-					<a className="nav-link active" href="/">
+					<CustomNavLink to="/">
 						<Icon name='user' className="me-2" />
 						About Me
-						<span className="sr-only">(current)</span>
-					</a>
+					</CustomNavLink>
 				</li>
 				<li className="nav-item d-none">
 					<a className="nav-link" href="portfolio.html">
@@ -24,10 +25,10 @@ const Navigation = () => {
 					</a>
 				</li>
 				<li className="nav-item">
-					<a className="nav-link" href="resume.html">
+					<CustomNavLink to="/resume">
 						<Icon name='fileAlt' className="me-2" />
 						Resume
-					</a>
+					</CustomNavLink>
 				</li>
 				<li className="nav-item d-none">
 					<a className="nav-link" href="blog-home.html">

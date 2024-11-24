@@ -1,5 +1,6 @@
 
 import { Icon } from 'components';
+import { NavLink } from "react-router-dom";
 import Navigation from './Navigation';
 import './Navigation.scss';
 
@@ -27,14 +28,14 @@ const Header = () => {
 
 						<div id="navigation" className="collapse navbar-collapse flex-column">
 							<div className="profile-section pt-3 pt-lg-0">
-								<a href="/" className="d-inline-block">
+								<NavLink to="/" className="d-inline-block" aria-label="Home">
 									<img
 										className="profile-image mb-3 rounded-circle mx-auto"
 										src="assets/images/profile.webp"
 										alt="Razon Komar Pal"
 										loading="lazy"
 									/>
-								</a>
+								</NavLink>
 
 								<div className="bio mb-3">
 									Hi, my name is Razon Komar Pal and I'm a senior web developer. Welcome to my personal

@@ -1,3 +1,6 @@
 import Home from "./Home/Home";
+import NotFound from "./NotFound/NotFound";
+import Resume from "./Resume/Resume";
 
-export { Home };
+export { Home, NotFound, Resume };
+
