@@ -1,10 +1,30 @@
-.only-show-on-dark,
-.dark-mode .only-show-on-light {
-	display: none;
-}
+.dark-mode {
+	.overview-section .item-icon {
+		svg {
+			width: 40px;
+			height: 40px;
 
-.dark-mode .only-show-on-dark {
-	display: inline-block;
+			&.fa-wordpress {
+				color: #fff;
+			}
+			&.fa-square-git {
+				color: #fff;
+			}
+			&.fa-square-github {
+				color: #fff;
+			}
+			&.fa-js {
+				color: #f3e5ab;
+			}
+			&.fa-bootstrap {
+				// color: #712cf9;
+				color: #fff;
+			}
+			&.fa-tailwindcss {
+				color: #38bdf9;
+			}
+		}
+	}
 }
 
 .profile-teaser .bio img.brand-logo {
@@ -34,9 +54,4 @@
 
 .overview-section .item-icon svg.fa-github {
 	color: #000;
-}
-
-.dark-mode .overview-section .item-icon svg.fa-wordpress,
-.dark-mode .overview-section .item-icon svg.fa-github {
-	color: #fff;
 }

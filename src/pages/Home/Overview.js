@@ -24,7 +24,7 @@ const Overview = () => {
 						<div className="item col-6 col-lg-3">
 							<div className="item-inner">
 								<div className="item-icon">
-									<Icon name='wordpress' />
+									<Icon name='wordpress' className='fa-wordpress' />
 								</div>
 								<h3 className="item-title">WordPress Development</h3>
 								<div className="item-desc">
@@ -36,7 +36,7 @@ const Overview = () => {
 						<div className="item col-6 col-lg-3">
 							<div className="item-inner">
 								<div className="item-icon">
-									<Icon name='php' />
+									<Icon name='php' className='fa-php' />
 								</div>
 								<h3 className="item-title">PHP</h3>
 								<div className="item-desc">
@@ -49,7 +49,7 @@ const Overview = () => {
 						<div className="item col-6 col-lg-3">
 							<div className="item-inner">
 								<div className="item-icon">
-									<Icon name='php' className='fa-css3 me-2'/>
+									<Icon name='js' className='fa-js' />
 								</div>
 								<h3 className="item-title">Vanilla JavaScript</h3>
 								<div className="item-desc">
@@ -62,8 +62,8 @@ const Overview = () => {
 						<div className="item col-6 col-lg-3">
 							<div className="item-inner">
 								<div className="item-icon">
-									<Icon name='html' className='fa-html5 me-2'/>
-									<Icon name='css' className='fa-css3 me-2'/>
+									<Icon name='html' className='fa-html5 me-2' />
+									<Icon name='css' className='fa-css3 me-2' />
 								</div>
 								<h3 className="item-title">HTML &amp; CSS</h3>
 								<div className="item-desc">
@@ -75,10 +75,11 @@ const Overview = () => {
 						<div className="item col-6 col-lg-3">
 							<div className="item-inner">
 								<div className="item-icon">
-									<i className="fab fa-sass me-2"></i>
-									<i className="fab fa-less"></i>
+									<Icon name='sass' className='fa-sass me-2' />
+									<Icon name='tailwindcss' className='fa-tailwindcss me-2' />
+									<Icon name='bootstrap' className='fa-bootstrap' />
 								</div>
-								<h3 className="item-title">Sass &amp; LESS</h3>
+								<h3 className="item-title">Sass, Tailwind &amp; Bootstrap</h3>
 								<div className="item-desc">
 									I can also write CSS code using SCSS and LESS. I have a good
 									understanding of SCSS and LESS. I can write clean, semantic, and valid SCSS and LESS
@@ -89,9 +90,9 @@ const Overview = () => {
 						<div className="item col-6 col-lg-3">
 							<div className="item-inner">
 								<div className="item-icon">
-									<i className="fab fa-npm me-2"></i>
-									<i className="fab fa-gulp me-2"></i>
-									<i className="fab fa-grunt"></i>
+									<Icon name='npm' className='fa-npm me-2' />
+									<Icon name='gulp' className='fa-gulp me-2' />
+									<Icon name='grunt' className='fa-grunt' />
 								</div>
 								<h3 className="item-title">NPM, Gulp &amp; Grunt</h3>
 								<div className="item-desc">
@@ -104,10 +105,10 @@ const Overview = () => {
 						<div className="item col-6 col-lg-3">
 							<div className="item-inner">
 								<div className="item-icon">
-									<i className="fab fa-github me-2"></i>
-									<i className="fab fa-git-alt me-2"></i>
+									<Icon name='squareGit' className='fa-square-git me-2' />
+									<Icon name='squareGithub' className='fa-square-github' />
 								</div>
-								<h3 className="item-title">GitHub &amp; Git</h3>
+								<h3 className="item-title">Gitflow &amp; GitHub</h3>
 								<div className="item-desc">
 									Regularly I use Git for team collaboration, version control, pull
 									requests, merge conflicts, and code reviews. I use GitHub mostly, aside also use GitLab
@@ -118,7 +119,7 @@ const Overview = () => {
 						<div className="item col-6 col-lg-3">
 							<div className="item-inner">
 								<div className="item-icon">
-									<i className="fab fa-react"></i>
+									<Icon name='react' className='fa-react' />
 								</div>
 								<h3 className="item-title">React</h3>
 								<div className="item-desc">
@@ -131,11 +132,10 @@ const Overview = () => {
 					</div>
 					<div className="text-center py-3 d-none">
 						<a href="services.html" className="btn btn-primary">
-							<i className="fas fa-arrow-alt-circle-right me-2"></i>
+							<Icon name='circleRight' className='fa-circle-right me-2' />
 							Services &amp; Pricing
 						</a>
 					</div>
-
 				</div>
 			</section>
 		</>
