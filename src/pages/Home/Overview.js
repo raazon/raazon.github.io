@@ -20,7 +20,29 @@ const Overview = () => {
 							GitHub
 						</a>.
 					</div>
-					<div className="row">
+
+					<div className="row gap-3">
+						<h4>Technical Skills:</h4>
+						<div className="my-skils">
+							<img
+								className="img-fluid rounded-start"
+								src="https://img.shields.io/badge/wordpress-0073aa?style=for-the-badge&logo=wordpress&labelColor=%200073aa&logoColor=fff"
+								alt="wordpress"
+							/>
+							<img
+								className="img-fluid rounded-start"
+								src="https://img.shields.io/badge/woocommerce-7f54b2?style=for-the-badge&logo=woocommerce&labelColor=%207f54b2&logoColor=fff"
+								alt="woocommerce"
+							/>
+							<img
+								className="img-fluid rounded-start"
+								src="https://img.shields.io/badge/gutenberg-7f54b2?style=for-the-badge&logo=gutenberg&labelColor=%207f54b2&logoColor=fff"
+								alt="woocommerce"
+							/>
+						</div>
+					</div>
+
+					<div className="row d-none">
 						<div className="item col-6 col-lg-3">
 							<div className="item-inner">
 								<div className="item-icon">

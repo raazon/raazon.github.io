@@ -41,8 +41,19 @@
 	}
 }
 
-.overview-section .item-icon svg.fa-wordpress {
-	color: #21759b;
+.overview-section {
+	.item-icon svg {
+		.fa-wordpress {
+			color: #21759b;
+		}
+	}
+
+	.my-skils {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		gap: 10px;
+	}
 }
 
 .overview-section .item-icon svg.fa-github {
