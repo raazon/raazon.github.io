@@ -4,21 +4,14 @@
 			width: 40px;
 			height: 40px;
 
-			&.fa-wordpress {
-				color: #fff;
-			}
-			&.fa-square-git {
-				color: #fff;
-			}
-			&.fa-square-github {
+			&.fa-wordpress,
+			&.fa-square-git,
+			&.fa-square-github,
+			&.fa-bootstrap {
 				color: #fff;
 			}
 			&.fa-js {
 				color: #f3e5ab;
-			}
-			&.fa-bootstrap {
-				// color: #712cf9;
-				color: #fff;
 			}
 			&.fa-tailwindcss {
 				color: #38bdf9;
