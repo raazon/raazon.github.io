@@ -1,5 +1,5 @@
 import AboutMe from './AboutMe';
-import './Home.scss';
+import './home.scss';
 import Overview from './Overview';
 
 const Home = () => {

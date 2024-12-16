@@ -2,7 +2,7 @@
 import { Icon } from 'components';
 import { NavLink } from "react-router-dom";
 import Navigation from './Navigation';
-import './Navigation.scss';
+import './navigation.scss';
 
 const Header = () => {
 	return (
