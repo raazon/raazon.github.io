@@ -10,7 +10,9 @@ const Header = () => {
 			<header className="header text-center">
 				<div className="force-overflow">
 					<h1 className="blog-name pt-lg-4 mb-0">
-						<a className="no-text-decoration" href="/">Razon Komar Pal</a>
+						<a className="no-text-decoration" href="/">
+							Razon Komar Pal
+						</a>
 					</h1>
 
 					<nav className="navbar navbar-expand-lg navbar-dark">
