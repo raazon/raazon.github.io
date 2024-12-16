@@ -25,18 +25,28 @@ const Overview = () => {
 						<h4>Technical Skills:</h4>
 						<div className="my-skils">
 							<img
-								className="img-fluid rounded-start"
+								className="img-fluid rounded"
 								src="https://img.shields.io/badge/wordpress-0073aa?style=for-the-badge&logo=wordpress&labelColor=%200073aa&logoColor=fff"
 								alt="wordpress"
 							/>
 							<img
-								className="img-fluid rounded-start"
-								src="https://img.shields.io/badge/woocommerce-7f54b2?style=for-the-badge&logo=woocommerce&labelColor=%207f54b2&logoColor=fff"
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/gutenberg-7f54b2?style=for-the-badge&logo=woo&labelColor=%207f54b2&logoColor=fff"
 								alt="woocommerce"
 							/>
 							<img
-								className="img-fluid rounded-start"
-								src="https://img.shields.io/badge/gutenberg-7f54b2?style=for-the-badge&logo=gutenberg&labelColor=%207f54b2&logoColor=fff"
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/gutenberg-ecf0f1?style=for-the-badge&logo=gutenberg&logoColor=101010"
+								alt="woocommerce"
+							/>
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/elementor-92003B?style=for-the-badge&logo=elementor&logoColor=fff"
+								alt="woocommerce"
+							/>
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/elementor-92003B?style=for-the-badge&logo=elementor&logoColor=fff"
 								alt="woocommerce"
 							/>
 						</div>
