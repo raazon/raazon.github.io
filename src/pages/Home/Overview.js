@@ -31,18 +31,18 @@ const Overview = () => {
 							/>
 							<img
 								className="img-fluid rounded"
-								src="https://img.shields.io/badge/gutenberg-7f54b2?style=for-the-badge&logo=woo&labelColor=%207f54b2&logoColor=fff"
+								src="https://img.shields.io/badge/woocommerce-7f54b2?style=for-the-badge&logo=woo&labelColor=%207f54b2&logoColor=fff"
 								alt="woocommerce"
 							/>
 							<img
 								className="img-fluid rounded"
 								src="https://img.shields.io/badge/gutenberg-ecf0f1?style=for-the-badge&logo=gutenberg&logoColor=101010"
-								alt="woocommerce"
+								alt="gutenberg"
 							/>
 							<img
 								className="img-fluid rounded"
 								src="https://img.shields.io/badge/elementor-92003B?style=for-the-badge&logo=elementor&logoColor=fff"
-								alt="woocommerce"
+								alt="elementor"
 							/>
 							<img
 								className="img-fluid rounded"
