@@ -51,7 +51,7 @@ const Overview = () => {
 							/>
 							<img
 								className="img-fluid rounded"
-								src="https://img.shields.io/badge/wordpress-777bb4?style=for-the-badge&logo=wordpress&logoColor=ffffff"
+								src="https://img.shields.io/badge/wordpress-21759b?style=for-the-badge&logo=wordpress&logoColor=ffffff"
 								alt="wordpress"
 							/>
 							<img
@@ -135,24 +135,41 @@ const Overview = () => {
 								src="https://img.shields.io/badge/grunt-faaa17?style=for-the-badge&logo=grunt&logoColor=ffffff"
 								alt="grunt"
 							/>
+
+							
 							<img
 								className="img-fluid rounded"
-								src="https://img.shields.io/badge/playwright-2fad33?style=for-the-badge&logo=microsoft&logoColor=ffffff"
+								src="https://img.shields.io/badge/Testing-Playwright-45ba8e?logo=microsoft&logoColor=white&style=for-the-badge"
 								alt="playwright"
 							/>
 							<img
 								className="img-fluid rounded"
-								src="https://img.shields.io/badge/puppeteer-40b5a4?style=for-the-badge&logo=puppeteer&logoColor=ffffff"
+								src="https://img.shields.io/badge/Testing-Puppeteer-40b5a4?logo=puppeteer&logoColor=white&style=for-the-badge"
 								alt="puppeteer"
 							/>
 							<img
 								className="img-fluid rounded"
-								src="https://img.shields.io/badge/PHPUnit-6d8faf?style=flat-square&logo=php&logoColor=ffffff"
+								src="https://img.shields.io/badge/Testing-PHPUnit-6d8faf?logo=php&logoColor=white&style=for-the-badge"
 								alt="PHPUnit"
 							/>
 							<img
 								className="img-fluid rounded"
-								src="https://img.shields.io/badge/WPCS-6d8faf?style=for-the-badge&logo=WP&logoColor=ffffff"
+								src="https://img.shields.io/badge/Code%20Style-WPCS-21759b?logo=wordpress&logoColor=white&style=for-the-badge"
+								alt="WPCS"
+							/>
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/Tool-WP--CLI-212121?logo=wordpress&logoColor=white&style=for-the-badge"
+								alt="WPCS"
+							/>
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/API-REST%20API-008080?logo=wordpress&logoColor=white&style=for-the-badge"
+								alt="WPCS"
+							/>
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/Editor-Gutenberg-333333?logo=wordpress&logoColor=white&style=for-the-badge"
 								alt="WPCS"
 							/>
 						</div>
