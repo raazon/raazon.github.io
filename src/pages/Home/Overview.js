@@ -66,7 +66,7 @@ const Overview = () => {
 							/>
 							<img
 								className="img-fluid rounded"
-								src="https://img.shields.io/badge/gutenberg-21759b?style=for-the-badge&logo=gutenberg&logoColor=ffffff"
+								src="https://img.shields.io/badge/gutenberg-whitesmoke?style=for-the-badge&logo=gutenberg&logoColor=333333"
 								alt="gutenberg"
 							/>
 							<img
