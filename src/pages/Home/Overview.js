@@ -22,32 +22,138 @@ const Overview = () => {
 					</div>
 
 					<div className="row gap-3">
-						<h4>Technical Skills:</h4>
+						<h3 class="item-title">Technical Skills</h3>
 						<div className="my-skils">
 							<img
 								className="img-fluid rounded"
-								src="https://img.shields.io/badge/wordpress-0073aa?style=for-the-badge&logo=wordpress&labelColor=%200073aa&logoColor=fff"
+								src="https://img.shields.io/badge/javascript-f7df1c?style=for-the-badge&logo=javascript&logoColor=333333"
+								alt="javascript"
+							/>
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/typescript-0073aa?style=for-the-badge&logo=typescript&logoColor=ffffff"
+								alt="typescript"
+							/>
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/react-61dafb?style=for-the-badge&logo=react&logoColor=ffffff"
+								alt="react"
+							/>
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/jquery-1f6faa?style=for-the-badge&logo=jquery&logoColor=ffffff"
+								alt="jquery"
+							/>
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/php-777bb4?style=for-the-badge&logo=php&logoColor=ffffff"
+								alt="php"
+							/>
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/wordpress-777bb4?style=for-the-badge&logo=wordpress&logoColor=ffffff"
 								alt="wordpress"
 							/>
 							<img
 								className="img-fluid rounded"
-								src="https://img.shields.io/badge/woocommerce-7f54b2?style=for-the-badge&logo=woo&labelColor=%207f54b2&logoColor=fff"
-								alt="woocommerce"
+								src="https://img.shields.io/badge/REST%20API-777bb4?style=for-the-badge&logo=api&logoColor=ffffff"
+								alt="REST API"
 							/>
 							<img
 								className="img-fluid rounded"
-								src="https://img.shields.io/badge/gutenberg-ecf0f1?style=for-the-badge&logo=gutenberg&logoColor=101010"
+								src="https://img.shields.io/badge/WP%20CLI-777bb4?style=for-the-badge&logo=wpcli&logoColor=ffffff"
+								alt="WP CLI"
+							/>
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/gutenberg-whitesmoke?style=for-the-badge&logo=gutenberg&logoColor=333333"
 								alt="gutenberg"
 							/>
 							<img
 								className="img-fluid rounded"
-								src="https://img.shields.io/badge/elementor-92003B?style=for-the-badge&logo=elementor&logoColor=fff"
-								alt="elementor"
+								src="https://img.shields.io/badge/html5-e35026?style=for-the-badge&logo=html5&logoColor=ffffff"
+								alt="html5"
 							/>
 							<img
 								className="img-fluid rounded"
-								src="https://img.shields.io/badge/elementor-92003B?style=for-the-badge&logo=elementor&logoColor=fff"
-								alt="woocommerce"
+								src="https://img.shields.io/badge/css3-2865f0?style=for-the-badge&logo=html5&logoColor=ffffff"
+								alt="css3"
+							/>
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/sass-cc6599?style=for-the-badge&logo=sass&logoColor=ffffff"
+								alt="sass"
+							/>
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/bootstrap-7952b3?style=for-the-badge&logo=bootstrap&logoColor=ffffff"
+								alt="bootstrap"
+							/>
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/tailwind-7952b3?style=for-the-badge&logo=tailwind&logoColor=ffffff"
+								alt="bootstrap"
+							/>
+						</div>
+					</div>
+
+					<div className="row gap-3 mt-5">
+						<h3 class="item-title">Tools and Technologies</h3>
+						<div className="my-skils">
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/git-f05032?style=for-the-badge&logo=git&logoColor=ffffff"
+								alt="git"
+							/>
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/CI/CD-brightgreen?style=for-the-badge&logo=githubactions&logoColor=ffffff"
+								alt="CI CD"
+							/>
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/npm-cb0001?style=for-the-badge&logo=npm&logoColor=ffffff"
+								alt="npm"
+							/>
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/vscode-22a7f2?style=for-the-badge&logo=vscode&logoColor=ffffff"
+								alt="vscode"
+							/>
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/webpack-8dd6f9?style=for-the-badge&logo=webpack&logoColor=333333"
+								alt="webpack"
+							/>
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/gulp-d04647?style=for-the-badge&logo=gulp&logoColor=ffffff"
+								alt="gulp"
+							/>
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/grunt-faaa17?style=for-the-badge&logo=grunt&logoColor=ffffff"
+								alt="grunt"
+							/>
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/playwright-2fad33?style=for-the-badge&logo=microsoft&logoColor=ffffff"
+								alt="playwright"
+							/>
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/puppeteer-40b5a4?style=for-the-badge&logo=puppeteer&logoColor=ffffff"
+								alt="puppeteer"
+							/>
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/PHPUnit-6d8faf?style=flat-square&logo=php&logoColor=ffffff"
+								alt="PHPUnit"
+							/>
+							<img
+								className="img-fluid rounded"
+								src="https://img.shields.io/badge/WPCS-6d8faf?style=for-the-badge&logo=WP&logoColor=ffffff"
+								alt="WPCS"
 							/>
 						</div>
 					</div>
