@@ -2,6 +2,216 @@ import { Icon } from 'components';
 import { NavLink } from "react-router-dom";
 
 const Overview = () => {
+	const technicalSkills = [
+		{
+			label: "JavaScript",
+			labelBgColor: "f7df1e",
+			logo: "javascript",
+			logoColor: "black",
+			style: "for-the-badge",
+		},
+		{
+			label: "TypeScript",
+			labelBgColor: "3178c6",
+			logo: "typescript",
+			logoColor: "white",
+			style: "for-the-badge",
+		},
+		{
+			label: "React",
+			labelBgColor: "61dafb",
+			logo: "react",
+			logoColor: "black",
+			style: "for-the-badge",
+		},
+		{
+			label: "jQuery",
+			labelBgColor: "0769ad",
+			logo: "jquery",
+			logoColor: "white",
+			style: "for-the-badge",
+		},
+		{
+			label: "PHP",
+			labelBgColor: "777bb4",
+			logo: "php",
+			logoColor: "white",
+			style: "for-the-badge",
+		},
+		{
+			label: "WordPress",
+			labelBgColor: "21759b",
+			logo: "wordpress",
+			logoColor: "white",
+			style: "for-the-badge",
+		},
+		{
+			label: "REST API",
+			labelBgColor: "008080",
+			logo: "wordpress",
+			logoColor: "white",
+			style: "for-the-badge",
+		},
+		{
+			label: "WP-CLI",
+			labelBgColor: "212121",
+			logo: "wordpress",
+			logoColor: "white",
+			style: "for-the-badge",
+		},
+		{
+			label: "Gutenberg",
+			labelBgColor: "333333",
+			logo: "wordpress",
+			logoColor: "white",
+			style: "for-the-badge",
+		},
+		{
+			label: "Full Site Editing",
+			labelBgColor: "21759b",
+			logo: "wordpress",
+			logoColor: "white",
+			style: "for-the-badge",
+		},
+		{
+			label: "Plugin Development",
+			labelBgColor: "0073aa",
+			logo: "wordpress",
+			logoColor: "white",
+			style: "for-the-badge",
+		},
+		{
+			label: "Theme Development",
+			labelBgColor: "0073aa",
+			logo: "wordpress",
+			logoColor: "white",
+			style: "for-the-badge",
+		},
+		{
+			label: "HTML 5",
+			labelBgColor: "E34F26",
+			logo: "html5",
+			logoColor: "white",
+			style: "for-the-badge",
+		},
+		{
+			label: "CSS 3",
+			labelBgColor: "1572B6",
+			logo: "css3",
+			logoColor: "white",
+			style: "for-the-badge",
+		},
+		{
+			label: "SASS",
+			labelBgColor: "CC6699",
+			logo: "sass",
+			logoColor: "white",
+			style: "for-the-badge",
+		},
+		{
+			label: "Bootstrap",
+			labelBgColor: "7952b3",
+			logo: "bootstrap",
+			logoColor: "white",
+			style: "for-the-badge",
+		},
+		{
+			label: "Tailwind CSS",
+			labelBgColor: "38b2ac",
+			logo: "tailwindcss",
+			logoColor: "white",
+			style: "for-the-badge",
+		},
+	];
+
+	const toolsAndTechnologies = [
+		{
+			label: "Gitflow",
+			labelBgColor: "f05032",
+			logo: "git",
+			logoColor: "white",
+			style: "for-the-badge",
+		},
+		{
+			label: "GitHub Actions",
+			labelBgColor: "2088FF",
+			logo: "githubactions",
+			logoColor: "white",
+			style: "for-the-badge",
+		},
+		{
+			label: "vscode",
+			labelBgColor: "22a7f2",
+			logo: "vscode",
+			logoColor: "white",
+			style: "for-the-badge",
+		},
+		{
+			label: "NPM",
+			labelBgColor: "cb0001",
+			logo: "npm",
+			logoColor: "white",
+			style: "for-the-badge",
+		},
+		{
+			label: "Webpack",
+			labelBgColor: "8dd6f9",
+			logo: "webpack",
+			logoColor: "black",
+			style: "for-the-badge",
+		},
+		{
+			label: "Gulp",
+			labelBgColor: "d04647",
+			logo: "gulp",
+			logoColor: "white",
+			style: "for-the-badge",
+		},
+		{
+			label: "Grunt",
+			labelBgColor: "faaa17",
+			logo: "grunt",
+			logoColor: "black",
+			style: "for-the-badge",
+		},
+		{
+			label: "Babel",
+			labelBgColor: "f9dc3e",
+			logo: "babel",
+			logoColor: "black",
+			style: "for-the-badge",
+		},
+		{
+			label: "Puppeteer",
+			labelBgColor: "40b5a4",
+			logo: "puppeteer",
+			logoColor: "black",
+			style: "for-the-badge",
+		},
+		{
+			label: "Playwright",
+			labelBgColor: "2fad33",
+			labelColor: "black",
+			logo: "playwright",
+			logoColor: "black",
+			style: "for-the-badge",
+		},
+		{
+			label: "PHPUnit",
+			labelBgColor: "3b9cd7",
+			logo: "php",
+			logoColor: "white",
+			style: "for-the-badge",
+		},
+		{
+			label: "WPCS",
+			labelBgColor: "21759b",
+			logo: "wordpress",
+			logoColor: "white",
+			style: "for-the-badge",
+		},
+	];
+
 	return (
 		<>
 			<section className="overview-section p-3 p-lg-5">
@@ -24,132 +234,32 @@ const Overview = () => {
 					<div className="row gap-3">
 						<h3 class="item-title">Technical Skills</h3>
 						<div className="my-skils">
-							<img
-								className="img-fluid rounded"
-								src="https://img.shields.io/badge/javascript-f7df1c?style=for-the-badge&logo=javascript&logoColor=333333"
-								alt="javascript"
-							/>
-							<img
-								className="img-fluid rounded"
-								src="https://img.shields.io/badge/typescript-0073aa?style=for-the-badge&logo=typescript&logoColor=ffffff"
-								alt="typescript"
-							/>
-							<img
-								className="img-fluid rounded"
-								src="https://img.shields.io/badge/react-61dafb?style=for-the-badge&logo=react&logoColor=ffffff"
-								alt="react"
-							/>
-							<img
-								className="img-fluid rounded"
-								src="https://img.shields.io/badge/jquery-1f6faa?style=for-the-badge&logo=jquery&logoColor=ffffff"
-								alt="jquery"
-							/>
-							<img
-								className="img-fluid rounded"
-								src="https://img.shields.io/badge/php-777bb4?style=for-the-badge&logo=php&logoColor=ffffff"
-								alt="php"
-							/>
-							<img
-								className="img-fluid rounded"
-								src="https://img.shields.io/badge/wordpress-21759b?style=for-the-badge&logo=wordpress&logoColor=ffffff"
-								alt="wordpress"
-							/>
-							<img
-								className="img-fluid rounded"
-								src="https://img.shields.io/badge/REST%20API-21759b?style=for-the-badge&logo=wordpress&logoColor=ffffff"
-								alt="REST API"
-							/>
-							<img
-								className="img-fluid rounded"
-								src="https://img.shields.io/badge/WP%20CLI-21759b?style=for-the-badge&logo=wordpress&logoColor=ffffff"
-								alt="WP CLI"
-							/>
-							<img
-								className="img-fluid rounded"
-								src="https://img.shields.io/badge/gutenberg-whitesmoke?style=for-the-badge&logo=gutenberg&logoColor=333333"
-								alt="gutenberg"
-							/>
-							<img
-								className="img-fluid rounded"
-								src="https://img.shields.io/badge/html5-e35026?style=for-the-badge&logo=html5&logoColor=ffffff"
-								alt="html5"
-							/>
-							<img
-								className="img-fluid rounded"
-								src="https://img.shields.io/badge/css3-2865f0?style=for-the-badge&logo=html5&logoColor=ffffff"
-								alt="css3"
-							/>
-							<img
-								className="img-fluid rounded"
-								src="https://img.shields.io/badge/sass-cc6599?style=for-the-badge&logo=sass&logoColor=ffffff"
-								alt="sass"
-							/>
-							<img
-								className="img-fluid rounded"
-								src="https://img.shields.io/badge/bootstrap-7952b3?style=for-the-badge&logo=bootstrap&logoColor=ffffff"
-								alt="bootstrap"
-							/>
-							<img
-								className="img-fluid rounded"
-								src="https://img.shields.io/badge/tailwind-7952b3?style=for-the-badge&logo=tailwind&logoColor=ffffff"
-								alt="bootstrap"
-							/>
+							{
+								technicalSkills.map((skill, index) => (
+									<img
+										className="img-fluid rounded"
+										src={`https://img.shields.io/badge/${skill.label}-${skill.labelBgColor}?logo=${skill.logo}&logoColor=${skill.logoColor}&style=${skill.style}`}
+										alt={skill.label}
+										key={index}
+									/>
+								))
+							}
 						</div>
 					</div>
 
 					<div className="row gap-3 mt-5">
 						<h3 class="item-title">Tools and Technologies</h3>
 						<div className="my-skils">
-							<img
-								className="img-fluid rounded"
-								src="https://img.shields.io/badge/git-f05032?style=for-the-badge&logo=git&logoColor=ffffff"
-								alt="git"
-							/>
-							<img
-								className="img-fluid rounded"
-								src="https://img.shields.io/badge/CI/CD-brightgreen?style=for-the-badge&logo=githubactions&logoColor=ffffff"
-								alt="CI CD"
-							/>
-							<img
-								className="img-fluid rounded"
-								src="https://img.shields.io/badge/npm-cb0001?style=for-the-badge&logo=npm&logoColor=ffffff"
-								alt="npm"
-							/>
-							<img
-								className="img-fluid rounded"
-								src="https://img.shields.io/badge/vscode-22a7f2?style=for-the-badge&logo=vscode&logoColor=ffffff"
-								alt="vscode"
-							/>
-							<img
-								className="img-fluid rounded"
-								src="https://img.shields.io/badge/webpack-8dd6f9?style=for-the-badge&logo=webpack&logoColor=333333"
-								alt="webpack"
-							/>
-							<img
-								className="img-fluid rounded"
-								src="https://img.shields.io/badge/gulp-d04647?style=for-the-badge&logo=gulp&logoColor=ffffff"
-								alt="gulp"
-							/>
-							<img
-								className="img-fluid rounded"
-								src="https://img.shields.io/badge/grunt-faaa17?style=for-the-badge&logo=grunt&logoColor=ffffff"
-								alt="grunt"
-							/>
-							<img
-								className="img-fluid rounded"
-								src="https://img.shields.io/badge/playwright-2fad33?style=for-the-badge&logo=microsoft&logoColor=ffffff"
-								alt="playwright"
-							/>
-							<img
-								className="img-fluid rounded"
-								src="https://img.shields.io/badge/puppeteer-40b5a4?style=for-the-badge&logo=puppeteer&logoColor=ffffff"
-								alt="puppeteer"
-							/>
-							<img
-								className="img-fluid rounded"
-								src="https://img.shields.io/badge/PHPUnit-6d8faf?style=for-the-badge&logo=php&logoColor=ffffff"
-								alt="PHPUnit"
-							/>
+							{
+								toolsAndTechnologies.map((skill, index) => (
+									<img
+										className="img-fluid rounded"
+										src={`https://img.shields.io/badge/${skill.label}-${skill.labelBgColor}?logo=${skill.logo}&logoColor=${skill.logoColor}&style=${skill.style}`}
+										alt={skill.label}
+										key={index}
+									/>
+								))
+							}
 						</div>
 					</div>
 
