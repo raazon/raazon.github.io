@@ -48,11 +48,28 @@
 		}
 	}
 
-	.my-skils {
+	.my-skills {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: flex-start;
 		gap: 10px;
+
+		.skill-item {
+			display: flex;
+			align-items: center;
+			gap: 5px;
+			height: 28px;
+			padding: 2px 8px;
+			text-transform: uppercase;
+			font-weight: 900;
+			font-size: 12px;
+
+			svg {
+				width: 1.2em;
+				height: 1.2em;
+				fill: currentColor;
+			}
+		}
 	}
 }
 
