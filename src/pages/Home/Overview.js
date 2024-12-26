@@ -242,7 +242,7 @@ const Overview = () => {
 										className='skill-item rounded'
 										style={{ backgroundColor: skill.labelBgColor, color: skill.labelColor }}
 										key={index}>
-										{`${skill.logo} ${skill.label}`}
+										{skill.logo} {skill.label}
 									</span>
 								))
 							}
@@ -258,7 +258,7 @@ const Overview = () => {
 										className='skill-item rounded'
 										style={{ backgroundColor: skill.labelBgColor, color: skill.labelColor }}
 										key={index}>
-										{`${skill.logo} ${skill.label}`}
+										{skill.logo} {skill.label}
 									</span>
 								))
 							}
