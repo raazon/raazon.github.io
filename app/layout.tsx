@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import Header from "./components/Header/Header";
+import '../public/assets/css/theme-1.css';
 import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 
 
 const roboto = Roboto({
@@ -40,7 +41,7 @@ export default function RootLayout({
 					rel="stylesheet"
 					href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
 				/> */}
-				<link id="theme-style" rel="stylesheet" href="/assets/css/theme-1.css" />
+				{/* <link id="theme-style" rel="stylesheet" href="/assets/css/theme-1.css" /> */}
 			</head>
 			<body className={roboto.className}>
 				<Header />

@@ -1,5 +1,6 @@
-import React from "react";
 import Image from "next/image"; // Use Next.js `Image` component for optimized images
+import Link from 'next/link';
+import React from "react";
 import Icon from "../Icon/Icon";
 import Navigation from "./Navigation";
 
@@ -8,9 +9,9 @@ const Header: React.FC = () => {
 		<header className="header text-center">
 			<div className="force-overflow">
 				<h1 className="blog-name pt-lg-4 mb-0">
-					<a className="no-text-decoration" href="/">
+					<Link className="no-text-decoration" href="/">
 						Razon Komar Pal
-					</a>
+					</Link>
 				</h1>
 
 				<nav className="navbar navbar-expand-lg navbar-dark">
@@ -28,7 +29,7 @@ const Header: React.FC = () => {
 
 					<div id="navigation" className="collapse navbar-collapse flex-column">
 						<div className="profile-section pt-3 pt-lg-0">
-							<a href="/" className="d-inline-block" aria-label="Home">
+							<Link href="/" className="d-inline-block" aria-label="Home">
 								<Image
 									className="profile-image mb-3 rounded-circle mx-auto"
 									src="/assets/images/profile.webp" // Updated for Next.js
@@ -37,43 +38,42 @@ const Header: React.FC = () => {
 									height={100} // Provide appropriate height
 									priority
 								/>
-							</a>
+							</Link>
 
 							<div className="bio mb-3">
-								Hi, my name is Razon Komar Pal and I'm a senior web developer. Welcome to my personal
-								website!
+								{`Hi, my name is Razon Komar Pal and I'm a senior web developer. Welcome to my personal website!`}
 							</div>
 
 							<ul className="social-list list-inline py-2 mx-auto">
 								<li className="list-inline-item">
-									<a href="https://www.linkedin.com/in/raazon/">
+									<Link href="https://www.linkedin.com/in/raazon/">
 										<Icon name="linkedin" className="svg-inline--fa" />
-									</a>
+									</Link>
 								</li>
 								<li className="list-inline-item">
-									<a href="https://github.com/razon-xs">
+									<Link href="https://github.com/razon-xs">
 										<Icon name="github" className="svg-inline--fa" />
-									</a>
+									</Link>
 								</li>
 								<li className="list-inline-item">
-									<a href="https://x.com/raazzon">
+									<Link href="https://x.com/raazzon">
 										<Icon name="x" className="svg-inline--fa" />
-									</a>
+									</Link>
 								</li>
 								<li className="list-inline-item">
-									<a href="https://wordpress.stackexchange.com/users/144761/razon-komar-pal">
+									<Link href="https://wordpress.stackexchange.com/users/144761/razon-komar-pal">
 										<Icon name="stackexchange" className="svg-inline--fa" />
-									</a>
+									</Link>
 								</li>
 								<li className="list-inline-item">
-									<a href="https://profiles.wordpress.org/raazon/">
+									<Link href="https://profiles.wordpress.org/raazon/">
 										<Icon name="wordpress" className="svg-inline--fa" />
-									</a>
+									</Link>
 								</li>
 								<li className="list-inline-item d-none">
-									<a href="https://codepen.io/raazon/">
+									<Link href="https://codepen.io/raazon/">
 										<Icon name="codepen" className="svg-inline--fa" />
-									</a>
+									</Link>
 								</li>
 							</ul>
 							<hr />
@@ -82,10 +82,10 @@ const Header: React.FC = () => {
 						<Navigation />
 
 						<div className="my-2 d-none">
-							<a className="btn btn-primary" href="contact.html" target="_blank" rel="noopener noreferrer">
+							<Link className="btn btn-primary" href="contact.html" target="_blank" rel="noopener noreferrer">
 								<i className="fas fa-paper-plane me-2"></i>
 								Hire Me
-							</a>
+							</Link>
 						</div>
 
 						<div className="dark-mode-toggle text-center w-100">

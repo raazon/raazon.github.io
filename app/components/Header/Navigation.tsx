@@ -1,5 +1,4 @@
 import React from "react";
-import Link from 'next/link';
 import Icon from "../Icon/Icon";
 import CustomNavLink from "./CustomNavLink";
 import "./navigation.scss";
