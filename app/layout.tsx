@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import '../public/assets/css/theme-1.css';
+import Script from 'next/script';
+import './assets/css/theme-1.css';
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
-
 
 const roboto = Roboto({
 	weight: ['100', '300', '400', '500', '700'],
@@ -16,7 +16,6 @@ export const metadata: Metadata = {
 	title: "Razon Komar Pal | Expert Full Stack Web Developer",
 	description: "Razon Komar Pal is an expert Full Stack Web Developer specializing in modern web technologies and responsive design.",
 	keywords: "Full Stack Web Developer, Web Development, Responsive Design, Modern Web Technologies, WordPress Developer, Razon Komar Pal",
-	themeColor: "#000000",
 	openGraph: {
 		title: "Razon Komar Pal | Expert Full Stack Web Developer",
 		description: "Razon Komar Pal is an expert Full Stack Web Developer specializing in modern web technologies and responsive design.",
@@ -37,19 +36,14 @@ export default function RootLayout({
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 				<link rel="apple-touch-icon" href="/logo192.png" />
-				{/* <link
-					rel="stylesheet"
-					href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
-				/> */}
-				{/* <link id="theme-style" rel="stylesheet" href="/assets/css/theme-1.css" /> */}
 			</head>
-			<body className={roboto.className}>
+			<body>
 				<Header />
 				{children}
 				<Footer />
 
-				<script src="/assets/plugins/popper.min.js" async></script>
-				<script src="/assets/plugins/bootstrap/bootstrap.min.js" async></script>
+				<Script src="./assets/plugins/popper.min.js" strategy="beforeInteractive" />
+				<Script src="./assets/plugins/bootstrap/js/bootstrap.min.js" strategy="afterInteractive" />
 			</body>
 		</html>
 	);
