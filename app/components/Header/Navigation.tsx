@@ -19,7 +19,7 @@ const Navigation: React.FC = () => {
 						Portfolio
 					</CustomNavLink>
 				</li>
-				<li className="nav-item d-noneX">
+				<li className="nav-item d-none">
 					<CustomNavLink to="/services">
 						<Icon name="briefcase" className="me-2" />
 						Services &amp; Pricing
