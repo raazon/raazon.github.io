@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
 import Script from 'next/script';
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import './theme-1.css';
 
-const roboto = Roboto({
-	weight: ['100', '300', '400', '500', '700'],
-	style: ['normal', 'italic'],
-	subsets: ['latin'],
-	display: 'swap',
-});
+// const roboto = Roboto({
+// 	weight: ['100', '300', '400', '500', '700'],
+// 	style: ['normal', 'italic'],
+// 	subsets: ['latin'],
+// 	display: 'swap',
+// });
 
 export const metadata: Metadata = {
 	title: "Razon Komar Pal | Expert Full Stack Web Developer",
