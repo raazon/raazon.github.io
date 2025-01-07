@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { AboutMe, Overview } from "./components/Home";
-import './styles/home.scss';
+import { AboutMe, Overview } from "../page-components/homepage";
 
 const Home: React.FC = () => {
 	return (

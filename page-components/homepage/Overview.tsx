@@ -1,6 +1,6 @@
-import { FC } from 'react';
+import Icon from '@/components/icon/Icon';
 import Link from 'next/link';
-import Icon from '../Icon/Icon';
+import { FC } from 'react';
 import { js, wordpressSimple } from './SkillsIcons';
 
 const Overview: FC = () => {

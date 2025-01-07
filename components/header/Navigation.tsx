@@ -1,7 +1,6 @@
 import React from "react";
-import Icon from "../Icon/Icon";
+import Icon from "../icon/Icon";
 import CustomNavLink from "./CustomNavLink";
-import "./navigation.scss";
 
 const Navigation: React.FC = () => {
 	return (

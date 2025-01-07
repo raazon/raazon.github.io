@@ -1,6 +1,5 @@
 import React, { SVGProps } from "react";
 import Icons from "./Icons";
-import "./icon.css";
 
 // Define the type for the `Icons` object
 type IconData = {
@@ -34,13 +33,11 @@ const Icon: React.FC<IconProps> = ({
 
 	const { svg, path } = icon;
 
-	const svgClass = className ? `svg-icon ${className}` : "svg-icon";
-
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox={svg.viewBox}
-			className={svgClass}
+			{...(className ? { className } : {})} // Add className only if it's provided
 			fill={fill}
 			{...props}
 		>

@@ -1,7 +1,7 @@
 import Image from "next/image"; // Use Next.js `Image` component for optimized images
 import Link from 'next/link';
 import React from "react";
-import Icon from "../Icon/Icon";
+import Icon from "../icon/Icon";
 import DarkMode from "./DarkMode";
 import Navigation from "./Navigation";
 
@@ -48,32 +48,32 @@ const Header: React.FC = () => {
 							<ul className="social-list list-inline py-2 mx-auto">
 								<li className="list-inline-item">
 									<Link href="https://www.linkedin.com/in/raazon/">
-										<Icon name="linkedin" className="svg-inline--fa" />
+										<Icon name="linkedin" />
 									</Link>
 								</li>
 								<li className="list-inline-item">
 									<Link href="https://github.com/razon-xs">
-										<Icon name="github" className="svg-inline--fa" />
+										<Icon name="github" />
 									</Link>
 								</li>
 								<li className="list-inline-item">
 									<Link href="https://x.com/raazzon">
-										<Icon name="x" className="svg-inline--fa" />
+										<Icon name="x" />
 									</Link>
 								</li>
 								<li className="list-inline-item">
 									<Link href="https://wordpress.stackexchange.com/users/144761/razon-komar-pal">
-										<Icon name="stackexchange" className="svg-inline--fa" />
+										<Icon name="stackexchange" />
 									</Link>
 								</li>
 								<li className="list-inline-item">
 									<Link href="https://profiles.wordpress.org/raazon/">
-										<Icon name="wordpress" className="svg-inline--fa" />
+										<Icon name="wordpress" />
 									</Link>
 								</li>
 								<li className="list-inline-item d-none">
 									<Link href="https://codepen.io/raazon/">
-										<Icon name="codepen" className="svg-inline--fa" />
+										<Icon name="codepen" />
 									</Link>
 								</li>
 							</ul>

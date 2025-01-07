@@ -1,6 +1,6 @@
+import Icon from '@/components/icon/Icon';
 import Link from 'next/link';
 import { FC } from 'react';
-import Icon from '../Icon/Icon';
 
 const AboutMe: FC = () => {
 	return (
