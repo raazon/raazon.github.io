@@ -13,7 +13,7 @@ const Navigation: React.FC = () => {
 						About Me
 					</CustomNavLink>
 				</li>
-				<li className="nav-item d-noneX">
+				<li className="nav-item d-none">
 					<CustomNavLink to="/portfolio">
 						<Icon name="laptopCode" className="me-2" />
 						Portfolio
