@@ -1,8 +1,11 @@
+import Icon from "@/components/icon/Icon";
+import './page.scss';
 
 const Resume = () => {
 	return (
 		<>
 			<div className="main-wrapper">
+				{/* cta-section */}
 				<section className="cta-section theme-bg-light py-5 d-none">
 					<div className="container text-center single-col-max-width">
 						<h2 className="heading mb-3">Online Resume</h2>
@@ -12,7 +15,9 @@ const Resume = () => {
 						</button>
 					</div>
 				</section>
+				{/* cta-section end */}
 
+				{/* resume */}
 				<div className="container resume-container px-3 px-lg-5">
 					<article className="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
 						<div className="resume-header">
@@ -475,19 +480,19 @@ const Resume = () => {
 							<ul className="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
 								<li className="list-inline-item mb-lg-0 me-3">
 									<a className="resume-link text-decoration-none" href="https://github.com/razon-xs">
-										<i className="fa-brands fa-github-square me-1" data-fa-transform="down-4"></i>
+										<Icon name="squareGithub" className="me-1" />
 										<span className="d-none d-lg-inline-block text-muted">@github.com/razon-xs</span>
 									</a>
 								</li>
 								<li className="list-inline-item mb-lg-0 me-3">
 									<a className="resume-link text-decoration-none" href="https://www.linkedin.com/in/raazon/">
-										<i className="fa-brands fa-linkedin me-1" data-fa-transform="down-4"></i>
+										<Icon name="linkedin" className="me-1" />
 										<span className="d-none d-lg-inline-block text-muted">@linkedin.com/in/raazon</span>
 									</a>
 								</li>
 								<li className="list-inline-item mb-lg-0 me-lg-1">
 									<a className="resume-link text-decoration-none" href="https://x.com/raazzon">
-										<i className="fa-brands fa-square-x-twitter me-2" data-fa-transform="down-4"></i>
+										<Icon name="x" className="me-2" />
 										<span className="d-none d-lg-inline-block text-muted">@raazzon</span>
 									</a>
 								</li>
@@ -495,9 +500,10 @@ const Resume = () => {
 						</div>
 					</article>
 				</div>
+				{/* resume end */}
 			</div>
 		</>
 	)
 }
 
-export default Resume
+export default Resume;
