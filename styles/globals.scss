@@ -20,6 +20,8 @@ svg {
 // Header
 header {
 	.social-list a {
-		vertical-align: -0.125em;
+		svg {
+			vertical-align: -0.125em;
+		}
 	}
 }

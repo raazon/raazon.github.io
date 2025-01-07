@@ -5,7 +5,15 @@ import Icon from "../icon/Icon";
 import DarkMode from "./DarkMode";
 import Navigation from "./Navigation";
 
-const Header: React.FC = () => {
+interface HeaderProps {
+	toggleDarkMode: () => void;
+	darkMode: boolean
+}
+
+const Header: React.FC<HeaderProps> = ({
+	toggleDarkMode,
+	darkMode
+}) => {
 	return (
 		<header className="header text-center">
 			<div className="force-overflow">
@@ -48,32 +56,32 @@ const Header: React.FC = () => {
 							<ul className="social-list list-inline py-2 mx-auto">
 								<li className="list-inline-item">
 									<Link href="https://www.linkedin.com/in/raazon/">
-										<Icon name="linkedin" />
+										<Icon name="linkedin" className="svg-inline--fa" />
 									</Link>
 								</li>
 								<li className="list-inline-item">
 									<Link href="https://github.com/razon-xs">
-										<Icon name="github" />
+										<Icon name="github" className="svg-inline--fa" />
 									</Link>
 								</li>
 								<li className="list-inline-item">
 									<Link href="https://x.com/raazzon">
-										<Icon name="x" />
+										<Icon name="x" className="svg-inline--fa" />
 									</Link>
 								</li>
 								<li className="list-inline-item">
 									<Link href="https://wordpress.stackexchange.com/users/144761/razon-komar-pal">
-										<Icon name="stackexchange" />
+										<Icon name="stackexchange" className="svg-inline--fa" />
 									</Link>
 								</li>
 								<li className="list-inline-item">
 									<Link href="https://profiles.wordpress.org/raazon/">
-										<Icon name="wordpress" />
+										<Icon name="wordpress" className="svg-inline--fa" />
 									</Link>
 								</li>
 								<li className="list-inline-item d-none">
 									<Link href="https://codepen.io/raazon/">
-										<Icon name="codepen" />
+										<Icon name="codepen" className="svg-inline--fa" />
 									</Link>
 								</li>
 							</ul>
@@ -89,7 +97,7 @@ const Header: React.FC = () => {
 							</Link>
 						</div>
 
-						<DarkMode />
+						<DarkMode toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
 					</div>
 				</nav>
 			</div>

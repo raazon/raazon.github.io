@@ -1,6 +1,10 @@
+interface DarkModeProps {
+	toggleDarkMode: () => void;
+	darkMode: boolean
+}
 
-const DarkMode: React.FC = () => {
-
+const DarkMode: React.FC<DarkModeProps> = ({ toggleDarkMode, darkMode }) => {
+	
 	return (
 		<>
 			<div className="dark-mode-toggle text-center w-100">
@@ -10,7 +14,14 @@ const DarkMode: React.FC = () => {
 					Dark Mode
 				</h4>
 
-				<input className="toggle" id="darkmode" type="checkbox" />
+				{/* Bind the checkbox checked state to the darkMode prop */}
+				<input
+					className="toggle"
+					id="darkmode"
+					type="checkbox"
+					checked={darkMode}
+					onChange={toggleDarkMode} // Toggle dark mode on change
+				/>
 				<label className="toggle-btn mx-auto mb-0" htmlFor="darkmode"></label>
 			</div>
 		</>
