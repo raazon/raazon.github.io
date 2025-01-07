@@ -1,4 +1,5 @@
-import "@/styles/globals.scss";
+import "@/styles/globals.scss"; // Import your global styles
+import "@assets/css/theme-1.css"; // Import theme CSS directly
 import { Roboto } from "next/font/google";
 import Script from 'next/script';
 import Footer from "../components/footer/Footer";
@@ -26,7 +27,6 @@ export default function RootLayout({
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 				<link rel="apple-touch-icon" href="/logo192.png" />
-				<link rel="stylesheet" href="./assets/css/theme-1.css" />
 			</head>
 			<body>
 				<Header />

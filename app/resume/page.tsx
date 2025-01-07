@@ -1,5 +1,7 @@
 import Icon from "@/components/icon/Icon";
+import Image from 'next/image';
 import './page.scss';
+
 
 const Resume = () => {
 	return (
@@ -78,8 +80,11 @@ const Resume = () => {
 						<div className="resume-intro py-3">
 							<div className="row align-items-center">
 								<div className="col-12 col-md-3 col-xl-2 text-center">
-									<img className="resume-profile-image mb-3 mb-md-0 me-md-5  ms-md-0 rounded mx-auto"
-										src="assets/images/profile.jpg" alt="Profile Image" loading="lazy" />
+									<Image
+										src="assets/images/profile.jpg"
+										alt="Profile Image"
+										className="resume-profile-image mb-3 mb-md-0 me-md-5  ms-md-0 rounded mx-auto"
+									/>
 								</div>
 								<div className="col text-start">
 									<p className="mb-0">
