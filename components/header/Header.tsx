@@ -5,15 +5,7 @@ import Icon from "../icon/Icon";
 import DarkMode from "./DarkMode";
 import Navigation from "./Navigation";
 
-interface HeaderProps {
-	toggleDarkMode: () => void;
-	darkMode: boolean
-}
-
-const Header: React.FC<HeaderProps> = ({
-	toggleDarkMode,
-	darkMode
-}) => {
+const Header: React.FC= () => {
 	return (
 		<header className="header text-center">
 			<div className="force-overflow">
@@ -97,7 +89,7 @@ const Header: React.FC<HeaderProps> = ({
 							</Link>
 						</div>
 
-						<DarkMode toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
+						<DarkMode />
 					</div>
 				</nav>
 			</div>

@@ -1,11 +1,9 @@
-"use client"; // Required for using state and effects in Next.js layouts
 import "@/styles/globals.scss";
-import Cookies from "js-cookie";
 import { Roboto } from "next/font/google";
 import Script from 'next/script';
-import { useEffect, useState } from "react";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
+import { metadata } from './metadata';
 
 const roboto = Roboto({
 	weight: ['100', '300', '400', '500', '700'],
@@ -14,29 +12,14 @@ const roboto = Roboto({
 	display: 'swap',
 });
 
+// Export metadata for the layout
+export { metadata };
+
 export default function RootLayout({
 	children,
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
-	// Client-side state management for dark mode
-	const [darkMode, setDarkMode] = useState(false);
-
-	// Load dark mode preference from cookies on mount
-	useEffect(() => {
-		const savedPreference = Cookies.get("dark-mode");
-		setDarkMode(savedPreference === "true");
-	}, []);
-
-	// Update cookie when dark mode changes
-	useEffect(() => {
-		Cookies.set("dark-mode", darkMode.toString(), { expires: 365 });
-	}, [darkMode]);
-
-	const toggleDarkMode = () => {
-		setDarkMode((prev) => !prev);
-	};
-
 	return (
 		<html lang="en" className={roboto.className}>
 			<head>
@@ -45,11 +28,8 @@ export default function RootLayout({
 				<link rel="apple-touch-icon" href="/logo192.png" />
 				<link rel="stylesheet" href="./assets/css/theme-1.css" />
 			</head>
-			<body className={darkMode ? "dark-mode" : ""}>
-				<Header
-					toggleDarkMode={toggleDarkMode}
-					darkMode={darkMode}
-				/>
+			<body>
+				<Header />
 				{children}
 				<Footer />
 

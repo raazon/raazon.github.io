@@ -1,10 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { AboutMe, Overview } from "../page-components/homepage";
-import { metadata } from './metadata';
-
-// Export metadata for the layout
-export { metadata };
 
 const Home: React.FC = () => {
 	return (
