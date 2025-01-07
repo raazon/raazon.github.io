@@ -3,7 +3,7 @@ import "@/styles/globals.scss";
 import Cookies from "js-cookie";
 import { Roboto } from "next/font/google";
 import Script from 'next/script';
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 
@@ -13,19 +13,6 @@ const roboto = Roboto({
 	subsets: ['latin'],
 	display: 'swap',
 });
-
-// export const metadata: Metadata = {
-// 	title: "Razon Komar Pal | Expert Full Stack Web Developer",
-// 	description: "Razon Komar Pal is an expert Full Stack Web Developer specializing in modern web technologies and responsive design.",
-// 	keywords: "Full Stack Web Developer, Web Development, Responsive Design, Modern Web Technologies, WordPress Developer, Razon Komar Pal",
-// 	openGraph: {
-// 		title: "Razon Komar Pal | Expert Full Stack Web Developer",
-// 		description: "Razon Komar Pal is an expert Full Stack Web Developer specializing in modern web technologies and responsive design.",
-// 		siteName: "Razon Komar Pal Portfolio",
-// 		locale: "en_US",
-// 		type: "website",
-// 	},
-// };
 
 export default function RootLayout({
 	children,
