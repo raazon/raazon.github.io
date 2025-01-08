@@ -1,14 +1,13 @@
+import Icon from "@/components/icon/Icon";
 import Image from 'next/image';
-import Link from "next/link";
-import "./resume.scss";
+import './page.scss';
 
 
-
-
-const Resume: React.FC = () => {
+const Resume = () => {
 	return (
 		<>
 			<div className="main-wrapper">
+				{/* cta-section */}
 				<section className="cta-section theme-bg-light py-5 d-none">
 					<div className="container text-center single-col-max-width">
 						<h2 className="heading mb-3">Online Resume</h2>
@@ -18,7 +17,9 @@ const Resume: React.FC = () => {
 						</button>
 					</div>
 				</section>
+				{/* cta-section end */}
 
+				{/* resume */}
 				<div className="container resume-container px-3 px-lg-5">
 					<article className="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
 						<div className="resume-header">
@@ -37,7 +38,7 @@ const Resume: React.FC = () => {
 													d="M384 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h320c35.35 0 64-28.65 64-64V96C448 60.65 419.3 32 384 32zM351.6 321.5l-11.62 50.39c-1.633 7.125-7.9 12.11-15.24 12.11c-126.1 0-228.7-102.6-228.7-228.8c0-7.328 4.984-13.59 12.11-15.22l50.38-11.63c7.344-1.703 14.88 2.109 17.93 9.062l23.27 54.28c2.719 6.391 .8828 13.83-4.492 18.22L168.3 232c16.99 34.61 45.14 62.75 79.77 79.75l22.02-26.91c4.344-5.391 11.85-7.25 18.24-4.484l54.24 23.25C349.5 306.6 353.3 314.2 351.6 321.5z">
 												</path>
 											</svg>
-											<Link className="resume-link" href="tel:+8801742259068">0174 2259 068</Link >
+											<a className="resume-link" href="tel:+8801742259068">0174 2259 068</a>
 										</li>
 										<li className="mb-2">
 											<svg className="svg-inline--fa fa-square-envelope fa-fw fa-lg me-2" aria-hidden="true"
@@ -47,7 +48,7 @@ const Resume: React.FC = () => {
 													d="M384 32H64C28.63 32 0 60.63 0 96v320c0 35.38 28.62 64 64 64h320c35.38 0 64-28.62 64-64V96C448 60.63 419.4 32 384 32zM384 336c0 17.67-14.33 32-32 32H96c-17.67 0-32-14.33-32-32V225.9l138.5 69.27C209.3 298.5 216.6 300.2 224 300.2s14.75-1.688 21.47-5.047L384 225.9V336zM384 190.1l-152.8 76.42c-4.5 2.25-9.812 2.25-14.31 0L64 190.1V176c0-17.67 14.33-32 32-32h256c17.67 0 32 14.33 32 32V190.1z">
 												</path>
 											</svg>
-											<Link className="resume-link" href="mailto:raazzon@gmail.com">raazzon@gmail.com</Link >
+											<a className="resume-link" href="mailto:raazzon@gmail.com">raazzon@gmail.com</a>
 										</li>
 										<li className="mb-2">
 											<svg className="svg-inline--fa fa-globe fa-fw fa-lg me-2" aria-hidden="true"
@@ -57,7 +58,7 @@ const Resume: React.FC = () => {
 													d="M352 256C352 278.2 350.8 299.6 348.7 320H163.3C161.2 299.6 159.1 278.2 159.1 256C159.1 233.8 161.2 212.4 163.3 192H348.7C350.8 212.4 352 233.8 352 256zM503.9 192C509.2 212.5 512 233.9 512 256C512 278.1 509.2 299.5 503.9 320H380.8C382.9 299.4 384 277.1 384 256C384 234 382.9 212.6 380.8 192H503.9zM493.4 160H376.7C366.7 96.14 346.9 42.62 321.4 8.442C399.8 29.09 463.4 85.94 493.4 160zM344.3 160H167.7C173.8 123.6 183.2 91.38 194.7 65.35C205.2 41.74 216.9 24.61 228.2 13.81C239.4 3.178 248.7 0 256 0C263.3 0 272.6 3.178 283.8 13.81C295.1 24.61 306.8 41.74 317.3 65.35C328.8 91.38 338.2 123.6 344.3 160H344.3zM18.61 160C48.59 85.94 112.2 29.09 190.6 8.442C165.1 42.62 145.3 96.14 135.3 160H18.61zM131.2 192C129.1 212.6 127.1 234 127.1 256C127.1 277.1 129.1 299.4 131.2 320H8.065C2.8 299.5 0 278.1 0 256C0 233.9 2.8 212.5 8.065 192H131.2zM194.7 446.6C183.2 420.6 173.8 388.4 167.7 352H344.3C338.2 388.4 328.8 420.6 317.3 446.6C306.8 470.3 295.1 487.4 283.8 498.2C272.6 508.8 263.3 512 255.1 512C248.7 512 239.4 508.8 228.2 498.2C216.9 487.4 205.2 470.3 194.7 446.6H194.7zM190.6 503.6C112.2 482.9 48.59 426.1 18.61 352H135.3C145.3 415.9 165.1 469.4 190.6 503.6V503.6zM321.4 503.6C346.9 469.4 366.7 415.9 376.7 352H493.4C463.4 426.1 399.8 482.9 321.4 503.6V503.6z">
 												</path>
 											</svg>
-											<Link className="resume-link" href="http://raazon.com/">www.raazon.com</Link >
+											<a className="resume-link" href="http://raazon.com/">www.raazon.com</a>
 										</li>
 										<li className="mb-0">
 											<svg className="svg-inline--fa fa-location-dot fa-fw fa-lg me-2" aria-hidden="true"
@@ -80,16 +81,19 @@ const Resume: React.FC = () => {
 							<div className="row align-items-center">
 								<div className="col-12 col-md-3 col-xl-2 text-center">
 									<Image
-										src="/assets/images/profile.jpg"
+										src="assets/images/profile.jpg"
 										alt="Profile Image"
 										className="resume-profile-image mb-3 mb-md-0 me-md-5  ms-md-0 rounded mx-auto"
-										width={100}
-										height={100}
 									/>
-
 								</div>
 								<div className="col text-start">
-									<p className="mb-0">Dedicated web developer driven by a passion for continuous learning and impactful contributions. With over 10+ years of experience in WordPress and web development, I have assisted companies in enhancing their development processes and fostering dynamic team management. Honored as the Responsible Team Player of the Year in 2022 and the Emerging Scrum Master of the Year in 2023.</p>
+									<p className="mb-0">
+										Dedicated web developer driven by a passion for continuous learning and impactful
+										contributions. With over 10+ years of experience in WordPress and web development, I
+										have assisted companies in enhancing their development processes and fostering dynamic
+										team management. Honored as the Responsible Team Player of the Year in 2022 and the
+										Emerging Scrum Master of the Year in 2023.
+									</p>
 								</div>
 							</div>
 						</div>
@@ -107,10 +111,10 @@ const Resume: React.FC = () => {
 													Developer</h4>
 												<div
 													className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
-													<Link className="text-muted text-decoration-none" href="https://xpeedstudio.com/"
+													<a className="text-muted text-decoration-none" href="https://xpeedstudio.com/"
 														target="_blank">
 														XpeedStudio
-													</Link > | 2021 - Present
+													</a> | 2021 - Present
 												</div>
 											</div>
 											<div className="item-content">
@@ -122,17 +126,17 @@ const Resume: React.FC = () => {
 														effectively.
 													</li>
 													<li className="mb-2">
-														Scaled <Link className="theme-link"
+														Scaled <a className="theme-link"
 															href="https://wordpress.org/plugins/elementskit-lite/"
-															target="_blank">ElementsKit</Link > WordPress plugin from 700K to nearly
+															target="_blank">ElementsKit</a> WordPress plugin from 700K to nearly
 														2M active installations through dedicated feature enhancements and
 														performance optimizations, significantly increasing product reach and
 														user engagement.
 													</li>
 													<li className="mb-2">
-														Launched and grew <Link className="theme-link"
+														Launched and grew <a className="theme-link"
 															href="https://wordpress.org/plugins/gutenkit-blocks-addon/"
-															target="_blank">GutenKit</Link > WordPress plugin to 10,000+ active
+															target="_blank">GutenKit</a> WordPress plugin to 10,000+ active
 														installations following its release in March 2024, successfully
 														establishing it as a valued addition to the company’s plugin portfolio.
 													</li>
@@ -150,10 +154,10 @@ const Resume: React.FC = () => {
 												</h4>
 												<div
 													className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
-													<Link className="text-muted text-decoration-none" href="https://itclanbd.com/"
+													<a className="text-muted text-decoration-none" href="https://itclanbd.com/"
 														target="_blank">
 														ITclan BD
-													</Link > | 2017 - 2020
+													</a> | 2017 - 2020
 												</div>
 											</div>
 											<div className="item-content">
@@ -187,10 +191,10 @@ const Resume: React.FC = () => {
 												</h4>
 												<div
 													className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
-													<Link className="text-muted text-decoration-none" href="https://pixelaar.com/"
+													<a className="text-muted text-decoration-none" href="https://pixelaar.com/"
 														target="_blank">
 														Pixelaar FZC LLC
-													</Link > | 2016 - 2017
+													</a> | 2016 - 2017
 												</div>
 											</div>
 											<div className="item-content">
@@ -286,9 +290,9 @@ const Resume: React.FC = () => {
 														prestigious Level 2 Seller badge while consistently maintaining 5-star
 														ratings for exceptional service and quality. My dedication to delivering
 														high-quality solutions has garnered trust and positive feedback from
-														clients worldwide. You can explore my <Link className="theme-link"
+														clients worldwide. You can explore my <a className="theme-link"
 															href="https://www.fiverr.com/raazzon" target="_blank">Fiverr
-															profile</Link > for more details on my work and client testimonials
+															profile</a> for more details on my work and client testimonials
 													</li>
 													<li className="mb-2">
 														On Upwork, I have completed 92 projects and logged 809 hours of work,
@@ -353,8 +357,8 @@ const Resume: React.FC = () => {
 													Open Source</div>
 											</div>
 											<div className="item-content">
-												<p>You can use this section for your side projects. You can <Link href="#"
-													className="theme-link">provide a project link here</Link > as well. Lorem ipsum
+												<p>You can use this section for your side projects. You can <a href="#"
+													className="theme-link">provide a project link here</a> as well. Lorem ipsum
 													dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
 													dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
 													montes, nascetur ridiculus mus. </p>
@@ -480,30 +484,31 @@ const Resume: React.FC = () => {
 						<div className="resume-footer text-center">
 							<ul className="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
 								<li className="list-inline-item mb-lg-0 me-3">
-									<Link className="resume-link text-decoration-none" href="https://github.com/razon-xs">
-										<i className="fa-brands fa-github-square me-1" data-fa-transform="down-4"></i>
+									<a className="resume-link text-decoration-none" href="https://github.com/razon-xs">
+										<Icon name="squareGithub" className="me-1" />
 										<span className="d-none d-lg-inline-block text-muted">@github.com/razon-xs</span>
-									</Link >
+									</a>
 								</li>
 								<li className="list-inline-item mb-lg-0 me-3">
-									<Link className="resume-link text-decoration-none" href="https://www.linkedin.com/in/raazon/">
-										<i className="fa-brands fa-linkedin me-1" data-fa-transform="down-4"></i>
+									<a className="resume-link text-decoration-none" href="https://www.linkedin.com/in/raazon/">
+										<Icon name="linkedin" className="me-1" />
 										<span className="d-none d-lg-inline-block text-muted">@linkedin.com/in/raazon</span>
-									</Link >
+									</a>
 								</li>
 								<li className="list-inline-item mb-lg-0 me-lg-1">
-									<Link className="resume-link text-decoration-none" href="https://x.com/raazzon">
-										<i className="fa-brands fa-square-x-twitter me-2" data-fa-transform="down-4"></i>
+									<a className="resume-link text-decoration-none" href="https://x.com/raazzon">
+										<Icon name="x" className="me-2" />
 										<span className="d-none d-lg-inline-block text-muted">@raazzon</span>
-									</Link >
+									</a>
 								</li>
 							</ul>
 						</div>
 					</article>
 				</div>
+				{/* resume end */}
 			</div>
 		</>
 	)
 }
 
-export default Resume
+export default Resume;

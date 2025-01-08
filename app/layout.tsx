@@ -1,28 +1,20 @@
-import type { Metadata } from "next";
+import "@/styles/globals.scss"; // Import your global styles
+import "@assets/css/theme-1.css"; // Import theme CSS directly
+import { Roboto } from "next/font/google";
 import Script from 'next/script';
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import './theme-1.css';
+import Footer from "../components/footer/Footer";
+import Header from "../components/header/Header";
+import { metadata } from './metadata';
 
-// const roboto = Roboto({
-// 	weight: ['100', '300', '400', '500', '700'],
-// 	style: ['normal', 'italic'],
-// 	subsets: ['latin'],
-// 	display: 'swap',
-// });
+const roboto = Roboto({
+	weight: ['100', '300', '400', '500', '700'],
+	style: ['normal', 'italic'],
+	subsets: ['latin'],
+	display: 'swap',
+});
 
-export const metadata: Metadata = {
-	title: "Razon Komar Pal | Expert Full Stack Web Developer",
-	description: "Razon Komar Pal is an expert Full Stack Web Developer specializing in modern web technologies and responsive design.",
-	keywords: "Full Stack Web Developer, Web Development, Responsive Design, Modern Web Technologies, WordPress Developer, Razon Komar Pal",
-	openGraph: {
-		title: "Razon Komar Pal | Expert Full Stack Web Developer",
-		description: "Razon Komar Pal is an expert Full Stack Web Developer specializing in modern web technologies and responsive design.",
-		siteName: "Razon Komar Pal Portfolio",
-		locale: "en_US",
-		type: "website",
-	},
-};
+// Export metadata for the layout
+export { metadata };
 
 export default function RootLayout({
 	children,
@@ -30,7 +22,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="en" className={roboto.className}>
 			<head>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
@@ -41,8 +33,14 @@ export default function RootLayout({
 				{children}
 				<Footer />
 
-				<Script src="./assets/plugins/popper.min.js" strategy="beforeInteractive" />
-				<Script src="./assets/plugins/bootstrap/js/bootstrap.min.js" strategy="afterInteractive" />
+				<Script
+					src="./assets/plugins/popper.min.js"
+					strategy="beforeInteractive"
+				/>
+				<Script
+					src="./assets/plugins/bootstrap/js/bootstrap.min.js"
+					strategy="afterInteractive"
+				/>
 			</body>
 		</html>
 	);

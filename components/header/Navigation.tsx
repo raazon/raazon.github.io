@@ -1,7 +1,6 @@
 import React from "react";
-import Icon from "../Icon/Icon";
+import Icon from "../icon/Icon";
 import CustomNavLink from "./CustomNavLink";
-import "./navigation.scss";
 
 const Navigation: React.FC = () => {
 	return (
@@ -13,7 +12,7 @@ const Navigation: React.FC = () => {
 						About Me
 					</CustomNavLink>
 				</li>
-				<li className="nav-item d-noneX">
+				<li className="nav-item d-none">
 					<CustomNavLink to="/portfolio">
 						<Icon name="laptopCode" className="me-2" />
 						Portfolio
