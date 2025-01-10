@@ -11,7 +11,7 @@ const AboutMe: FC = () => {
 						<h2 className="name font-weight-bold mb-1">Razon Komar Pal</h2>
 						<div className="tagline mb-3">Senior Web Developer</div>
 						<div className="bio mb-4">
-							{`I'm a Dedicated web developer driven by a passion for continuous learning and impactful contributions. With over 10+ years of experience in WordPress and web development, I have assisted companies in enhancing their development processes and fostering dynamic team management. Honored as the Responsible Team Player of the Year in 2022 and the Emerging Scrum Master of the Year in 2023.`}
+							{`I'm a dedicated web developer driven by a passion for continuous learning and impactful contributions. With over 10+ years of experience in WordPress and web development, I have assisted companies in enhancing their development processes and fostering dynamic team management. Honored as the Responsible Team Player of the Year in 2022 and the Emerging Scrum Master of the Year in 2023.`}
 							<br />
 							<br />
 							{`Currently serving as a Senior Web Developer at `}
