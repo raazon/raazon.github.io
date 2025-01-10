@@ -47,32 +47,32 @@ const Header: React.FC= () => {
 
 							<ul className="social-list list-inline py-2 mx-auto">
 								<li className="list-inline-item">
-									<Link href="https://www.linkedin.com/in/raazon/">
+									<Link href="https://www.linkedin.com/in/raazon/" target="_blank" aria-label="Visit LinkedIn profile">
 										<Icon name="linkedin" className="svg-inline--fa" />
 									</Link>
 								</li>
 								<li className="list-inline-item">
-									<Link href="https://github.com/razon-xs">
+									<Link href="https://github.com/razon-xs" target="_blank" aria-label="Visit GitHub profile">
 										<Icon name="github" className="svg-inline--fa" />
 									</Link>
 								</li>
 								<li className="list-inline-item">
-									<Link href="https://x.com/raazzon">
+									<Link href="https://x.com/raazzon" target="_blank" aria-label="Visit X profile">
 										<Icon name="x" className="svg-inline--fa" />
 									</Link>
 								</li>
 								<li className="list-inline-item">
-									<Link href="https://wordpress.stackexchange.com/users/144761/razon-komar-pal">
+									<Link href="https://wordpress.stackexchange.com/users/144761/razon-komar-pal" target="_blank" aria-label="Visit Stack Exchange profile">
 										<Icon name="stackexchange" className="svg-inline--fa" />
 									</Link>
 								</li>
 								<li className="list-inline-item">
-									<Link href="https://profiles.wordpress.org/raazon/">
+									<Link href="https://profiles.wordpress.org/raazon/" target="_blank" aria-label="Visit WordPress profile">
 										<Icon name="wordpress" className="svg-inline--fa" />
 									</Link>
 								</li>
 								<li className="list-inline-item d-none">
-									<Link href="https://codepen.io/raazon/">
+									<Link href="https://codepen.io/raazon/" target="_blank" aria-label="Visit Codepen profile">
 										<Icon name="codepen" className="svg-inline--fa" />
 									</Link>
 								</li>
