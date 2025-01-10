@@ -5,12 +5,12 @@ import Icon from "../icon/Icon";
 import DarkMode from "./DarkMode";
 import Navigation from "./Navigation";
 
-const Header: React.FC= () => {
+const Header: React.FC = () => {
 	return (
 		<header className="header text-center">
 			<div className="force-overflow">
 				<h1 className="blog-name pt-lg-4 mb-0">
-					<Link className="no-text-decoration" href="/">
+					<Link className="no-text-decoration" href="/" aria-label="Home">
 						Razon Komar Pal
 					</Link>
 				</h1>
@@ -30,16 +30,14 @@ const Header: React.FC= () => {
 
 					<div id="navigation" className="collapse navbar-collapse flex-column">
 						<div className="profile-section pt-3 pt-lg-0">
-							<Link href="/" className="d-inline-block" aria-label="Home">
-								<Image
-									className="profile-image mb-3 rounded-circle mx-auto"
-									src="/assets/images/profile.webp" // Updated for Next.js
-									alt="Razon Komar Pal"
-									width={100} // Provide appropriate width
-									height={100} // Provide appropriate height
-									priority
-								/>
-							</Link>
+							<Image
+								className="profile-image mb-3 rounded-circle mx-auto"
+								src="/assets/images/profile.webp" // Updated for Next.js
+								alt="Razon Komar Pal"
+								width={100} // Provide appropriate width
+								height={100} // Provide appropriate height
+								priority
+							/>
 
 							<div className="bio mb-3">
 								{`Hi, my name is Razon Komar Pal and I'm a senior web developer. Welcome to my personal website!`}
