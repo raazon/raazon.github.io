@@ -1,4 +1,5 @@
 import Icon from "@/components/icon/Icon";
+import profilePic from '@assets/images/profile.jpg';
 import Image from 'next/image';
 import './page.scss';
 
@@ -81,9 +82,11 @@ const Resume = () => {
 							<div className="row align-items-center">
 								<div className="col-12 col-md-3 col-xl-2 text-center">
 									<Image
-										src="assets/images/profile.jpg"
+										src={profilePic}
 										alt="Profile Image"
 										className="resume-profile-image mb-3 mb-md-0 me-md-5  ms-md-0 rounded mx-auto"
+										width={120}
+										height={120}
 									/>
 								</div>
 								<div className="col text-start">
