@@ -434,8 +434,8 @@ const Resume = () => {
 											<li className="mb-3">
 												<div className="resume-degree font-weight-bold">BSc in Electrical and Electronic
 													Engineering</div>
-												<div className="resume-degree-org text-muted">Northern University Banglades</div>
-												<div className="resume-degree-time text-muted">2012 - 2018</div>
+												<div className="resume-degree-org text-muted">Northern University of Bangladesh</div>
+												<div className="resume-degree-time text-muted">2012 - Present</div>
 											</li>
 										</ul>
 									</section>
