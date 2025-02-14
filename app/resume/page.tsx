@@ -404,7 +404,7 @@ const Resume = () => {
 											<h4 className="item-title">Technical</h4>
 											<ul className="list-unstyled resume-skills-list">
 												<li className="mb-2">JavaScript/TypeScript</li>
-												<li className="mb-2">ReactJS/jQuery/PHP</li>
+												<li className="mb-2">ReactJS/jQuery/PHP/Laravel</li>
 												<li className="mb-2">WordPress/REST API/WP-CLI</li>
 												<li className="mb-2">Gutenberg Development/FSE</li>
 												<li className="mb-2">Plugin/Theme Development</li>
