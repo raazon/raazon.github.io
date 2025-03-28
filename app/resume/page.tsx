@@ -106,6 +106,7 @@ const Resume = () => {
 						<div className="resume-body">
 							<div className="row">
 								<div className="resume-main col-12 col-lg-8 col-xl-9   pe-0   pe-lg-5">
+									{/* work */}
 									<section className="work-section py-3">
 										<h3 className="text-uppercase resume-section-heading mb-4">Work Experiences</h3>
 										<div className="item mb-3">
@@ -308,6 +309,7 @@ const Resume = () => {
 										</div>
 									</section>
 
+									{/* volunteer */}
 									<section className="volunteer-section py-3">
 										<h3 className="text-uppercase resume-section-heading mb-4">Volunteer Experience</h3>
 										<div className="item mb-3">
@@ -349,39 +351,26 @@ const Resume = () => {
 										</div>
 									</section>
 
-									<section className="project-section py-3 d-none">
+									{/* project */}
+									<section className="project-section py-3">
 										<h3 className="text-uppercase resume-section-heading mb-4">Projects</h3>
 										<div className="item mb-3">
 											<div className="item-heading row align-items-center mb-2">
-												<h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Project Lorem Ipsum
+												<h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
+													Linked Variation for WooCommerce - WordPress Plugin
 												</h4>
-												<div
-													className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
-													Open Source</div>
+												<div className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
+													Open Source
+												</div>
 											</div>
 											<div className="item-content">
-												<p>You can use this section for your side projects. You can <a href="#"
-													className="theme-link">provide a project link here</a> as well. Lorem ipsum
-													dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-													dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-													montes, nascetur ridiculus mus. </p>
+												<p>
+													Developed a WooCommerce plugin that intelligently links products based on selected attributes, simplifying the management of complex product variations.
+													<a href="https://wordpress.org/plugins/linked-variation-for-woocommerce/" className="theme-link">View Plugin Demo</a>
+												</p>
 											</div>
 										</div>
-										<div className="item">
-											<div className="item-heading row align-items-center mb-2">
-												<h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Project Sed
-													Fringilla</h4>
-												<div
-													className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
-													Open Source</div>
-											</div>
-											<div className="item-content">
-												<p>You can use this section for your side projects. Cras dapibus. Vivamus
-													elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-													porttitor eu, consequat vitae, eleifend ac, enim.</p>
-											</div>
-										</div>
-										<div className="item">
+										<div className="item d-none">
 											<div className="item-heading row align-items-center mb-2">
 												<h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Project Praesent
 												</h4>
@@ -397,6 +386,8 @@ const Resume = () => {
 										</div>
 									</section>
 								</div>
+
+								{/* aside */}
 								<aside className="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
 									<section className="skills-section py-3">
 										<h3 className="text-uppercase resume-section-heading mb-4">Skills</h3>
@@ -484,6 +475,7 @@ const Resume = () => {
 
 						<hr />
 
+						{/* resume-footer */}
 						<div className="resume-footer text-center">
 							<ul className="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
 								<li className="list-inline-item mb-lg-0 me-3">
