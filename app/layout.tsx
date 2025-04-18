@@ -27,7 +27,7 @@ export default function RootLayout({
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 				<link rel="icon" href="/favicon.ico" />
 				<link rel="apple-touch-icon" href="/logo192.png" />
-				<meta name='impact-site-verification' value='6e98e0e5-d48e-4124-a7e6-3d7ab6aa9c76'>
+				<meta name="impact-site-verification" value="6e98e0e5-d48e-4124-a7e6-3d7ab6aa9c76">
 			</head>
 			<body>
 				<Header />
