@@ -1,3 +1,5 @@
+"use client";
+
 import "@assets/plugins/tiny-slider/tiny-slider.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,11 +11,6 @@ const Home: React.FC = () => {
 		<>
 			<Script
 				src="/assets/plugins/tiny-slider/min/tiny-slider.js"
-				strategy="afterInteractive"
-			/>
-
-			<Script
-				src="/assets/js/testimonials.js"
 				strategy="afterInteractive"
 			/>
 
