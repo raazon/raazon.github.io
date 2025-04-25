@@ -30,6 +30,7 @@ export default function RootLayout({
 			</head>
 			<body>
 				<p className="d-none">Impact-Site-Verification: 6e98e0e5-d48e-4124-a7e6-3d7ab6aa9c76</p>
+
 				<Header />
 				{children}
 				<Footer />
