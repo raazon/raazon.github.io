@@ -1,71 +1,31 @@
+import "@assets/plugins/tiny-slider/tiny-slider.css";
 import Image from "next/image";
 import Link from "next/link";
-import { AboutMe, Overview } from "../page-components/homepage";
+import Script from "next/script";
+import { AboutMe, Overview, Testimonials } from "../page-components/homepage";
 
 const Home: React.FC = () => {
 	return (
 		<>
+			<Script
+				src="/assets/plugins/tiny-slider/min/tiny-slider.js"
+				strategy="afterInteractive"
+			/>
+			<Script
+				src="/assets/js/testimonials.js"
+				strategy="afterInteractive"
+			/>
+
 			<div className="main-wrapper">
 				<AboutMe />
 
 				<Overview />
 
-				<div className="container d-none">
+				<div className="container">
 					<hr />
 				</div>
 
-				{/* Testimonials Section */}
-				<section className="testimonials-section p-3 p-lg-5 d-none">
-					<div className="container">
-						<h2 className="section-title font-weight-bold mb-5">Testimonials</h2>
-						<div className="testiomonial-carousel-container">
-							<div className="testimonial-carousel tiny-slider">
-								{[
-									{
-										quote:
-											"Razon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.",
-										name: "Brandon James",
-										info: "Project Manager, Google",
-										img: "/assets/images/clients/profile-1.png",
-									},
-									{
-										quote:
-											"Razon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.",
-										name: "Kate Sanders",
-										info: "Project Manager, Uber",
-										img: "/assets/images/clients/profile-2.png",
-									},
-									// Add more testimonials here
-								].map((testimonial, index) => (
-									<div className="item" key={index}>
-										<div className="item-inner">
-											<div className="quote-holder">
-												<blockquote className="quote-content">
-													{testimonial.quote}
-												</blockquote>
-												<i className="fas fa-quote-left"></i>
-											</div>
-											<div className="source-holder">
-												<div className="source-profile">
-													<Image
-														src={testimonial.img}
-														alt="Client profile"
-														width={100}
-														height={100}
-													/>
-												</div>
-												<div className="meta">
-													<div className="name">{testimonial.name}</div>
-													<div className="info">{testimonial.info}</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								))}
-							</div>
-						</div>
-					</div>
-				</section>
+				<Testimonials />
 
 				<div className="container d-none">
 					<hr />
