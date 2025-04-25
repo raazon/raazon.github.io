@@ -15,45 +15,45 @@ const AboutMe: FC = () => {
 							<br />
 							<br />
 							{`Currently serving as a Senior Web Developer at `}
-							<a
+							<Link
 								className="text-link text-decoration-none"
 								href="https://www.wpmet.com/"
 								target="_blank"
 								rel="noreferrer"
 							>
 								Wpmet
-							</a>
+							</Link>
 							{` a division of `}
-							<a
+							<Link
 								className="text-link text-decoration-none"
 								href="https://www.xpeedstudio.com/"
 								target="_blank"
 								rel="noreferrer"
 							>
 								XpeedStudio
-							</a>
+							</Link>
 							{` where I have taken a leading role in managing, developing, and enhancing impactful plugins `}
-							<a
+							<Link
 								className="text-link text-decoration-none"
 								href="https://wordpress.org/plugins/elementskit-lite/"
 								target="_blank"
 								rel="noreferrer"
 							>
 								ElementsKit
-							</a>
+							</Link>
 							{`, `}
-							<a
+							<Link
 								className="text-link text-decoration-none"
 								href="https://wordpress.org/plugins/gutenkit-blocks-addon/"
 								target="_blank"
 								rel="noreferrer"
 							>
 								GutenKit
-							</a>
+							</Link>
 							{` and more, trusted by millions of users worldwide.`}
 						</div>
 						<div className="mb-4">
-							<a
+							<Link
 								className="btn btn-primary me-2 mb-3"
 								href="https://github.com/raazon/"
 								target="_blank"
@@ -62,7 +62,7 @@ const AboutMe: FC = () => {
 								<Icon name="circleRight" className="svg-inline--fa me-2" />
 								<span className="d-none d-md-inline">View</span>
 								{` GitHub `}
-							</a>
+							</Link>
 							<Link href="/portfolio" className="btn btn-primary me-2 mb-3 d-none">
 								<Icon name="circleRight" className="svg-inline--fa me-2" />
 								<span className="d-none d-md-inline">View</span>

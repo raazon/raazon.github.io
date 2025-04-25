@@ -3,7 +3,7 @@
 const testimonialCarousel = document.querySelector('.testimonial-carousel');
 if (testimonialCarousel) {
 	const slider = tns({
-		container: '.testimonial-carousel',
+		container: testimonialCarousel,
 		loop: true,
 		items: 3,
 		responsive: {
