@@ -394,10 +394,10 @@ const Resume = () => {
 										<div className="item">
 											<h4 className="item-title">Technical</h4>
 											<ul className="list-unstyled resume-skills-list">
-												<li className="mb-2">JavaScript/TypeScript</li>
-												<li className="mb-2">ReactJS/jQuery/PHP/Laravel</li>
-												<li className="mb-2">WordPress/REST API/WP-CLI</li>
-												<li className="mb-2">Gutenberg Development/FSE</li>
+												<li className="mb-2">WordPress/PHP/REST API</li>
+												<li className="mb-2">Gutenberg/FSE/WP-CLI</li>
+												<li className="mb-2">WP-CLI/JavaScript/React/Vue</li>
+												<li className="mb-2">TypeScript/jQuery/jQuery UI</li>
 												<li className="mb-2">Plugin/Theme Development</li>
 												<li className="mb-2">HTML/CSS/SASS/Tailwind</li>
 												<li className="mb-2">Webpack/Babel/Playwright</li>
