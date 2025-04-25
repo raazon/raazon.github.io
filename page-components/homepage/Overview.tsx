@@ -27,6 +27,13 @@ const Overview: FC = () => {
 			style: "for-the-badge",
 		},
 		{
+			label: "Vue",
+			labelColor: "#35495e",
+			labelBgColor: "#42b883",
+			logo: "",
+			style: "for-the-badge",
+		},
+		{
 			label: "jQuery",
 			labelColor: "#ffffff",
 			labelBgColor: "#0769ad",
