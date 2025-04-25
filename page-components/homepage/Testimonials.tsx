@@ -39,7 +39,7 @@ const Testimonials: FC = () => {
 			quote: "Razon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.",
 			name: "James Lee",
 			info: "Project Manager, Amazon",
-			img: "/assets/images/clients/profile-5.png",
+			img: "/assets/images/clients/profile-6.png",
 		},
 	];
 
