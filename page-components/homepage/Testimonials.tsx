@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
+
 
 
 const Testimonials: FC = () => {
@@ -41,6 +42,45 @@ const Testimonials: FC = () => {
 			img: "/assets/images/clients/profile-5.png",
 		},
 	];
+
+	useEffect(() => {
+		const initSlider = () => {
+			const testimonialCarousel = document.querySelector('.testimonial-carousel');
+
+			if (
+				testimonialCarousel &&
+				typeof window !== "undefined" &&
+				(window as any).tns &&
+				!testimonialCarousel.classList.contains("tns-initialized")
+			) {
+				(window as any).tns({
+					container: testimonialCarousel,
+					loop: true,
+					items: 3,
+					responsive: {
+						0: { items: 1 },
+						768: { items: 2 },
+						1200: { items: 3 },
+					},
+					slideBy: 'page',
+					nav: true,
+					autoplay: true,
+					autoplayButtonOutput: false,
+					mouseDrag: true,
+					lazyload: true,
+					gutter: 30,
+					navPosition: 'bottom',
+					controls: false,
+					speed: 800,
+				});
+				testimonialCarousel.classList.add("tns-initialized");
+			}
+		};
+
+		// Wait a little in case script is still loading
+		const timer = setTimeout(initSlider, 300);
+		return () => clearTimeout(timer);
+	}, []);
 
 	return (
 		<section className="testimonials-section p-3 p-lg-5">
