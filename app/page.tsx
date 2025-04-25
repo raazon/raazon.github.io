@@ -11,6 +11,7 @@ const Home: React.FC = () => {
 				src="/assets/plugins/tiny-slider/min/tiny-slider.js"
 				strategy="afterInteractive"
 			/>
+
 			<Script
 				src="/assets/js/testimonials.js"
 				strategy="afterInteractive"
