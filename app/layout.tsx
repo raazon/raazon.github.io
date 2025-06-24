@@ -27,10 +27,27 @@ export default function RootLayout({
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 				<link rel="icon" href="/favicon.ico" />
 				<link rel="apple-touch-icon" href="/logo192.png" />
+
+				{/* Google tag (gtag.js) */}
+				<Script
+					strategy="afterInteractive"
+					src={`https://www.googletagmanager.com/gtag/js?id=G-4K5D9E2NQ1`} // Replace with your GA4 ID
+				/>
+				<Script
+					id="google-analytics"
+					strategy="afterInteractive"
+					dangerouslySetInnerHTML={{
+						__html: `
+							window.dataLayer = window.dataLayer || [];
+							function gtag(){dataLayer.push(arguments);}
+							gtag('js', new Date());
+						
+							gtag('config', 'G-4K5D9E2NQ1');
+						`,
+					}}
+				/>
 			</head>
 			<body>
-				<p className="d-none">Impact-Site-Verification: 6e98e0e5-d48e-4124-a7e6-3d7ab6aa9c76</p>
-
 				<Header />
 
 				{children}

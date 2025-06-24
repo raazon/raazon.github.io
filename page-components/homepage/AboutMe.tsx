@@ -26,11 +26,11 @@ const AboutMe: FC = () => {
 							{` a division of `}
 							<Link
 								className="text-link text-decoration-none"
-								href="https://www.xpeedstudio.com/"
+								href="https://roxnor.com/"
 								target="_blank"
 								rel="noreferrer"
 							>
-								XpeedStudio
+								Roxnor
 							</Link>
 							{` where I have taken a leading role in managing, developing, and enhancing impactful plugins `}
 							<Link
