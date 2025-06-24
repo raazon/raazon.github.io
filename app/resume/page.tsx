@@ -92,7 +92,7 @@ const Resume = () => {
 								<div className="col text-start">
 									<p className="mb-0">
 										Dedicated web developer driven by a passion for continuous learning and impactful
-										contributions. With over 10+ years of experience in WordPress and web development, I
+										contributions. With over 12+ years of experience in WordPress and web development, I
 										have assisted companies in enhancing their development processes and fostering dynamic
 										team management. Honored as the Responsible Team Player of the Year in 2022 and the
 										Emerging Scrum Master of the Year in 2023.
