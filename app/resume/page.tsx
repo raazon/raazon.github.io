@@ -31,7 +31,7 @@ const Resume = () => {
 								</div>
 								<div className="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
 									<ul className="list-unstyled mb-0">
-										<li className="mb-2">
+										<li className="mb-2 d-none">
 											<svg className="svg-inline--fa fa-square-phone fa-fw fa-lg me-2" aria-hidden="true"
 												focusable="false" data-prefix="fas" data-icon="square-phone" role="img"
 												xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
@@ -41,15 +41,13 @@ const Resume = () => {
 											</svg>
 											<a className="resume-link" href="tel:+8801742259068">0174 2259 068</a>
 										</li>
-										<li className="mb-2">
-											<svg className="svg-inline--fa fa-square-envelope fa-fw fa-lg me-2" aria-hidden="true"
-												focusable="false" data-prefix="fas" data-icon="square-envelope" role="img"
-												xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
-												<path fill="currentColor"
-													d="M384 32H64C28.63 32 0 60.63 0 96v320c0 35.38 28.62 64 64 64h320c35.38 0 64-28.62 64-64V96C448 60.63 419.4 32 384 32zM384 336c0 17.67-14.33 32-32 32H96c-17.67 0-32-14.33-32-32V225.9l138.5 69.27C209.3 298.5 216.6 300.2 224 300.2s14.75-1.688 21.47-5.047L384 225.9V336zM384 190.1l-152.8 76.42c-4.5 2.25-9.812 2.25-14.31 0L64 190.1V176c0-17.67 14.33-32 32-32h256c17.67 0 32 14.33 32 32V190.1z">
-												</path>
+										<li className="mb-2 d-none">
+											<svg className="svg-inline--fa fa-square-envelope fa-fw fa-lg me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+												<path fill="currentColor" d="M384 32H64C28.63 32 0 60.63 0 96v320c0 35.38 28.62 64 64 64h320c35.38 0 64-28.62 64-64V96C448 60.63 419.4 32 384 32zM384 336c0 17.67-14.33 32-32 32H96c-17.67 0-32-14.33-32-32V225.9l138.5 69.27C209.3 298.5 216.6 300.2 224 300.2s14.75-1.688 21.47-5.047L384 225.9V336zM384 190.1l-152.8 76.42c-4.5 2.25-9.812 2.25-14.31 0L64 190.1V176c0-17.67 14.33-32 32-32h256c17.67 0 32 14.33 32 32V190.1z"></path>
 											</svg>
-											<a className="resume-link" href="mailto:raazzon@gmail.com">raazzon@gmail.com</a>
+											<a className="resume-link" href="mailto:raazzon@gmail.com">
+												raazzon@gmail.com
+											</a>
 										</li>
 										<li className="mb-2">
 											<svg className="svg-inline--fa fa-globe fa-fw fa-lg me-2" aria-hidden="true"
@@ -115,9 +113,9 @@ const Resume = () => {
 													Developer</h4>
 												<div
 													className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
-													<a className="text-muted text-decoration-none" href="https://xpeedstudio.com/"
+													<a className="text-muted text-decoration-none" href="https://roxnor.com/"
 														target="_blank">
-														XpeedStudio
+														Roxnor
 													</a> | 2021 - Present
 												</div>
 											</div>
@@ -357,7 +355,11 @@ const Resume = () => {
 										<div className="item mb-3">
 											<div className="item-heading row align-items-center mb-2">
 												<h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
-													Linked Variation for WooCommerce - WordPress Plugin
+													<a className="theme-link"
+														href="https://wordpress.org/plugins/linked-variation-for-woocommerce/"
+														target="_blank">
+														Linked Variation for WooCommerce - WordPress Plugin
+													</a>
 												</h4>
 												<div className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
 													Open Source
@@ -366,7 +368,6 @@ const Resume = () => {
 											<div className="item-content">
 												<p>
 													Developed a WooCommerce plugin that intelligently links products based on selected attributes, simplifying the management of complex product variations.
-													<a href="https://wordpress.org/plugins/linked-variation-for-woocommerce/" className="theme-link">View Plugin Demo</a>
 												</p>
 											</div>
 										</div>
@@ -479,15 +480,15 @@ const Resume = () => {
 						<div className="resume-footer text-center">
 							<ul className="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
 								<li className="list-inline-item mb-lg-0 me-3">
-									<a className="resume-link text-decoration-none" href="https://github.com/razon-xs">
-										<Icon name="squareGithub" className="me-1" />
-										<span className="d-none d-lg-inline-block text-muted">@github.com/razon-xs</span>
-									</a>
-								</li>
-								<li className="list-inline-item mb-lg-0 me-3">
 									<a className="resume-link text-decoration-none" href="https://www.linkedin.com/in/raazon/">
 										<Icon name="linkedin" className="me-1" />
 										<span className="d-none d-lg-inline-block text-muted">@linkedin.com/in/raazon</span>
+									</a>
+								</li>
+								<li className="list-inline-item mb-lg-0 me-3">
+									<a className="resume-link text-decoration-none" href="https://github.com/razon-xs">
+										<Icon name="squareGithub" className="me-1" />
+										<span className="d-none d-lg-inline-block text-muted">@github.com/razon-xs</span>
 									</a>
 								</li>
 								<li className="list-inline-item mb-lg-0 me-lg-1">
