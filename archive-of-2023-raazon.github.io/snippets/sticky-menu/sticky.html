@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      
+       <script>
+       
+        (function( $ ) {// jscs:ignore validateLineBreaks
+
+            jQuery( document ).ready(function( $ ) {
+
+                // Fix nav to top while scrolling
+
+                clNav = $( 'body .nav-container nav:first' );
+                clNavOuterHeight = $( 'body .nav-container nav:first' ).outerHeight();
+                windowW = jQuery( window ).width();
+                if ( windowW > 991 ) {
+                    window.addEventListener( 'scroll', updateNav, false );
+                    updateNav();
+                }
+
+                $( window ).resize(function() {
+                    windowW = $( window ).width();
+                    if ( windowW < 992 ) {
+                        clNav.removeClass( 'fixed scrolled outOfSight' );
+                    } else {
+                        window.addEventListener( 'scroll', updateNav, false );
+                        updateNav();
+                    }
+                });
+
+
+
+            });
+
+
+            /* Function To
+             * keep menu fixed
+             **/
+            function updateNav() {
+                var scroll = $( window ).scrollTop();
+                var windowW = jQuery( window ).width();
+
+                if ( windowW < 992 ) {
+                    return;
+                }
+
+                if ( scroll > clNavOuterHeight ) {
+                    clNav.addClass( 'outOfSight' );
+                }
+
+                if ( $( window ).scrollTop() > ( clNavOuterHeight + 65 ) ) {//If href = #element id
+                    clNav.addClass( 'fixed scrolled' );
+                }
+
+                if ( 0 === $( window ).scrollTop() ) {
+                    clNav.removeClass( 'fixed scrolled outOfSight' );
+                }
+            }
+
+
+        })( jQuery );
+      
+       </script>
+       
+       <style>
+       
+            nav.outOfSight {
+                transform: translate3d(0, -100px, 0);
+                -webkit-transform: translate3d(0, -100px, 0);
+                -moz-transform: translate3d(0, -100px, 0);
+                transition: all 0.3s ease;
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+            }
+
+            nav.scrolled {
+                transform: translate3d(0, 0px, 0);
+                -webkit-transform: translate3d(0, 0px, 0);
+                -moz-transform: translate3d(0, 0px, 0);
+                transition: all 0.3s ease;
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+            }
+
+            nav.fixed.scrolled {
+                visibility: visible;
+                opacity: 1;
+                transition: all 0.3s ease;
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+            }
+
+            nav.fixed {
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 999;
+                transition: all 0.3s ease;
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+            }
+
+            nav.fixed {
+                position: fixed;
+                visibility: hidden;
+                opacity: 0;
+            }
+
+            nav.fixed.scrolled {
+                visibility: visible;
+                opacity: 1;
+            }
+
+       
+       </style>
+      
+   </head>
+   <body>
+
+
+       
+       <div class="nav-container">
+            <nav class="navbar navbar-default">
+             <div class="container-fluid">
+                <div class="navbar-header">
+                   <a class="navbar-brand" href="#">WebSiteName</a>
+                </div>
+                <ul class="nav navbar-nav">
+                   <li class="active"><a href="#">Home</a></li>
+                   <li><a href="#">Page 1</a></li>
+                   <li><a href="#">Page 2</a></li>
+                   <li><a href="#">Page 3</a></li>
+                </ul>
+             </div>
+          </nav>
+       </div>
+      
+     
+       
+       <div id="content" class="main-content">
+          
+           <div class="container">
+               <h3>Basic Navbar Example</h3>
+         <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+         <div class="jumbotron">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+         </div>
+         <p>This is some text.</p>
+         <p>This is another text.</p>
+         <div class="jumbotron">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+         </div>
+         <p>This is some text.</p>
+         <p>This is another text.</p>
+         <div class="jumbotron">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+         </div>
+         <p>This is some text.</p>
+         <p>This is another text.</p>
+         <div class="jumbotron">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+         </div>
+         <p>This is some text.</p>
+         <p>This is another text.</p>
+         <div class="jumbotron">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+         </div>
+         <p>This is some text.</p>
+         <p>This is another text.</p>
+         <div class="jumbotron">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+         </div>
+         <p>This is some text.</p>
+         <p>This is another text.</p>
+         <div class="jumbotron">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+         </div>
+         <p>This is some text.</p>
+         <p>This is another text.</p>
+         <div class="jumbotron">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+         </div>
+         <p>This is some text.</p>
+         <p>This is another text.</p>
+         <div class="jumbotron">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+         </div>
+         <p>This is some text.</p>
+         <p>This is another text.</p>
+          
+           </div>
+           
+          </div>
+       
+   </body>
+</html>

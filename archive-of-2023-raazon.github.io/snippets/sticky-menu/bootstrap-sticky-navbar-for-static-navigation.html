@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script>
+         $(document).ready(function () {
+         
+         var navHeight = $('.navbar-default').height(); // calculate navbar height
+         var menu = $('.navbar-default'); // navbar main calss
+         var origOffsetY = menu.offset().top; // calculate offset for Y axis from top
+             
+         function sticky_on_scroll() {
+             
+           if ($(window).scrollTop() >= origOffsetY) {
+               $('.navbar-default').addClass('navbar-fixed-top');
+               $('.main-content').css({'margin-top' : navHeight,});
+           } else {
+               $('.navbar-default').removeClass('navbar-fixed-top');
+               $('.main-content').removeAttr("style");
+           }
+         
+         
+          }
+         
+         document.onscroll = sticky_on_scroll;
+         
+         });
+         
+         
+      </script>
+   </head>
+   <body>
+
+       <div class="container">
+       
+           <h3>Basic Navbar Example</h3>
+        
+           <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+      
+           <h3>Basic Navbar Example</h3>
+      
+           <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+       
+       </div>
+      
+      <nav class="navbar navbar-default navbar-static-top">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <ul class="nav navbar-nav">
+               <li class="active"><a href="#">Home</a></li>
+               <li><a href="#">Page 1</a></li>
+               <li><a href="#">Page 2</a></li>
+               <li><a href="#">Page 3</a></li>
+            </ul>
+         </div>
+      </nav>
+       
+       
+       <div class="main-content">
+          
+           <div class="container">
+               <h3>Basic Navbar Example</h3>
+         <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+         <div class="jumbotron">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+         </div>
+         <p>This is some text.</p>
+         <p>This is another text.</p>
+         <div class="jumbotron">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+         </div>
+         <p>This is some text.</p>
+         <p>This is another text.</p>
+         <div class="jumbotron">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+         </div>
+         <p>This is some text.</p>
+         <p>This is another text.</p>
+         <div class="jumbotron">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+         </div>
+         <p>This is some text.</p>
+         <p>This is another text.</p>
+         <div class="jumbotron">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+         </div>
+         <p>This is some text.</p>
+         <p>This is another text.</p>
+         <div class="jumbotron">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+         </div>
+         <p>This is some text.</p>
+         <p>This is another text.</p>
+         <div class="jumbotron">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+         </div>
+         <p>This is some text.</p>
+         <p>This is another text.</p>
+         <div class="jumbotron">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+         </div>
+         <p>This is some text.</p>
+         <p>This is another text.</p>
+         <div class="jumbotron">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+         </div>
+         <p>This is some text.</p>
+         <p>This is another text.</p>
+          
+           </div>
+           
+          </div>
+       
+   </body>
+</html>

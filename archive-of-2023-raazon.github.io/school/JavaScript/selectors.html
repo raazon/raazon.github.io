@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Selector</title>
+	<script>
+	
+	var tag = document.getElementById('active');
+	var tags = document.getElementsByClassName('bold');
+	var tags = document.getElementByTagName('li');
+	var tag = document.querySelector('#active');
+	var tags = document.querySelectorAll('.bold');
+
+
+
+	// get all js options
+	console.dir(tag)
+
+	</script>
+</head>
+<body>
+	<h1>JS Selector</h1>
+	<p>Run the code in browser console</p>
+
+	<hr>
+
+	<ul>
+		<li>document.getElementById()</li>
+		<li>document.getElementsByClassName()</li>
+		<li>document.getElementByTagName()</li>
+		<li>document.querySelector()</li>
+		<li>document.querySelectorAll()</li>
+	</ul>
+
+	<hr>
+
+	<h4>An Unordered List:</h4>
+	<ul>
+	  <li id="active">Coffee</li>
+	  <li class="bold">Tea</li>
+	  <li class="bold">Milk</li>
+	</ul>
+
+
+</body>
+</html>
