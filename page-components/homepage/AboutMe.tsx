@@ -11,46 +11,36 @@ const AboutMe: FC = () => {
 						<h2 className="name font-weight-bold mb-1">Razon Komar Pal</h2>
 						<div className="tagline mb-3">Senior Web Developer</div>
 						<div className="bio mb-4">
-							{`I'm a dedicated web developer driven by a passion for continuous learning and impactful contributions. With over 12+ years of experience in WordPress and web development, I have assisted companies in enhancing their development processes and fostering dynamic team management. Honored as the Responsible Team Player of the Year in 2022 and the Emerging Scrum Master of the Year in 2023.`}
-							<br />
-							<br />
-							{`Currently serving as a Senior Web Developer at `}
+							{`With 12 years+ of experience in WordPress and web development, I have spearheaded the architecture and management of various WordPress plugins, including GutenKit and PopupKit. My expertise includes plugin development, team leadership, project lifecycle management, bug fixing and UX enhancement. I write about software development on `}
+
 							<Link
 								className="text-link text-decoration-none"
-								href="https://www.wpmet.com/"
-								target="_blank"
-								rel="noreferrer"
+								href="/blog"
 							>
-								Wpmet
+								my blog
 							</Link>
-							{` a division of `}
+
+							{`.`}
+
+							{` Want to know how I may help your project? Check out my project `}
+
 							<Link
 								className="text-link text-decoration-none"
-								href="https://roxnor.com/"
-								target="_blank"
-								rel="noreferrer"
+								href="/portfolio"
 							>
-								Roxnor
+								portfolio
 							</Link>
-							{` where I have taken a leading role in managing, developing, and enhancing impactful plugins `}
+
+							{` and `}
+
 							<Link
 								className="text-link text-decoration-none"
-								href="https://wordpress.org/plugins/elementskit-lite/"
-								target="_blank"
-								rel="noreferrer"
+								href="/resume"
 							>
-								ElementsKit
+								online resume
 							</Link>
-							{`, `}
-							<Link
-								className="text-link text-decoration-none"
-								href="https://wordpress.org/plugins/gutenkit-blocks-addon/"
-								target="_blank"
-								rel="noreferrer"
-							>
-								GutenKit
-							</Link>
-							{` and more, trusted by millions of users worldwide.`}
+
+							{`.`}
 						</div>
 						<div className="mb-4">
 							<Link
