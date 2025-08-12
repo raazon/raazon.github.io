@@ -15,13 +15,26 @@ const Home: React.FC = () => {
 			<div className="main-wrapper">
 				<AboutMe />
 
+				<Projects hide={false} />
+
+				<div className="container">
+					<hr />
+				</div>
+
 				<Overview />
 
-				<Testimonials hide />
+				<div className="container">
+					<hr />
+				</div>
 
-				<Projects hide />
 
-				<Posts hide />
+				<Testimonials hide={false} />
+
+				<div className="container">
+					<hr />
+				</div>
+
+				<Posts hide={false} />
 			</div>
 		</>
 	);
