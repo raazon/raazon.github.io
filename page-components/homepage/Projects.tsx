@@ -34,7 +34,7 @@ const Projects: FC<ProjectsProps> = ({ hide = false }) => {
 			banner: "https://ps.w.org/elementskit-lite/assets/banner-1544x500.jpg",
 			link: "/project/elementskit",
 			description: "ElementsKit Elementor addons is an ultimate and all - in - one addons for Elementor Page Builder. It brings the most comprehensive solution with 90+ Elementor widgets, 18+ modules, and 900+ pre - designed Elementor templates. Everything is accessible through an easy drag - and - drop interface, including features like header - footer builder",
-			activeInstalls: 9000000,
+			activeInstalls: 1000000,
 		},
 		{
 			title: "GutenKit – Gutenberg Blocks",
@@ -43,6 +43,7 @@ const Projects: FC<ProjectsProps> = ({ hide = false }) => {
 			banner: "https://ps.w.org/gutenkit-blocks-addon/assets/banner-1544x500.jpg",
 			link: "/project/gutenkit",
 			description: "No more struggling with complicated page builders or the need for coding expertise. Introducing GutenKit for Gutenberg, the best Gutenberg page builder experience right within the WordPress block editor. This block editor plugin brings the familiar ease of drag - and - drop design to Gutenberg",
+			activeInstalls: 20000,
 		},
 		{
 			title: "PopupKit - Popup Builder for WordPress",
@@ -51,6 +52,7 @@ const Projects: FC<ProjectsProps> = ({ hide = false }) => {
 			banner: "https://ps.w.org/popup-builder-block/assets/banner-1544x500.jpg",
 			link: "/project/popupkit",
 			description: "The Right Audience, The Perfect Timing, The Ideal Engagement PopupKit - Popup builder plugin by Wpmet can confidently build exceptional popups that boost conversions, make sales, generate leads, display offers, deliver target messages, show videos, capture attention, create surveys, collect feedback",
+			activeInstalls: 10000,
 		},
 		{
 			title: "TableKit - Popup Builder for WordPress",
@@ -59,6 +61,7 @@ const Projects: FC<ProjectsProps> = ({ hide = false }) => {
 			banner: "https://ps.w.org/table-builder-block/assets/banner-1544x500.jpg",
 			link: "/project/tablekit",
 			description: "Fully Customizable. Multi - Media Integration. Synch Any Data Files. All Within Block Editor. That’s TableKit - Table Builder Block by Wpmet! An ultimate table builder solution that empowers you to create any type of table design without touching a single line of code. Generating highly functional",
+			activeInstalls: 500,
 		},
 	]);
 
@@ -108,7 +111,7 @@ const Projects: FC<ProjectsProps> = ({ hide = false }) => {
 							projects.map((project, index) => {
 								const isLastTwo = index >= projects.length - 2;
 								const projectDescription = letterLimit(stripHtml(project.description), 250);
-								const projectActiveInstall = formatInstalls(project?.active_installs);
+								var projectActiveInstall = formatInstalls(project?.activeInstalls);
 								return (
 									<div className={`col-md-6 ${isLastTwo ? "" : "mb-4"}`} key={index}>
 										<div className="card project-card">
