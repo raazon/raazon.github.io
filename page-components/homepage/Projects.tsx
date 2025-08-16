@@ -13,6 +13,7 @@ interface ProjectsProps {
 interface Project {
 	title: string;
 	slug: string;
+	category: string;
 	author: string;
 	banner: string;
 	link: string;
@@ -30,6 +31,7 @@ const Projects: FC<ProjectsProps> = ({ hide = false }) => {
 		{
 			title: "ElementsKit - Elementor Addons",
 			slug: "elementskit-lite",
+			category: "WordPress Plugin",
 			author: "Wpmet",
 			banner: "https://ps.w.org/elementskit-lite/assets/banner-1544x500.jpg",
 			link: "/project/elementskit",
@@ -39,6 +41,7 @@ const Projects: FC<ProjectsProps> = ({ hide = false }) => {
 		{
 			title: "GutenKit – Gutenberg Blocks",
 			slug: "gutenkit-blocks-addon",
+			category: "WordPress Plugin",
 			author: "Wpmet",
 			banner: "https://ps.w.org/gutenkit-blocks-addon/assets/banner-1544x500.jpg",
 			link: "/project/gutenkit",
@@ -48,6 +51,7 @@ const Projects: FC<ProjectsProps> = ({ hide = false }) => {
 		{
 			title: "PopupKit - Popup Builder for WordPress",
 			slug: "popup-builder-block",
+			category: "WordPress Plugin",
 			author: "Wpmet",
 			banner: "https://ps.w.org/popup-builder-block/assets/banner-1544x500.jpg",
 			link: "/project/popupkit",
@@ -57,6 +61,7 @@ const Projects: FC<ProjectsProps> = ({ hide = false }) => {
 		{
 			title: "TableKit - Popup Builder for WordPress",
 			slug: "table-builder-block",
+			category: "WordPress Plugin",
 			author: "Wpmet",
 			banner: "https://ps.w.org/table-builder-block/assets/banner-1544x500.jpg",
 			link: "/project/tablekit",
@@ -117,7 +122,10 @@ const Projects: FC<ProjectsProps> = ({ hide = false }) => {
 										<div className="card project-card">
 											<div className="row no-gutters">
 												<div className="col-12 card-img-holder">
-													<Link href={project.link}>
+													<Link href={project.link} className="d-block position-relative">
+														<span className="badge bg-primaryX position-absolute project-badge">
+															{project.category}
+														</span>
 														<Image
 															src={project.banner}
 															alt={project.title}
@@ -148,6 +156,7 @@ const Projects: FC<ProjectsProps> = ({ hide = false }) => {
 													</div>
 												</div>
 											</div>
+
 											<div className="link-mask d-none">
 												<a className="link-mask-link" href={project.link}></a>
 												<div className="link-mask-text">

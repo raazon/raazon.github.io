@@ -258,7 +258,7 @@ const Overview: FC = () => {
 	return (
 		<section className="overview-section p-3 p-lg-5">
 			<div className="container">
-				<h2 className="section-title font-weight-bold mb-3">What I do</h2>
+				<h2 className="section-title font-weight-bold mb-3">Skills</h2>
 				<div className="section-intro mb-4">
 					{`With over 10+ years of experience in WordPress and web development, I have assisted companies and individuals in enhancing their development processes and fostering dynamic team management. Below is a quick overview of my main technical skill sets and technologies I use. Want to find out more about my experience? Check out my `}
 					<Link href="/resume" className="text-link">
