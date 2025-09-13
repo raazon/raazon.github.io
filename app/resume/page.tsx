@@ -1,4 +1,5 @@
 import Icon from "@/components/icon/Icon";
+import { siteConfig } from "@/utils/siteConfig";
 import profilePic from '@assets/images/profile.jpg';
 import Image from 'next/image';
 import './page.scss';
@@ -26,8 +27,8 @@ const Resume = () => {
 						<div className="resume-header">
 							<div className="row align-items-center">
 								<div className="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
-									<h2 className="resume-name mb-0 text-uppercase">Razon Komar Pal</h2>
-									<div className="resume-tagline mb-3 mb-md-0">Senior Web Developer</div>
+									<h2 className="resume-name mb-0 text-uppercase">{siteConfig.name}</h2>
+									<div className="resume-tagline mb-3 mb-md-0">{siteConfig.designation}</div>
 								</div>
 								<div className="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
 									<ul className="list-unstyled mb-0">
@@ -73,13 +74,7 @@ const Resume = () => {
 									/>
 								</div>
 								<div className="col text-start">
-									<p className="mb-0">
-										Dedicated web developer driven by a passion for continuous learning and impactful
-										contributions. With over 12+ years of experience in WordPress and web development, I
-										have assisted companies in enhancing their development processes and fostering dynamic
-										team management. Honored as the Responsible Team Player of the Year in 2022 and the
-										Emerging Scrum Master of the Year in 2023.
-									</p>
+									<p className="mb-0">{siteConfig.bio}</p>
 								</div>
 							</div>
 						</div>

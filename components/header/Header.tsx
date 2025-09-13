@@ -1,3 +1,4 @@
+import { siteConfig } from "@/utils/siteConfig";
 import Image from "next/image"; // Use Next.js `Image` component for optimized images
 import Link from 'next/link';
 import React from "react";
@@ -11,7 +12,7 @@ const Header: React.FC = () => {
 			<div className="force-overflow">
 				<h1 className="blog-name pt-lg-4 mb-0">
 					<Link className="no-text-decoration" href="/" aria-label="Home">
-						{process.env.NEXT_PUBLIC_NAME}
+						{siteConfig.name}
 					</Link>
 				</h1>
 
@@ -39,7 +40,7 @@ const Header: React.FC = () => {
 								priority
 							/>
 
-							<div className="bio mb-3">{process.env.NEXT_PUBLIC_SHORT_BIO}</div>
+							<div className="bio mb-3">{siteConfig.shortBio}</div>
 
 							<ul className="social-list list-inline py-2 mx-auto">
 								<li className="list-inline-item">

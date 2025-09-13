@@ -1,6 +1,8 @@
 import Icon from '@/components/icon/Icon';
+import { siteConfig } from "@/utils/siteConfig";
 import Link from 'next/link';
 import { FC } from 'react';
+
 
 const AboutMe: FC = () => {
 	return (
@@ -8,9 +10,15 @@ const AboutMe: FC = () => {
 			<div className="container">
 				<div className="profile-teaser row">
 					<div className="col">
-						<h2 className="name font-weight-bold mb-1">{process.env.NEXT_PUBLIC_NAME}</h2>
-						<div className="tagline mb-3">{process.env.NEXT_PUBLIC_DESIGNATION}</div>
-						<div className="bio mb-4 ">{process.env.NEXT_PUBLIC_BIO}</div>
+						<h2 className="name font-weight-bold mb-1">
+							{siteConfig.name}
+						</h2>
+						<div className="tagline mb-3">
+							{siteConfig.designation}
+						</div>
+						<div className="bio mb-4 ">
+							{siteConfig.bio}
+						</div>
 						<div className="bio mb-4 d-none">
 							{`With 12 years+ of experience in WordPress and web development, I have spearheaded the architecture and management of various WordPress plugins, including GutenKit and PopupKit. My expertise includes plugin development, team leadership, project lifecycle management, bug fixing and UX enhancement. I write about software development on `}
 
@@ -46,7 +54,7 @@ const AboutMe: FC = () => {
 						<div className="mb-4">
 							<Link
 								className="btn btn-primary me-2 mb-3"
-								href={process.env.NEXT_PUBLIC_GITHUB_LINK || "#"}
+								href={siteConfig.links.github}
 								target="_blank"
 								rel="noreferrer"
 							>

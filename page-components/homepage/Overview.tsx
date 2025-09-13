@@ -1,4 +1,5 @@
 import Icon from '@/components/icon/Icon';
+import { siteConfig } from "@/utils/siteConfig";
 import Link from 'next/link';
 import { FC } from 'react';
 import { bootstrap, css3, docker, gitAlt, gutenberg, html5, jQuery, js, nextjs, npm, php, php2, playwright, plugin, react, saas, shopify, tailwind, terminal, theme, ts, vscode, vue, webhook, webpack, wordpressSimple } from './SkillsIcons';
@@ -270,7 +271,7 @@ const Overview: FC = () => {
 					{` and `}
 					<a
 						className="text-link"
-						href={process.env.NEXT_PUBLIC_GITHUB_LINK || "#"}
+						href={siteConfig.links.github}
 						target="_blank"
 						rel="noreferrer"
 					>
