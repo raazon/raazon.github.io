@@ -123,8 +123,13 @@ const Resume = () => {
 													<li className="mb-2">
 														Launched and grew <a className="theme-link"
 															href="https://wordpress.org/plugins/gutenkit-blocks-addon/"
-															target="_blank">GutenKit</a> WordPress plugin to 10,000+ active
+															target="_blank">GutenKit</a> WordPress plugin to 30,000+ active
 														installations following its release in March 2024, successfully
+														establishing it as a valued addition to the company’s plugin portfolio.
+													</li>
+													<li className="mb-2">
+														Launched and grew <a className="theme-link" href="https://wordpress.org/plugins/popup-builder-block/" target="_blank">PopupKit</a> WordPress plugin to 20,000+ active
+														installations following its release in May 2025, successfully
 														establishing it as a valued addition to the company’s plugin portfolio.
 													</li>
 													<li>
@@ -386,8 +391,8 @@ const Resume = () => {
 												<li className="mb-2">TypeScript/jQuery/jQuery UI</li>
 												<li className="mb-2">Plugin/Theme Development</li>
 												<li className="mb-2">HTML/CSS/SASS/Tailwind</li>
-												<li className="mb-2">Webpack/Babel/Playwright</li>
-												<li className="mb-2">Gitflow/CI-CD</li>
+												<li className="mb-2">NPM/Gulp/Webpack/GruntJS</li>
+												<li className="mb-2">Gitflow/CI-CD/SVN</li>
 											</ul>
 										</div>
 										<div className="item">

@@ -75,13 +75,6 @@ const Overview: FC = () => {
 
 	const toolsAndTechnologies = [
 		{
-			label: "Docker",
-			labelColor: "#ffffff",
-			labelBgColor: "#1D63ED",
-			logo: docker,
-			style: "for-the-badge",
-		},
-		{
 			label: "Git",
 			labelColor: "#ffffff",
 			labelBgColor: "#f05032",
@@ -149,6 +142,13 @@ const Overview: FC = () => {
 			labelColor: "#ffffff",
 			labelBgColor: "#2fad33",
 			logo: playwright,
+			style: "for-the-badge",
+		},
+		{
+			label: "Docker",
+			labelColor: "#ffffff",
+			labelBgColor: "#1D63ED",
+			logo: docker,
 			style: "for-the-badge",
 		},
 	];
@@ -255,6 +255,9 @@ const Overview: FC = () => {
 		},
 	];
 
+	// merge 'otherSkills' with 'cmsFrameworksLibraries'
+	const cmsFrameworksLibrariesOtherSkills= [...cmsFrameworksLibraries, ...otherSkills];
+
 	return (
 		<section className="overview-section p-3 p-lg-5">
 			<div className="container">
@@ -267,7 +270,7 @@ const Overview: FC = () => {
 					{` and `}
 					<a
 						className="text-link"
-						href="https://github.com/raazon/"
+						href={process.env.NEXT_PUBLIC_GITHUB_LINK || "#"}
 						target="_blank"
 						rel="noreferrer"
 					>
@@ -294,9 +297,9 @@ const Overview: FC = () => {
 				</div>
 
 				<div className="row gap-1 mt-4">
-					<h3 className="item-title">CMS, Frameworks & Libraries</h3>
+					<h3 className="item-title">CMS, Frameworks, Libraries & Technicals</h3>
 					<div className="my-skills">
-						{cmsFrameworksLibraries.map((skill, index) => (
+						{cmsFrameworksLibrariesOtherSkills.map((skill, index) => (
 							<span
 								className="skill-item rounded"
 								style={{

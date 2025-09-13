@@ -8,9 +8,10 @@ const AboutMe: FC = () => {
 			<div className="container">
 				<div className="profile-teaser row">
 					<div className="col">
-						<h2 className="name font-weight-bold mb-1">Razon Komar Pal</h2>
-						<div className="tagline mb-3">Senior Web Developer</div>
-						<div className="bio mb-4">
+						<h2 className="name font-weight-bold mb-1">{process.env.NEXT_PUBLIC_NAME}</h2>
+						<div className="tagline mb-3">{process.env.NEXT_PUBLIC_DESIGNATION}</div>
+						<div className="bio mb-4 ">{process.env.NEXT_PUBLIC_BIO}</div>
+						<div className="bio mb-4 d-none">
 							{`With 12 years+ of experience in WordPress and web development, I have spearheaded the architecture and management of various WordPress plugins, including GutenKit and PopupKit. My expertise includes plugin development, team leadership, project lifecycle management, bug fixing and UX enhancement. I write about software development on `}
 
 							<Link
@@ -45,7 +46,7 @@ const AboutMe: FC = () => {
 						<div className="mb-4">
 							<Link
 								className="btn btn-primary me-2 mb-3"
-								href="https://github.com/raazon/"
+								href={process.env.NEXT_PUBLIC_GITHUB_LINK || "#"}
 								target="_blank"
 								rel="noreferrer"
 							>

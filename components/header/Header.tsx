@@ -11,7 +11,7 @@ const Header: React.FC = () => {
 			<div className="force-overflow">
 				<h1 className="blog-name pt-lg-4 mb-0">
 					<Link className="no-text-decoration" href="/" aria-label="Home">
-						Razon Komar Pal
+						{process.env.NEXT_PUBLIC_NAME}
 					</Link>
 				</h1>
 
@@ -39,9 +39,7 @@ const Header: React.FC = () => {
 								priority
 							/>
 
-							<div className="bio mb-3">
-								{`Hi, my name is Razon Komar Pal and I'm a senior web developer. Welcome to my personal website!`}
-							</div>
+							<div className="bio mb-3">{process.env.NEXT_PUBLIC_SHORT_BIO}</div>
 
 							<ul className="social-list list-inline py-2 mx-auto">
 								<li className="list-inline-item">

@@ -10,19 +10,6 @@ interface ProjectsProps {
 	hide?: string | boolean;
 }
 
-interface Project {
-	title: string;
-	slug: string;
-	category: string;
-	author: string;
-	banner: string;
-	link: string;
-	description?: string;
-	activeInstalls?: number | string;
-	numRatings?: number | string;
-	rating?: number | string;
-}
-
 
 const Projects: FC<ProjectsProps> = ({ hide = false }) => {
 	if (hide) return null;
@@ -32,9 +19,9 @@ const Projects: FC<ProjectsProps> = ({ hide = false }) => {
 			title: "ElementsKit - Elementor Addons",
 			slug: "elementskit-lite",
 			category: "WordPress Plugin",
-			author: "Wpmet",
+			author: "Roxnor",
 			banner: "https://ps.w.org/elementskit-lite/assets/banner-1544x500.jpg",
-			link: "/project/elementskit",
+			link: "https://wordpress.org/plugins/elementskit-lite/",
 			description: "ElementsKit Elementor addons is an ultimate and all - in - one addons for Elementor Page Builder. It brings the most comprehensive solution with 90+ Elementor widgets, 18+ modules, and 900+ pre - designed Elementor templates. Everything is accessible through an easy drag - and - drop interface, including features like header - footer builder",
 			activeInstalls: 1000000,
 		},
@@ -44,7 +31,7 @@ const Projects: FC<ProjectsProps> = ({ hide = false }) => {
 			category: "WordPress Plugin",
 			author: "Wpmet",
 			banner: "https://ps.w.org/gutenkit-blocks-addon/assets/banner-1544x500.jpg",
-			link: "/project/gutenkit",
+			link: "https://wordpress.org/plugins/gutenkit-blocks-addon/",
 			description: "No more struggling with complicated page builders or the need for coding expertise. Introducing GutenKit for Gutenberg, the best Gutenberg page builder experience right within the WordPress block editor. This block editor plugin brings the familiar ease of drag - and - drop design to Gutenberg",
 			activeInstalls: 20000,
 		},
@@ -54,7 +41,7 @@ const Projects: FC<ProjectsProps> = ({ hide = false }) => {
 			category: "WordPress Plugin",
 			author: "Wpmet",
 			banner: "https://ps.w.org/popup-builder-block/assets/banner-1544x500.jpg",
-			link: "/project/popupkit",
+			link: "https://wordpress.org/plugins/popup-builder-block/",
 			description: "The Right Audience, The Perfect Timing, The Ideal Engagement PopupKit - Popup builder plugin by Wpmet can confidently build exceptional popups that boost conversions, make sales, generate leads, display offers, deliver target messages, show videos, capture attention, create surveys, collect feedback",
 			activeInstalls: 10000,
 		},
@@ -64,7 +51,7 @@ const Projects: FC<ProjectsProps> = ({ hide = false }) => {
 			category: "WordPress Plugin",
 			author: "Wpmet",
 			banner: "https://ps.w.org/table-builder-block/assets/banner-1544x500.jpg",
-			link: "/project/tablekit",
+			link: "https://wordpress.org/plugins/table-builder-block/",
 			description: "Fully Customizable. Multi - Media Integration. Synch Any Data Files. All Within Block Editor. That’s TableKit - Table Builder Block by Wpmet! An ultimate table builder solution that empowers you to create any type of table design without touching a single line of code. Generating highly functional",
 			activeInstalls: 500,
 		},
@@ -122,7 +109,7 @@ const Projects: FC<ProjectsProps> = ({ hide = false }) => {
 										<div className="card project-card">
 											<div className="row no-gutters">
 												<div className="col-12 card-img-holder">
-													<Link href={project.link} className="d-block position-relative">
+													<Link href={project.link} className="d-block position-relative" target="_blank" rel="noopener noreferrer">
 														<span className="badge bg-primaryX position-absolute project-badge">
 															{project.category}
 														</span>
@@ -138,7 +125,7 @@ const Projects: FC<ProjectsProps> = ({ hide = false }) => {
 												<div className="col-12">
 													<div className="card-body">
 														<h5 className="card-title">
-															<Link href={project.link} className="theme-link">
+															<Link href={project.link} className="theme-link" target="_blank" rel="noopener noreferrer">
 																{project.title}
 															</Link>
 														</h5>

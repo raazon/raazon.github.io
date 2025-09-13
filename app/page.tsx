@@ -27,14 +27,13 @@ const Home: React.FC = () => {
 					<hr />
 				</div>
 
+				<Testimonials hide={true} />
 
-				<Testimonials hide={false} />
-
-				<div className="container">
+				<div className="container d-none">
 					<hr />
 				</div>
 
-				<Posts hide={false} />
+				<Posts hide={true} />
 			</div>
 		</>
 	);
