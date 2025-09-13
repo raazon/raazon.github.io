@@ -4,17 +4,12 @@ import { stripHtml } from "@/utils/stripHtml";
 
 import Image from "next/image";
 import Link from "next/link";
-import { FC, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
-interface ProjectsProps {
-	hide?: string | boolean;
-}
-
-
-const Projects: FC<ProjectsProps> = ({ hide = false }) => {
+const Projects = ({ hide = false }) => {
 	if (hide) return null;
 
-	const [projects, setProjects] = useState < Project[] > ([
+	const [projects, setProjects] = useState([
 		{
 			title: "ElementsKit - Elementor Addons",
 			slug: "elementskit-lite",
