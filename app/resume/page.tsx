@@ -89,8 +89,35 @@ const Resume = () => {
 										<h3 className="text-uppercase resume-section-heading mb-4">Work Experiences</h3>
 										<div className="item mb-3">
 											<div className="item-heading row align-items-center mb-2">
-												<h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Senior Web
-													Developer</h4>
+												<h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">WordPress Developer</h4>
+												<div
+													className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
+													<a className="text-muted text-decoration-none" href="https://wpmudev.com/"
+														target="_blank">
+														WPMU DEV
+													</a> | 2025 - Present
+												</div>
+											</div>
+											<div className="item-content">
+												<ul className="resume-list my-3 ps-3">
+													<li className="mb-2">
+														Developed new features and fixed complex bugs, including payment gateway integrations, across <a className="theme-link" href="https://wordpress.org/plugins/forminator/" target="_blank">Forminator</a> plugin.
+													</li>
+													<li className="mb-2">
+														Reviewed pull requests to maintain code quality and consistency.
+													</li>
+													<li className="mb-2">
+														Provided advanced technical solutions for support engineers.
+													</li>
+													<li className="mb-2">
+														Collaborated with cross-functional teams to improve product stability, testing and bug resolution.
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div className="item mb-3">
+											<div className="item-heading row align-items-center mb-2">
+												<h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Senior Web Developer</h4>
 												<div
 													className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
 													<a className="text-muted text-decoration-none" href="https://roxnor.com/"
@@ -412,7 +439,7 @@ const Resume = () => {
 												<div className="resume-degree font-weight-bold">BSc in Electrical and Electronic
 													Engineering</div>
 												<div className="resume-degree-org text-muted">Northern University of Bangladesh</div>
-												<div className="resume-degree-time text-muted">2012 - Present</div>
+												<div className="resume-degree-time text-muted">2012 - 2025</div>
 											</li>
 										</ul>
 									</section>
