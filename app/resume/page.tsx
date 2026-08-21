@@ -447,6 +447,10 @@ const Resume = () => {
 										<h3 className="text-uppercase resume-section-heading mb-4">Awards</h3>
 										<ul className="list-unstyled resume-awards-list">
 											<li className="mb-3">
+												<div className="font-weight-bold">Employee of the Year</div>
+												<div className="text-muted">Roxnor (2025)</div>
+											</li>
+											<li className="mb-3">
 												<div className="font-weight-bold">Emerging Scrum Master</div>
 												<div className="text-muted">XpeedStudio (2023)</div>
 											</li>
