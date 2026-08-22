@@ -11,6 +11,16 @@ const Projects = ({ hide = false }) => {
 
 	const [projects, setProjects] = useState([
 		{
+			title: "Forminator Forms – Contact Form, Payment Form & Custom Form Builder",
+			slug: "forminator",
+			category: "WordPress Plugin",
+			author: "WPMU DEV",
+			banner: "https://ps.w.org/forminator/assets/banner-1544x500.png",
+			link: "https://wordpress.org/plugins/forminator/",
+			description: "Forminator is a powerful and flexible form builder plugin for WordPress that allows you to create and manage contact forms, payment forms, and custom forms with ease. It offers a wide range of features, including form fields, validation, email notifications, and integrations with popular services like Mailchimp, Zapier, and more.",
+			activeInstalls: 600000,
+		},
+		{
 			title: "ElementsKit - Elementor Addons",
 			slug: "elementskit-lite",
 			category: "WordPress Plugin",
@@ -98,7 +108,7 @@ const Projects = ({ hide = false }) => {
 							projects.map((project, index) => {
 								const isLastTwo = index >= projects.length - 2;
 								const projectDescription = letterLimit(stripHtml(project.description), 250);
-								var projectActiveInstall = formatInstalls(project?.activeInstalls);
+								const projectActiveInstall = formatInstalls(project?.activeInstalls);
 								return (
 									<div className={`col-md-6 ${isLastTwo ? "" : "mb-4"}`} key={index}>
 										<div className="card project-card">
