@@ -65,7 +65,7 @@ const Projects = ({ hide = false }) => {
 			slug: "shopengine",
 			category: "WordPress Plugin",
 			author: "Wpmet",
-			banner: "https://ps.w.org/table-builder-block/assets/banner-1544x500.jpg",
+			banner: "https://ps.w.org/shopengine/assets/banner-1544x500.png?rev=2544154",
 			link: "https://wordpress.org/plugins/shopengine/",
 			description: "ShopEngine is the most complete WooCommerce Builder for Elementor. The all-in-one Elementor WooCommerce addon that replaces dozens of separate plugins. Build every page of your WooCommerce store: shop page builder, cart page builder, checkout builder, single product builder, and My Account builder, all with drag-and-drop.",
 			activeInstalls: 500,
