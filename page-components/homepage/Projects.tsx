@@ -61,7 +61,7 @@ const Projects = ({ hide = false }) => {
 			activeInstalls: 500,
 		},
 		{
-			title: "ShopEngine - ShopEngine Elementor WooCommerce Builder Addon",
+			title: "ShopEngine - Elementor WooCommerce Builder Addon",
 			slug: "shopengine",
 			category: "WordPress Plugin",
 			author: "Wpmet",
