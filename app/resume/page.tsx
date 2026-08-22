@@ -123,7 +123,7 @@ const Resume = () => {
 													<a className="text-muted text-decoration-none" href="https://roxnor.com/"
 														target="_blank">
 														Roxnor
-													</a> | 2021 - Present
+													</a> | 2021 - 2025
 												</div>
 											</div>
 											<div className="item-content">
