@@ -11,13 +11,13 @@ const Projects = ({ hide = false }) => {
 
 	const [projects, setProjects] = useState([
 		{
-			title: "Forminator Forms – Contact Form, Payment Form & Custom Form Builder",
+			title: "Forminator Forms – Form Builder",
 			slug: "forminator",
 			category: "WordPress Plugin",
 			author: "WPMU DEV",
 			banner: "https://ps.w.org/forminator/assets/banner-1544x500.png",
 			link: "https://wordpress.org/plugins/forminator/",
-			description: "Forminator is a powerful and flexible form builder plugin for WordPress that allows you to create and manage contact forms, payment forms, and custom forms with ease. It offers a wide range of features, including form fields, validation, email notifications, and integrations with popular services like Mailchimp, Zapier, and more.",
+			description: "Not your typical form-making plugin. Forminator is the easy-to-use WordPress form builder plugin for every website and situation. It’s the easiest way to create any form – contact form, order form, payment form, email form, feedback widgets, interactive polls with real-time results, buzzfeed-style “no wrong answer” quizzes, service estimators, and registration forms with payment options including PayPal and Stripe.",
 			activeInstalls: 600000,
 		},
 		{
@@ -58,6 +58,16 @@ const Projects = ({ hide = false }) => {
 			banner: "https://ps.w.org/table-builder-block/assets/banner-1544x500.jpg",
 			link: "https://wordpress.org/plugins/table-builder-block/",
 			description: "Fully Customizable. Multi - Media Integration. Synch Any Data Files. All Within Block Editor. That’s TableKit - Table Builder Block by Wpmet! An ultimate table builder solution that empowers you to create any type of table design without touching a single line of code. Generating highly functional",
+			activeInstalls: 500,
+		},
+		{
+			title: "ShopEngine - ShopEngine Elementor WooCommerce Builder Addon",
+			slug: "shopengine",
+			category: "WordPress Plugin",
+			author: "Wpmet",
+			banner: "https://ps.w.org/table-builder-block/assets/banner-1544x500.jpg",
+			link: "https://wordpress.org/plugins/shopengine/",
+			description: "ShopEngine is the most complete WooCommerce Builder for Elementor. The all-in-one Elementor WooCommerce addon that replaces dozens of separate plugins. Build every page of your WooCommerce store: shop page builder, cart page builder, checkout builder, single product builder, and My Account builder, all with drag-and-drop.",
 			activeInstalls: 500,
 		},
 	]);
