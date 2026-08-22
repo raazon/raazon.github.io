@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# raazon.com
 
-## Getting Started
+Personal portfolio site for [Razon Komar Pal](https://raazon.com/). Built with Next.js and published as a static export on GitHub Pages.
 
-First, run the development server:
+| Branch | Purpose |
+| --- | --- |
+| `development` | Source code. Do all work here. |
+| `master` | Built static files only. GitHub Pages serves this branch (`/` root). |
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Do not merge `development` into `master`.
+
+## Project structure
+
+```text
+.
+├── app/                      # Next.js App Router pages
+│   ├── layout.tsx            # Root layout, fonts, analytics
+│   ├── page.tsx              # Homepage
+│   ├── metadata.tsx          # Site metadata
+│   └── resume/               # Resume page
+├── page-components/          # Page-level sections
+│   ├── homepage/             # Overview, projects, skills, posts
+│   └── project/
+├── components/               # Shared UI
+│   ├── header/
+│   ├── footer/
+│   └── icon/
+├── utils/                    # Helpers (site config, formatting)
+├── styles/                   # Global SCSS
+├── public/                   # Static assets copied into the export
+│   ├── assets/               # CSS, images, JS plugins
+│   ├── CNAME                 # Custom domain: raazon.com
+│   └── .nojekyll             # Required so GitHub Pages serves _next/
+├── next.config.ts            # Static export config
+├── package.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Getting started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Work on the `development` branch:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+git checkout development
+npm install
+npm run dev
+```
 
-## Learn More
+Open [http://localhost:3000](http://localhost:3000).
 
-To learn more about Next.js, take a look at the following resources:
+| Command | What it does |
+| --- | --- |
+| `npm run dev` | Local development server |
+| `npm run build` | Production static export to `out/` |
+| `npm run lint` | Lint the project |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy to GitHub Pages
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Commit your changes on `development`, then publish the static build to `master`.
 
-## Deploy on Vercel
+1. Build:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. Switch to `master` and replace it with the new `out/` files:
+
+```bash
+git checkout master
+git rm -rf .
+cp -R out/. .
+```
+
+3. Keep a small `.gitignore` so leftover folders are not committed:
+
+```bash
+printf '%s\n' 'node_modules/' '.next/' 'out/' '.env' '.DS_Store' '.vscode/' > .gitignore
+```
+
+4. Commit and push `master` (that is what GitHub Pages serves):
+
+```bash
+git add -A
+git commit -m "Update site"
+git push origin master
+```
+
+5. Switch back to work:
+
+```bash
+git checkout development
+```
+
+Wait 1–2 minutes, then hard-refresh [https://raazon.com/](https://raazon.com/).
