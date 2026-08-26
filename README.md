@@ -93,3 +93,18 @@ git checkout development
 ```
 
 Wait 1–2 minutes, then hard-refresh [https://raazon.com/](https://raazon.com/).
+
+
+## All commands togather
+```
+git checkout development                                                     ✔  9s  10:53:06 AM 
+npm run build
+git checkout master
+git rm -rf .
+cp -R out/. .
+printf '%s\n' 'node_modules/' '.next/' 'out/' '.env' '.DS_Store' '.vscode/' > .gitignore
+git add -A
+git commit -m "Update site"
+git push origin master
+git checkout development
+```
