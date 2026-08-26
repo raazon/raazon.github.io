@@ -55,11 +55,11 @@ export default function RootLayout({
 				<Footer />
 
 				<Script
-					src="./assets/plugins/popper.min.js"
+					src="/assets/plugins/popper.min.js"
 					strategy="beforeInteractive"
 				/>
 				<Script
-					src="./assets/plugins/bootstrap/js/bootstrap.min.js"
+					src="/assets/plugins/bootstrap/js/bootstrap.min.js"
 					strategy="afterInteractive"
 				/>
 			</body>
