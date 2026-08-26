@@ -325,23 +325,6 @@ const Resume = () => {
 										<div className="item mb-3">
 											<div className="item-heading row align-items-center mb-2">
 												<h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
-													Junior WordPress Developer
-												</h4>
-												<div
-													className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
-													Divine LLC​ | 2013
-												</div>
-											</div>
-											<div className="item-content">
-												<p>At this company, I worked on the development of a custom multi-vendor
-													WooCommerce website. During my internship, I also learned the importance of
-													cross-team collaboration and gained valuable experience working with various
-													teams to achieve project goals.</p>
-											</div>
-										</div>
-										<div className="item">
-											<div className="item-heading row align-items-center mb-2">
-												<h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
 													WordPress Developer Intern
 												</h4>
 												<div
