@@ -49,7 +49,7 @@ const Header: React.FC = () => {
 									</Link>
 								</li>
 								<li className="list-inline-item">
-									<Link href="https://github.com/razon-xs" target="_blank" aria-label="Visit GitHub profile">
+									<Link href={siteConfig.links.github} target="_blank" aria-label="Visit GitHub profile">
 										<Icon name="github" className="svg-inline--fa" />
 									</Link>
 								</li>
