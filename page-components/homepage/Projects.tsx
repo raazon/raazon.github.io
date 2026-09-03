@@ -11,16 +11,6 @@ const Projects = ({ hide = false }) => {
 
 	const [projects, setProjects] = useState([
 		{
-			title: "Forminator Forms – Form Builder",
-			slug: "forminator",
-			category: "WordPress Plugin",
-			author: "WPMU DEV",
-			banner: "https://ps.w.org/forminator/assets/banner-1544x500.png",
-			link: "https://wordpress.org/plugins/forminator/",
-			description: "Not your typical form-making plugin. Forminator is the easy-to-use WordPress form builder plugin for every website and situation. It’s the easiest way to create any form – contact form, order form, payment form, email form, feedback widgets, interactive polls with real-time results, buzzfeed-style “no wrong answer” quizzes, service estimators, and registration forms with payment options including PayPal and Stripe.",
-			activeInstalls: 600000,
-		},
-		{
 			title: "ElementsKit - Elementor Addons",
 			slug: "elementskit-lite",
 			category: "WordPress Plugin",
@@ -29,6 +19,16 @@ const Projects = ({ hide = false }) => {
 			link: "https://wordpress.org/plugins/elementskit-lite/",
 			description: "ElementsKit Elementor addons is an ultimate and all - in - one addons for Elementor Page Builder. It brings the most comprehensive solution with 90+ Elementor widgets, 18+ modules, and 900+ pre - designed Elementor templates. Everything is accessible through an easy drag - and - drop interface, including features like header - footer builder",
 			activeInstalls: 1000000,
+		},
+		{
+			title: "Forminator Forms – Form Builder",
+			slug: "forminator",
+			category: "WordPress Plugin",
+			author: "WPMU DEV",
+			banner: "https://ps.w.org/forminator/assets/banner-1544x500.png",
+			link: "https://wordpress.org/plugins/forminator/",
+			description: "Not your typical form-making plugin. Forminator is the easy-to-use WordPress form builder plugin for every website and situation. It’s the easiest way to create any form – contact form, order form, payment form, email form, feedback widgets, interactive polls with real-time results, buzzfeed-style “no wrong answer” quizzes, service estimators, and registration forms with payment options including PayPal and Stripe.",
+			activeInstalls: 600000,
 		},
 		{
 			title: "GutenKit – Gutenberg Blocks",

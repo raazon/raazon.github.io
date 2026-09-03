@@ -58,19 +58,29 @@ const AboutMe: FC = () => {
 								target="_blank"
 								rel="noreferrer"
 							>
-								<Icon name="circleRight" className="svg-inline--fa me-2" />
+								<Icon name="circleRight" className="svg-inline--fa me-2 mb-1" />
 								<span className="d-none d-md-inline">View</span>
 								{` GitHub `}
 							</Link>
 							<Link href="/portfolio" className="btn btn-primary me-2 mb-3 d-none">
-								<Icon name="circleRight" className="svg-inline--fa me-2" />
+								<Icon name="circleRight" className="svg-inline--fa me-2 mb-1" />
 								<span className="d-none d-md-inline">View</span>
 								{` Portfolio `}
 							</Link>
-							<Link href="/resume" className="btn btn-secondary mb-3">
-								<Icon name="fileLines" className="svg-inline--fa me-2" />
+							<Link href="/resume" className="btn btn-secondary me-2 mb-3">
+								<Icon name="fileLines" className="svg-inline--fa me-2 mb-1" />
 								<span className="d-none d-md-inline">View</span>
 								{` Resume `}
+							</Link>
+							<Link
+								className="btn btn-primary mb-3"
+								href={siteConfig.links.calendly}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<Icon name="calendarCheck" className="svg-inline--fa me-2 mb-1" />
+								<span className="d-none d-md-inline">Book a</span>
+								{` Call `}
 							</Link>
 						</div>
 					</div>
