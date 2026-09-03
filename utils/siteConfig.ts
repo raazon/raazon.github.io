@@ -9,6 +9,7 @@ export const siteConfig = {
 		twitter: process.env.NEXT_PUBLIC_TWITTER_LINK || "",
 		github: process.env.NEXT_PUBLIC_GITHUB_LINK || "",
 		linkedin: process.env.NEXT_PUBLIC_LINKEDIN_LINK || "",
+		calendly: process.env.NEXT_PUBLIC_CALENDLY_LINK || "",
 	},
 };
 

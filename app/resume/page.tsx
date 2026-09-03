@@ -1,4 +1,5 @@
 import Icon from "@/components/icon/Icon";
+import DownloadResumeButton from "@/components/resume/DownloadResumeButton";
 import { siteConfig } from "@/utils/siteConfig";
 import profilePic from '@assets/images/profile.jpg';
 import Image from 'next/image';
@@ -10,20 +11,17 @@ const Resume = () => {
 		<>
 			<div className="main-wrapper">
 				{/* cta-section */}
-				<section className="cta-section theme-bg-light py-5 d-none">
+				<section className="cta-section theme-bg-light py-5">
 					<div className="container text-center single-col-max-width">
 						<h2 className="heading mb-3">Online Resume</h2>
-						<button className="btn btn-primary" id="download-btn">
-							<i className="fas fa-file-pdf me-2"></i>
-							Download PDF Version
-						</button>
+						<DownloadResumeButton name={siteConfig.name} />
 					</div>
 				</section>
 				{/* cta-section end */}
 
 				{/* resume */}
 				<div className="container resume-container px-3 px-lg-5">
-					<article className="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
+					<article id="resume" className="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
 						<div className="resume-header">
 							<div className="row align-items-center">
 								<div className="resume-title col-12 col-md-6 col-lg-8 col-xl-9">

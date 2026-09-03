@@ -4,3 +4,41 @@
 		font-size: 24px;
 	}
 }
+
+#download-btn svg {
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.125em;
+}
+
+body.resume-pdf-export {
+	background: #ffffff !important;
+
+	#resume,
+	.resume-wrapper {
+		background: #ffffff !important;
+		border: none !important;
+		box-shadow: none !important;
+	}
+}
+
+@media print {
+	header,
+	footer,
+	.cta-section {
+		display: none !important;
+	}
+
+	.resume-wrapper {
+		box-shadow: none !important;
+		margin: 0 !important;
+		max-width: 100% !important;
+	}
+
+	.resume-header,
+	.resume-intro,
+	.item {
+		break-inside: avoid;
+		page-break-inside: avoid;
+	}
+}
