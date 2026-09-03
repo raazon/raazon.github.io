@@ -32,17 +32,17 @@ const Resume = () => {
 								</div>
 								<div className="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
 									<ul className="list-unstyled mb-0">
-										<li className="mb-2 d-none">
+										<li className="mb-2">
 											<svg className="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M384 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h320c35.35 0 64-28.65 64-64V96C448 60.65 419.3 32 384 32zM351.6 321.5l-11.62 50.39c-1.633 7.125-7.9 12.11-15.24 12.11c-126.1 0-228.7-102.6-228.7-228.8c0-7.328 4.984-13.59 12.11-15.22l50.38-11.63c7.344-1.703 14.88 2.109 17.93 9.062l23.27 54.28c2.719 6.391 .8828 13.83-4.492 18.22L168.3 232c16.99 34.61 45.14 62.75 79.77 79.75l22.02-26.91c4.344-5.391 11.85-7.25 18.24-4.484l54.24 23.25C349.5 306.6 353.3 314.2 351.6 321.5z"></path></svg>
 											<a className="resume-link" href="tel:+8801742259068">0174 2259 068</a>
 										</li>
-										<li className="mb-2 d-none">
+										<li className="mb-2">
 											<svg className="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M384 32H64C28.63 32 0 60.63 0 96v320c0 35.38 28.62 64 64 64h320c35.38 0 64-28.62 64-64V96C448 60.63 419.4 32 384 32zM384 336c0 17.67-14.33 32-32 32H96c-17.67 0-32-14.33-32-32V225.9l138.5 69.27C209.3 298.5 216.6 300.2 224 300.2s14.75-1.688 21.47-5.047L384 225.9V336zM384 190.1l-152.8 76.42c-4.5 2.25-9.812 2.25-14.31 0L64 190.1V176c0-17.67 14.33-32 32-32h256c17.67 0 32 14.33 32 32V190.1z"></path></svg>
 											<a className="resume-link" href="mailto:raazzon@gmail.com">
 												raazzon@gmail.com
 											</a>
 										</li>
-										<li className="mb-2">
+										<li className="mb-2 d-none">
 											<svg className="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
 											<a className="resume-link" href={siteConfig.links.github}>@raazon</a>
 										</li>
@@ -53,7 +53,7 @@ const Resume = () => {
 										<li className="mb-0">
 											<svg className="me-2"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
 												<path fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg>
-											Dhaka
+											Dhaka, Bangladesh
 										</li>
 									</ul>
 								</div>
@@ -68,7 +68,7 @@ const Resume = () => {
 									<Image
 										src={profilePic}
 										alt="Profile Image"
-										className="resume-profile-image mb-3 mb-md-0 me-md-5  ms-md-0 rounded mx-auto"
+										className="resume-profile-image mb-3 mb-md-0 me-md-5  ms-md-0 rounded-circle mx-auto"
 										width={120}
 										height={120}
 									/>
@@ -95,7 +95,7 @@ const Resume = () => {
 													<a className="text-muted text-decoration-none" href="https://wpmudev.com/"
 														target="_blank">
 														WPMU DEV
-													</a> | 2025 - Present
+													</a> | 2025 - 2026
 												</div>
 											</div>
 											<div className="item-content">
@@ -117,7 +117,9 @@ const Resume = () => {
 										</div>
 										<div className="item mb-3">
 											<div className="item-heading row align-items-center mb-2">
-												<h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Senior Web Developer</h4>
+												<h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
+													Senior Full-Stack Web Developer
+												</h4>
 												<div
 													className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
 													<a className="text-muted text-decoration-none" href="https://roxnor.com/"
@@ -164,7 +166,7 @@ const Resume = () => {
 										<div className="item mb-3">
 											<div className="item-heading row align-items-center mb-2">
 												<h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
-													WordPress Theme and Plugin Developer
+													Full-Stack WordPress Developer
 												</h4>
 												<div
 													className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
@@ -234,11 +236,11 @@ const Resume = () => {
 										<div className="item mb-3">
 											<div className="item-heading row align-items-center mb-2">
 												<h4 className="item-title col-12 col-md-6 col-lg-6 mb-2 mb-md-0">
-													Web Developer( Remote Job)
+													Web Developer
 												</h4>
 												<div
 													className="item-meta col-12 col-md-6 col-lg-6 text-muted text-start text-md-end">
-													Prestige Brokers Group LLC | 2015 - 2016
+													Prestige Brokers Group LLC | Remote | 2015 - 2016
 												</div>
 											</div>
 											<div className="item-content">
@@ -262,11 +264,11 @@ const Resume = () => {
 										<div className="item mb-3">
 											<div className="item-heading row align-items-center mb-2">
 												<h4 className="item-title col-12 col-md-6 col-lg-6 mb-2 mb-md-0">
-													WP Specialist( Remote Job )
+													WordPress Developer
 												</h4>
 												<div
 													className="item-meta col-12 col-md-6 col-lg-6 text-muted text-start text-md-end">
-													Euroboats Yachtcharter GmbH | 2014 - 2014
+													Euroboats Yachtcharter GmbH | Remote | 2014 - 2014
 												</div>
 											</div>
 											<div className="item-content">
@@ -290,7 +292,7 @@ const Resume = () => {
 										<div className="item">
 											<div className="item-heading row align-items-center mb-2">
 												<h4 className="item-title col-12 col-md-6 col-lg-6 mb-2 mb-md-0">
-													Online Marketplaces( Remote Job )
+													Online Marketplaces
 												</h4>
 												<div
 													className="item-meta col-12 col-md-6 col-lg-6 text-muted text-start text-md-end">
