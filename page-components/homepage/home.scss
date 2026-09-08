@@ -99,7 +99,11 @@
 .project-badge {
 	right: 12px;
 	top: 12px;
+	// Sit above banner animations so the category label stays readable.
+	z-index: 3;
 	font-size: 0.7em;
 	// background: #151e29e6;
 	background: rgb(84 182 137 / 90%);
 }
+
+// Banner animation styles live in animations/*.scss (imported from index.tsx).

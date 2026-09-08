@@ -5,6 +5,7 @@ import { skipAllCapsPrefix, stripHtml } from "@/utils/stripHtml";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { isProjectAnimation, ProjectBannerAnimation } from "./animations";
 
 const Projects = ({ hide = false }) => {
 	if (hide) return null;
@@ -30,6 +31,8 @@ const Projects = ({ hide = false }) => {
 			// description: "PR Review is an AI-powered GitHub pull request reviewer. Paste a PR URL, pick a model, and get a structured verdict with findings you can copy or post back as a comment. API keys stay in your browser. It flags security and quality issues, then tells you whether the PR looks safe to merge or needs changes. Sign in to review private repos or post the result as a GitHub comment.",
 			description: "Review GitHub pull requests with Claude, OpenAI, Gemini, and free-tier providers. Visitors paste a PR URL; the review runs on a Cloudflare Worker (diff fetch, prompt, model call), not in the browser. Optional GitHub sign-in for private repos and posting the review as a comment.",
 			stat: "7 AI Providers",
+			// Banner overlay. Current types: 'sparkle' | 'aladdin'. Add more in animations/registry.ts.
+			animation: "sparkle",
 		},
 		{
 			title: "Forminator Forms — Form Builder",
@@ -136,9 +139,12 @@ const Projects = ({ hide = false }) => {
 								const projectStat = project.category === "WordPress Plugin"
 									? `${formatInstalls(project?.activeInstalls)}+ Active Installations`
 									: project.stat;
+								const projectAnimation = isProjectAnimation(project.animation)
+									? project.animation
+									: undefined;
 								return (
 									<div className={`col-md-6 ${isLastTwo ? "" : "mb-4"}`} key={index}>
-										<div className="card project-card h-100">
+										<div className={`card project-card h-100${projectAnimation ? " project-card--animated" : ""}`}>
 											<div className="row no-gutters">
 												<div className="col-12 card-img-holder">
 													<Link href={project.link} className="d-block position-relative" target="_blank" rel="noopener noreferrer">
@@ -152,6 +158,7 @@ const Projects = ({ hide = false }) => {
 															height={500}
 															className="card-img h-auto"
 														/>
+														<ProjectBannerAnimation name={projectAnimation} />
 													</Link>
 												</div>
 												<div className="col-12">

@@ -1,0 +1,53 @@
+// Shared by every banner animation (sparkle, aladdin, future types).
+// Clip to the banner so title/description stay readable.
+.featured-section .project-card--animated .card-img-holder {
+	position: relative;
+	overflow: hidden;
+	isolation: isolate;
+}
+
+// Full-bleed layer over the banner only. pointer-events: none so the
+// image/title links still work while the animation plays on the photo.
+.project-anim-stage {
+	position: absolute;
+	inset: 0;
+	z-index: 2;
+	overflow: hidden;
+	pointer-events: none;
+}
+
+.anim-sparkle-icon {
+	display: block;
+	width: 36px;
+	height: 36px;
+	overflow: visible;
+	filter: drop-shadow(0 0 8px rgba(74, 163, 255, 0.45))
+		drop-shadow(0 0 14px rgba(139, 92, 246, 0.28));
+}
+
+.anim-sparkle-icon__blue {
+	fill: #4aa3ff;
+}
+
+.anim-sparkle-icon__purple {
+	fill: #8b5cf6;
+}
+
+.anim-sparkle-icon--mid {
+	width: 20px;
+	height: 20px;
+	opacity: 0.72;
+	filter: drop-shadow(0 0 8px rgba(139, 92, 246, 0.45));
+}
+
+.anim-sparkle-icon--tiny {
+	width: 12px;
+	height: 12px;
+	opacity: 0.55;
+	filter: drop-shadow(0 0 6px rgba(74, 163, 255, 0.5));
+}
+
+.dark-mode .anim-sparkle-icon {
+	filter: drop-shadow(0 0 12px rgba(74, 163, 255, 0.7))
+		drop-shadow(0 0 22px rgba(139, 92, 246, 0.45));
+}
