@@ -21,6 +21,16 @@ const Projects = ({ hide = false }) => {
 			activeInstalls: 1000000,
 		},
 		{
+		  title: "PR Review — AI Pull Request Reviewer",
+		  slug: "pr-review",
+		  category: "Web Application",
+		  author: "Razon",
+		  banner: "https://pr-review.razonkumar.workers.dev/assets/banner.svg",
+		  link: "https://pr-review.razonkumar.workers.dev/",
+		  description:
+			"PR Review is an AI pull request reviewer for GitHub. Paste a public PR URL to get a structured review with a verdict and file-level findings. The pipeline runs on a Cloudflare Worker: it fetches the diff, builds the prompt, and calls Claude, OpenAI, Google AI Studio, Groq, and other providers. Sign in with GitHub only for private repositories or to post the review as a comment.",
+		},
+		{
 			title: "Forminator Forms – Form Builder",
 			slug: "forminator",
 			category: "WordPress Plugin",

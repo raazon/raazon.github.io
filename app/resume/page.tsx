@@ -375,7 +375,7 @@ const Resume = () => {
 														AI Pull Request Reviewer
 													</a>
 												</h4>
-												<div className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">Open Source</div>
+												<div className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">Web Application</div>
 											</div>
 											<div className="item-content">
 												<p>Review GitHub pull requests with Claude, OpenAI, Gemini, and free-tier providers. Visitors paste a PR URL; the review runs on a Cloudflare Worker (diff fetch, prompt, model call), not in the browser. Optional GitHub sign-in for private repos and posting the review as a comment.</p>
