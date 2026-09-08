@@ -2,6 +2,7 @@ import Icon from '@/components/icon/Icon';
 import { siteConfig } from "@/utils/siteConfig";
 import Link from 'next/link';
 import { FC } from 'react';
+import { anthropic, n8n, openai, openclaw } from './AiSkillIcons';
 import { bootstrap, css3, docker, gitAlt, gutenberg, html5, jQuery, js, nextjs, npm, php, php2, playwright, plugin, react, saas, shopify, tailwind, terminal, theme, ts, vscode, vue, webhook, webpack, wordpressSimple } from './SkillsIcons';
 
 const Overview: FC = () => {
@@ -151,6 +152,33 @@ const Overview: FC = () => {
 			labelBgColor: "#1D63ED",
 			logo: docker,
 			style: "for-the-badge",
+		},
+	];
+
+	const aiSkills = [
+		{
+			label: "OpenAI",
+			labelColor: "#ffffff",
+			labelBgColor: "#10a37f",
+			logo: openai,
+		},
+		{
+			label: "Claude",
+			labelColor: "#ffffff",
+			labelBgColor: "#d97757",
+			logo: anthropic,
+		},
+		{
+			label: "n8n",
+			labelColor: "#ffffff",
+			labelBgColor: "#ea4b71",
+			logo: n8n,
+		},
+		{
+			label: "OpenClaw",
+			labelColor: "#ffffff",
+			labelBgColor: "#ff4d4d",
+			logo: openclaw,
 		},
 	];
 
@@ -328,6 +356,24 @@ const Overview: FC = () => {
 								key={index}
 							>
 								{tool.logo} {tool.label}
+							</span>
+						))}
+					</div>
+				</div>
+
+				<div className="row gap-1 mt-4">
+					<h3 className="item-title">AI</h3>
+					<div className="my-skills">
+						{aiSkills.map((skill, index) => (
+							<span
+								className="skill-item rounded"
+								style={{
+									backgroundColor: skill.labelBgColor,
+									color: skill.labelColor,
+								}}
+								key={index}
+							>
+								{skill.logo} {skill.label}
 							</span>
 						))}
 					</div>
