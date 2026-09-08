@@ -163,7 +163,7 @@ const Overview: FC = () => {
 			logo: openai,
 		},
 		{
-			label: "Claude",
+			label: "Anthropic",
 			labelColor: "#ffffff",
 			labelBgColor: "#d97757",
 			logo: anthropic,
