@@ -366,18 +366,19 @@ const Resume = () => {
 												</p>
 											</div>
 										</div>
-										<div className="item d-none">
+										<div className="item">
 											<div className="item-heading row align-items-center mb-2">
-												<h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Project Praesent
+												<h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
+													<a className="theme-link"
+														href="https://pr-review.razonkumar.workers.dev/"
+														target="_blank">
+														AI Pull Request Reviewer
+													</a>
 												</h4>
-												<div
-													className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
-													Open Source</div>
+												<div className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">Open Source</div>
 											</div>
 											<div className="item-content">
-												<p>You can use this section for your side projects. Cras dapibus. Vivamus
-													elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-													porttitor eu, consequat vitae, eleifend ac, enim.</p>
+												<p>Review GitHub pull requests with Claude, OpenAI, Gemini, and free-tier providers. Visitors paste a PR URL; the review runs on a Cloudflare Worker (diff fetch, prompt, model call), not in the browser. Optional GitHub sign-in for private repos and posting the review as a comment.</p>
 											</div>
 										</div>
 									</section>
