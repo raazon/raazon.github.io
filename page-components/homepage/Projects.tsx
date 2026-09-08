@@ -1,6 +1,6 @@
 import { formatInstalls } from "@/utils/formatNumber";
 import { letterLimit } from "@/utils/letterLimit";
-import { stripHtml } from "@/utils/stripHtml";
+import { skipAllCapsPrefix, stripHtml } from "@/utils/stripHtml";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -25,7 +25,7 @@ const Projects = ({ hide = false }) => {
 			slug: "pr-review",
 			category: "AI Web App",
 			author: "Razon",
-			banner: "https://pr-review.razonkumar.workers.dev/assets/banner-1544x500.png",
+			banner: "/assets/images/projects/pr-review-banner-1544x500.jpg",
 			link: "https://pr-review.razonkumar.workers.dev/",
 			description: "PR Review is an AI-powered GitHub pull request reviewer. Paste a PR URL, pick a model, and get a structured verdict with findings you can copy or post back as a comment. API keys stay in your browser. It flags security and quality issues, then tells you whether the PR looks safe to merge or needs changes. Sign in to review private repos or post the result as a GitHub comment.",
 			stat: "7 AI Providers",
@@ -39,6 +39,16 @@ const Projects = ({ hide = false }) => {
 			link: "https://wordpress.org/plugins/forminator/",
 			description: "Not your typical form-making plugin. Forminator is the easy-to-use WordPress form builder plugin for every website and situation. It’s the easiest way to create any form – contact form, order form, payment form, email form, feedback widgets, interactive polls with real-time results, buzzfeed-style “no wrong answer” quizzes, service estimators, and registration forms with payment options including PayPal and Stripe.",
 			activeInstalls: 600000,
+		},
+		{
+			title: "ShopEngine — Elementor WooCommerce Page Builder",
+			slug: "shopengine",
+			category: "WordPress Plugin",
+			author: "Wpmet",
+			banner: "https://ps.w.org/shopengine/assets/banner-1544x500.png?rev=2544154",
+			link: "https://wordpress.org/plugins/shopengine/",
+			description: "ShopEngine is the most complete WooCommerce Builder for Elementor. The all-in-one Elementor WooCommerce addon that replaces dozens of separate plugins. Build every page of your WooCommerce store: shop page builder, cart page builder, checkout builder, single product builder, and My Account builder, all with drag-and-drop.",
+			activeInstalls: 100,
 		},
 		{
 			title: "GutenKit — Gutenberg Blocks",
@@ -70,16 +80,6 @@ const Projects = ({ hide = false }) => {
 			description: "Fully Customizable. Multi - Media Integration. Synch Any Data Files. All Within Block Editor. That’s TableKit - Table Builder Block by Wpmet! An ultimate table builder solution that empowers you to create any type of table design without touching a single line of code. Generating highly functional",
 			activeInstalls: 500,
 		},
-		{
-			title: "ShopEngine — Elementor WooCommerce Page Builder",
-			slug: "shopengine",
-			category: "WordPress Plugin",
-			author: "Wpmet",
-			banner: "https://ps.w.org/shopengine/assets/banner-1544x500.png?rev=2544154",
-			link: "https://wordpress.org/plugins/shopengine/",
-			description: "ShopEngine is the most complete WooCommerce Builder for Elementor. The all-in-one Elementor WooCommerce addon that replaces dozens of separate plugins. Build every page of your WooCommerce store: shop page builder, cart page builder, checkout builder, single product builder, and My Account builder, all with drag-and-drop.",
-			activeInstalls: 100,
-		},
 	]);
 
 	useEffect(() => {
@@ -99,10 +99,7 @@ const Projects = ({ hide = false }) => {
 
 						return {
 							...project,
-							// author: stripHtml(data?.author),
-							description: (() => {
-								return stripHtml(desc);
-							})(),
+							description: skipAllCapsPrefix(stripHtml(desc)),
 							activeInstalls: data?.active_installs,
 							numRatings: data?.num_ratings || "N/A",
 							rating: data?.rating || "N/A",
@@ -131,13 +128,16 @@ const Projects = ({ hide = false }) => {
 						{
 							projects.map((project, index) => {
 								const isLastTwo = index >= projects.length - 2;
-								const projectDescription = letterLimit(stripHtml(project.description), 250);
+								const projectDescription = letterLimit(
+									skipAllCapsPrefix(stripHtml(project.description)),
+									250
+								);
 								const projectStat = project.category === "WordPress Plugin"
 									? `${formatInstalls(project?.activeInstalls)}+ Active Installations`
 									: project.stat;
 								return (
 									<div className={`col-md-6 ${isLastTwo ? "" : "mb-4"}`} key={index}>
-										<div className="card project-card">
+										<div className="card project-card h-100">
 											<div className="row no-gutters">
 												<div className="col-12 card-img-holder">
 													<Link href={project.link} className="d-block position-relative" target="_blank" rel="noopener noreferrer">

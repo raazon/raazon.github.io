@@ -78,6 +78,18 @@
 }
 
 // Project css - featured-section
+.featured-section .project-card {
+	height: 100%;
+
+	.card-body > .card-text:not(.card-footer) {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 4;
+		line-clamp: 4;
+		overflow: hidden;
+	}
+}
+
 .featured-section .card-footer {
 	background-color: transparent;
 	border-top: 1px solid #dcdcde;
