@@ -396,6 +396,9 @@ const Resume = () => {
 												<li className="mb-2">WP-CLI/JavaScript/React/Vue</li>
 												<li className="mb-2">TypeScript/jQuery/jQuery UI</li>
 												<li className="mb-2">Plugin/Theme Development</li>
+												<li className="mb-2">AI/LLM Integrations</li>
+												<li className="mb-2">AI-assisted Development</li>
+												<li className="mb-2">n8n/OpenClaw</li>
 												<li className="mb-2">HTML/CSS/SASS/Tailwind</li>
 												<li className="mb-2">NPM/Gulp/Webpack/GruntJS</li>
 												<li className="mb-2">Gitflow/CI-CD/SVN</li>
