@@ -11,7 +11,7 @@ const Projects = ({ hide = false }) => {
 
 	const [projects, setProjects] = useState([
 		{
-			title: "ElementsKit - Elementor Addons",
+			title: "ElementsKit — Elementor Addons",
 			slug: "elementskit-lite",
 			category: "WordPress Plugin",
 			author: "Roxnor",
@@ -21,17 +21,17 @@ const Projects = ({ hide = false }) => {
 			activeInstalls: 1000000,
 		},
 		{
-		  title: "PR Review — AI Pull Request Reviewer",
-		  slug: "pr-review",
-		  category: "Web Application",
-		  author: "Razon",
-		  banner: "https://pr-review.razonkumar.workers.dev/assets/banner.svg",
-		  link: "https://pr-review.razonkumar.workers.dev/",
-		  description:
-			"PR Review is an AI pull request reviewer for GitHub. Paste a public PR URL to get a structured review with a verdict and file-level findings. The pipeline runs on a Cloudflare Worker: it fetches the diff, builds the prompt, and calls Claude, OpenAI, Google AI Studio, Groq, and other providers. Sign in with GitHub only for private repositories or to post the review as a comment.",
+			title: "PR Review — AI Pull Request Reviewer",
+			slug: "pr-review",
+			category: "AI Web App",
+			author: "Razon",
+			banner: "https://pr-review.razonkumar.workers.dev/assets/banner-1544x500.png",
+			link: "https://pr-review.razonkumar.workers.dev/",
+			description: "PR Review is an AI-powered GitHub pull request reviewer. Paste a PR URL, pick a model, and get a structured verdict with findings you can copy or post back as a comment. API keys stay in your browser. It flags security and quality issues, then tells you whether the PR looks safe to merge or needs changes. Sign in to review private repos or post the result as a GitHub comment.",
+			stat: "7 AI Providers",
 		},
 		{
-			title: "Forminator Forms – Form Builder",
+			title: "Forminator Forms — Form Builder",
 			slug: "forminator",
 			category: "WordPress Plugin",
 			author: "WPMU DEV",
@@ -41,7 +41,7 @@ const Projects = ({ hide = false }) => {
 			activeInstalls: 600000,
 		},
 		{
-			title: "GutenKit – Gutenberg Blocks",
+			title: "GutenKit — Gutenberg Blocks",
 			slug: "gutenkit-blocks-addon",
 			category: "WordPress Plugin",
 			author: "Wpmet",
@@ -51,7 +51,7 @@ const Projects = ({ hide = false }) => {
 			activeInstalls: 20000,
 		},
 		{
-			title: "PopupKit - Popup Builder for WordPress",
+			title: "PopupKit — Popup Builder for WordPress",
 			slug: "popup-builder-block",
 			category: "WordPress Plugin",
 			author: "Wpmet",
@@ -61,7 +61,7 @@ const Projects = ({ hide = false }) => {
 			activeInstalls: 10000,
 		},
 		{
-			title: "TableKit - Popup Builder for WordPress",
+			title: "TableKit — Popup Builder for WordPress",
 			slug: "table-builder-block",
 			category: "WordPress Plugin",
 			author: "Wpmet",
@@ -71,7 +71,7 @@ const Projects = ({ hide = false }) => {
 			activeInstalls: 500,
 		},
 		{
-			title: "ShopEngine - Elementor WooCommerce Page Builder",
+			title: "ShopEngine — Elementor WooCommerce Page Builder",
 			slug: "shopengine",
 			category: "WordPress Plugin",
 			author: "Wpmet",
@@ -86,6 +86,10 @@ const Projects = ({ hide = false }) => {
 		const fetchDescriptions = async () => {
 			const updatedProjects = await Promise.all(
 				projects.map(async (project) => {
+					if (project.category !== "WordPress Plugin") {
+						return project;
+					}
+
 					try {
 						const res = await fetch(
 							`https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&request[slug]=${project.slug}`
@@ -128,7 +132,9 @@ const Projects = ({ hide = false }) => {
 							projects.map((project, index) => {
 								const isLastTwo = index >= projects.length - 2;
 								const projectDescription = letterLimit(stripHtml(project.description), 250);
-								const projectActiveInstall = formatInstalls(project?.activeInstalls);
+								const projectStat = project.category === "WordPress Plugin"
+									? `${formatInstalls(project?.activeInstalls)}+ Active Installations`
+									: project.stat;
 								return (
 									<div className={`col-md-6 ${isLastTwo ? "" : "mb-4"}`} key={index}>
 										<div className="card project-card">
@@ -161,9 +167,11 @@ const Projects = ({ hide = false }) => {
 															<small className="text-muted">
 																By {project.author}
 															</small>
-															<small className="text-muted">
-																{projectActiveInstall}+ Active Installations
-															</small>
+															{projectStat && (
+																<small className="text-muted">
+																	{projectStat}
+																</small>
+															)}
 														</p>
 													</div>
 												</div>
