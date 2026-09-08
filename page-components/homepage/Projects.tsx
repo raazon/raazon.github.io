@@ -70,16 +70,16 @@ const Projects = ({ hide = false }) => {
 			description: "The Right Audience, The Perfect Timing, The Ideal Engagement PopupKit - Popup builder plugin by Wpmet can confidently build exceptional popups that boost conversions, make sales, generate leads, display offers, deliver target messages, show videos, capture attention, create surveys, collect feedback",
 			activeInstalls: 10000,
 		},
-		{
-			title: "TableKit — Popup Builder for WordPress",
-			slug: "table-builder-block",
-			category: "WordPress Plugin",
-			author: "Wpmet",
-			banner: "https://ps.w.org/table-builder-block/assets/banner-1544x500.jpg",
-			link: "https://wordpress.org/plugins/table-builder-block/",
-			description: "Fully Customizable. Multi - Media Integration. Synch Any Data Files. All Within Block Editor. That’s TableKit - Table Builder Block by Wpmet! An ultimate table builder solution that empowers you to create any type of table design without touching a single line of code. Generating highly functional",
-			activeInstalls: 500,
-		},
+		// {
+		// 	title: "TableKit — Popup Builder for WordPress",
+		// 	slug: "table-builder-block",
+		// 	category: "WordPress Plugin",
+		// 	author: "Wpmet",
+		// 	banner: "https://ps.w.org/table-builder-block/assets/banner-1544x500.jpg",
+		// 	link: "https://wordpress.org/plugins/table-builder-block/",
+		// 	description: "Fully Customizable. Multi - Media Integration. Synch Any Data Files. All Within Block Editor. That’s TableKit - Table Builder Block by Wpmet! An ultimate table builder solution that empowers you to create any type of table design without touching a single line of code. Generating highly functional",
+		// 	activeInstalls: 500,
+		// },
 	]);
 
 	useEffect(() => {
