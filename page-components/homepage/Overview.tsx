@@ -3,7 +3,7 @@ import { siteConfig } from "@/utils/siteConfig";
 import Link from 'next/link';
 import { FC } from 'react';
 import { aiAgents, llmApi, n8n, openclaw, promptEngineering } from './AiSkillIcons';
-import { bootstrap, css3, docker, gitAlt, gutenberg, html5, jQuery, js, nextjs, npm, php, php2, playwright, plugin, react, saas, shopify, tailwind, terminal, theme, ts, vscode, vue, webhook, webpack, wordpressSimple } from './SkillsIcons';
+import { bootstrap, css3, docker, gitAlt, gutenberg, html5, jQuery, js, nextjs, npm, php, php2, playwright, plugin, react, saas, shopify, tailwind, terminal, theme, ts, vscode, vue, webhook, webpack, woocommerce, wordpressSimple } from './SkillsIcons';
 
 const Overview: FC = () => {
 	const programmingLanguages = [
@@ -209,6 +209,13 @@ const Overview: FC = () => {
 			labelColor: "#ffffff",
 			labelBgColor: "#333333",
 			logo: gutenberg,
+			style: "for-the-badge",
+		},
+		{
+			label: "WooCommerce",
+			labelColor: "#ffffff",
+			labelBgColor: "#7F54B3",
+			logo: woocommerce,
 			style: "for-the-badge",
 		},
 		{
