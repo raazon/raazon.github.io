@@ -3,7 +3,8 @@ import { siteConfig } from "@/utils/siteConfig";
 import Link from 'next/link';
 import { FC } from 'react';
 import { aiAgents, llmApi, n8n, openclaw, promptEngineering } from './AiSkillIcons';
-import { bootstrap, css3, docker, gitAlt, gutenberg, html5, jQuery, js, nextjs, npm, php, php2, playwright, plugin, react, saas, shopify, tailwind, terminal, theme, ts, vscode, vue, webhook, webpack, woocommerce, wordpressSimple } from './SkillsIcons';
+import { acf, agile, aiContent, clipboardCheck, composer, elementor, gauge, graphql, layers, mysql, network, shield, sitemap, users, wpHooks } from './ExtraSkillIcons';
+import { bootstrap, css3, docker, gitAlt, githubAction, gutenberg, html5, jQuery, js, nextjs, npm, php, php2, playwright, plugin, react, saas, shopify, tailwind, terminal, theme, ts, vscode, vue, webhook, webpack, woocommerce, wordpressSimple } from './SkillsIcons';
 
 const Overview: FC = () => {
 	const programmingLanguages = [
@@ -26,6 +27,13 @@ const Overview: FC = () => {
 			labelColor: "#ffffff",
 			labelBgColor: "#3178c6",
 			logo: ts,
+			style: "for-the-badge",
+		},
+		{
+			label: "MySQL",
+			labelColor: "#ffffff",
+			labelBgColor: "#4479A1",
+			logo: mysql,
 			style: "for-the-badge",
 		},
 	];
@@ -60,6 +68,13 @@ const Overview: FC = () => {
 			style: "for-the-badge",
 		},
 		{
+			label: "WPGraphQL",
+			labelColor: "#ffffff",
+			labelBgColor: "#E10098",
+			logo: graphql,
+			style: "for-the-badge",
+		},
+		{
 			label: "Vue",
 			labelColor: "#35495e",
 			labelBgColor: "#42b883",
@@ -83,13 +98,13 @@ const Overview: FC = () => {
 			logo: gitAlt,
 			style: "for-the-badge",
 		},
-		// {
-		// 	label: "GitHub Actions",
-		// 	labelColor: "#ffffff",
-		// 	labelBgColor: "#2088FF",
-		// 	logo: githubAction,
-		// 	style: "for-the-badge",
-		// },
+		{
+			label: "GitHub Actions",
+			labelColor: "#ffffff",
+			labelBgColor: "#2088FF",
+			logo: githubAction,
+			style: "for-the-badge",
+		},
 		{
 			label: "vscode",
 			labelColor: "#ffffff",
@@ -102,6 +117,13 @@ const Overview: FC = () => {
 			labelColor: "#ffffff",
 			labelBgColor: "#cb0001",
 			logo: npm,
+			style: "for-the-badge",
+		},
+		{
+			label: "Composer",
+			labelColor: "#ffffff",
+			labelBgColor: "#885630",
+			logo: composer,
 			style: "for-the-badge",
 		},
 		{
@@ -153,6 +175,20 @@ const Overview: FC = () => {
 			logo: docker,
 			style: "for-the-badge",
 		},
+		{
+			label: "Core Web Vitals",
+			labelColor: "#ffffff",
+			labelBgColor: "#0f9d58",
+			logo: gauge,
+			style: "for-the-badge",
+		},
+		{
+			label: "Caching",
+			labelColor: "#ffffff",
+			labelBgColor: "#0ea5e9",
+			logo: layers,
+			style: "for-the-badge",
+		},
 	];
 
 	const aiSkills = [
@@ -175,6 +211,12 @@ const Overview: FC = () => {
 			logo: promptEngineering,
 		},
 		{
+			label: "AI Content Generation",
+			labelColor: "#ffffff",
+			labelBgColor: "#0f766e",
+			logo: aiContent,
+		},
+		{
 			label: "n8n",
 			labelColor: "#ffffff",
 			labelBgColor: "#ea4b71",
@@ -185,6 +227,33 @@ const Overview: FC = () => {
 			labelColor: "#ffffff",
 			labelBgColor: "#ff4d4d",
 			logo: openclaw,
+		},
+	];
+
+	const leadershipSkills = [
+		{
+			label: "Code Review",
+			labelColor: "#ffffff",
+			labelBgColor: "#334155",
+			logo: clipboardCheck,
+		},
+		{
+			label: "Team Mentorship",
+			labelColor: "#ffffff",
+			labelBgColor: "#0f766e",
+			logo: users,
+		},
+		{
+			label: "Architecture",
+			labelColor: "#ffffff",
+			labelBgColor: "#4338ca",
+			logo: sitemap,
+		},
+		{
+			label: "Agile / Scrum",
+			labelColor: "#ffffff",
+			labelBgColor: "#ea580c",
+			logo: agile,
 		},
 	];
 
@@ -237,6 +306,41 @@ const Overview: FC = () => {
 			labelColor: "#ffffff",
 			labelBgColor: "#0073aa",
 			logo: theme,
+			style: "for-the-badge",
+		},
+		{
+			label: "Elementor",
+			labelColor: "#ffffff",
+			labelBgColor: "#92003B",
+			logo: elementor,
+			style: "for-the-badge",
+		},
+		{
+			label: "ACF",
+			labelColor: "#1a1a1a",
+			labelBgColor: "#00D3AE",
+			logo: acf,
+			style: "for-the-badge",
+		},
+		{
+			label: "WP Hooks",
+			labelColor: "#ffffff",
+			labelBgColor: "#3858e9",
+			logo: wpHooks,
+			style: "for-the-badge",
+		},
+		{
+			label: "Multisite",
+			labelColor: "#ffffff",
+			labelBgColor: "#135e96",
+			logo: network,
+			style: "for-the-badge",
+		},
+		{
+			label: "WP Security",
+			labelColor: "#ffffff",
+			labelBgColor: "#1d4ed8",
+			logo: shield,
 			style: "for-the-badge",
 		},
 		{
@@ -378,6 +482,24 @@ const Overview: FC = () => {
 					<h3 className="item-title">AI & Automation</h3>
 					<div className="my-skills">
 						{aiSkills.map((skill, index) => (
+							<span
+								className="skill-item rounded"
+								style={{
+									backgroundColor: skill.labelBgColor,
+									color: skill.labelColor,
+								}}
+								key={index}
+							>
+								{skill.logo} {skill.label}
+							</span>
+						))}
+					</div>
+				</div>
+
+				<div className="row gap-1 mt-4">
+					<h3 className="item-title">Technical Leadership</h3>
+					<div className="my-skills">
+						{leadershipSkills.map((skill, index) => (
 							<span
 								className="skill-item rounded"
 								style={{
