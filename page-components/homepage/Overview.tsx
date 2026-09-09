@@ -1,408 +1,126 @@
 import Icon from '@/components/icon/Icon';
 import { siteConfig } from "@/utils/siteConfig";
 import Link from 'next/link';
-import { FC } from 'react';
+import { CSSProperties, FC, ReactNode } from 'react';
 import { aiAgents, llmApi, n8n, openclaw, promptEngineering } from './AiSkillIcons';
 import { acf, agile, aiContent, clipboardCheck, composer, elementor, gauge, graphql, layers, mysql, network, shield, sitemap, users, wpHooks } from './ExtraSkillIcons';
 import { bootstrap, css3, docker, gitAlt, githubAction, gutenberg, html5, jQuery, js, nextjs, npm, php, php2, playwright, plugin, react, saas, shopify, tailwind, terminal, theme, ts, vscode, vue, webhook, webpack, woocommerce, wordpressSimple } from './SkillsIcons';
 
+type Skill = {
+	label: string;
+	iconColor: string;
+	logo: ReactNode;
+};
+
+type SkillGroup = {
+	title: string;
+	skills: Skill[];
+};
+
+const isDarkIcon = (hex: string) => {
+	const raw = hex.replace("#", "");
+	const normalized = raw.length === 3 ? raw.split("").map((char) => char + char).join("") : raw;
+	const value = parseInt(normalized, 16);
+	const r = (value >> 16) & 255;
+	const g = (value >> 8) & 255;
+	const b = value & 255;
+	return 0.2126 * r + 0.7152 * g + 0.0722 * b < 40;
+};
+
+const SkillChip: FC<{ skill: Skill }> = ({ skill }) => (
+	<span
+		className={`skill-item${isDarkIcon(skill.iconColor) ? " is-dark-icon" : ""}`}
+		style={{ "--skill-color": skill.iconColor } as CSSProperties}
+	>
+		{skill.logo}
+		{skill.label}
+	</span>
+);
+
 const Overview: FC = () => {
-	const programmingLanguages = [
+	const skillGroups: SkillGroup[] = [
 		{
-			label: "PHP",
-			labelColor: "#ffffff",
-			labelBgColor: "#777bb4",
-			logo: php,
-			style: "for-the-badge",
+			title: "Languages",
+			skills: [
+				{ label: "PHP", iconColor: "#777bb4", logo: php },
+				{ label: "JavaScript", iconColor: "#c9b208", logo: js },
+				{ label: "TypeScript", iconColor: "#3178c6", logo: ts },
+				{ label: "MySQL", iconColor: "#4479A1", logo: mysql },
+			],
 		},
 		{
-			label: "JavaScript",
-			labelColor: "#333333",
-			labelBgColor: "#f7df1e",
-			logo: js,
-			style: "for-the-badge",
+			title: "WordPress & CMS",
+			skills: [
+				{ label: "WordPress", iconColor: "#21759b", logo: wordpressSimple },
+				{ label: "Shopify", iconColor: "#7aa33a", logo: shopify },
+				{ label: "WooCommerce", iconColor: "#7F54B3", logo: woocommerce },
+				{ label: "Gutenberg", iconColor: "#3858e9", logo: gutenberg },
+				{ label: "Full Site Editing", iconColor: "#21759b", logo: gutenberg },
+				{ label: "Plugin Development", iconColor: "#0073aa", logo: plugin },
+				{ label: "Theme Development", iconColor: "#0073aa", logo: theme },
+				{ label: "WPGraphQL", iconColor: "#E10098", logo: graphql },
+				{ label: "WP-CLI", iconColor: "#64748b", logo: terminal },
+				{ label: "Elementor", iconColor: "#92003B", logo: elementor },
+				{ label: "ACF", iconColor: "#00a88b", logo: acf },
+				{ label: "WP Hooks", iconColor: "#3858e9", logo: wpHooks },
+				{ label: "Multisite", iconColor: "#135e96", logo: network },
+				{ label: "WP Security", iconColor: "#1d4ed8", logo: shield },
+			],
 		},
 		{
-			label: "TypeScript",
-			labelColor: "#ffffff",
-			labelBgColor: "#3178c6",
-			logo: ts,
-			style: "for-the-badge",
+			title: "Frontend",
+			skills: [
+				{ label: "React", iconColor: "#149eca", logo: react },
+				{ label: "Next.js", iconColor: "#111111", logo: nextjs },
+				{ label: "Vue", iconColor: "#42b883", logo: vue },
+				{ label: "jQuery", iconColor: "#0769ad", logo: jQuery },
+				{ label: "HTML5", iconColor: "#E34F26", logo: html5 },
+				{ label: "CSS3", iconColor: "#1572B6", logo: css3 },
+				{ label: "SASS", iconColor: "#CC6699", logo: saas },
+				{ label: "Bootstrap", iconColor: "#7952b3", logo: bootstrap },
+				{ label: "Tailwind CSS", iconColor: "#38b2ac", logo: tailwind },
+			],
 		},
 		{
-			label: "MySQL",
-			labelColor: "#ffffff",
-			labelBgColor: "#4479A1",
-			logo: mysql,
-			style: "for-the-badge",
-		},
-	];
-
-	const cmsFrameworksLibraries = [
-		{
-			label: "WordPress",
-			labelColor: "#ffffff",
-			labelBgColor: "#21759b",
-			logo: wordpressSimple,
-			style: "for-the-badge",
-		},
-		{
-			label: "Shopify",
-			labelColor: "#ffffff",
-			labelBgColor: "#96BF48",
-			logo: shopify,
-			style: "for-the-badge",
+			title: "Tools & Workflow",
+			skills: [
+				{ label: "Git", iconColor: "#f05032", logo: gitAlt },
+				{ label: "GitHub Actions", iconColor: "#2088FF", logo: githubAction },
+				{ label: "VS Code", iconColor: "#22a7f2", logo: vscode },
+				{ label: "NPM", iconColor: "#cb0001", logo: npm },
+				{ label: "Composer", iconColor: "#885630", logo: composer },
+				{ label: "Webpack", iconColor: "#1c78c0", logo: webpack },
+				{ label: "Playwright", iconColor: "#2fad33", logo: playwright },
+				{ label: "Docker", iconColor: "#1D63ED", logo: docker },
+				{ label: "REST API", iconColor: "#0f766e", logo: webhook },
+				{ label: "PHPUnit", iconColor: "#3b9cd7", logo: php2 },
+				{ label: "PHPCS", iconColor: "#777bb4", logo: php2 },
+				{ label: "WPCS", iconColor: "#21759b", logo: wordpressSimple },
+				{ label: "Core Web Vitals", iconColor: "#0f9d58", logo: gauge },
+				{ label: "Caching", iconColor: "#0ea5e9", logo: layers },
+			],
 		},
 		{
-			label: "React",
-			labelColor: "#333333",
-			labelBgColor: "#61dafb",
-			logo: react,
-			style: "for-the-badge",
+			title: "AI & Automation",
+			skills: [
+				{ label: "LLM APIs", iconColor: "#4f46e5", logo: llmApi },
+				{ label: "AI Agents", iconColor: "#7c3aed", logo: aiAgents },
+				{ label: "Prompt Engineering", iconColor: "#0369a1", logo: promptEngineering },
+				{ label: "AI Content", iconColor: "#0f766e", logo: aiContent },
+				{ label: "n8n", iconColor: "#ea4b71", logo: n8n },
+				{ label: "OpenClaw", iconColor: "#ff4d4d", logo: openclaw },
+			],
 		},
 		{
-			label: "Next.js",
-			labelColor: "#000000",
-			labelBgColor: "#61dafb",
-			logo: nextjs,
-			style: "for-the-badge",
-		},
-		{
-			label: "WPGraphQL",
-			labelColor: "#ffffff",
-			labelBgColor: "#E10098",
-			logo: graphql,
-			style: "for-the-badge",
-		},
-		{
-			label: "Vue",
-			labelColor: "#35495e",
-			labelBgColor: "#42b883",
-			logo: vue,
-			style: "for-the-badge",
-		},
-		{
-			label: "jQuery",
-			labelColor: "#ffffff",
-			labelBgColor: "#0769ad",
-			logo: jQuery,
-			style: "for-the-badge",
-		},
-	];
-
-	const toolsAndTechnologies = [
-		{
-			label: "Git",
-			labelColor: "#ffffff",
-			labelBgColor: "#f05032",
-			logo: gitAlt,
-			style: "for-the-badge",
-		},
-		{
-			label: "GitHub Actions",
-			labelColor: "#ffffff",
-			labelBgColor: "#2088FF",
-			logo: githubAction,
-			style: "for-the-badge",
-		},
-		{
-			label: "vscode",
-			labelColor: "#ffffff",
-			labelBgColor: "#22a7f2",
-			logo: vscode,
-			style: "for-the-badge",
-		},
-		{
-			label: "NPM",
-			labelColor: "#ffffff",
-			labelBgColor: "#cb0001",
-			logo: npm,
-			style: "for-the-badge",
-		},
-		{
-			label: "Composer",
-			labelColor: "#ffffff",
-			labelBgColor: "#885630",
-			logo: composer,
-			style: "for-the-badge",
-		},
-		{
-			label: "Webpack",
-			labelColor: "#333333",
-			labelBgColor: "#8dd6f9",
-			logo: webpack,
-			style: "for-the-badge",
-		},
-		// {
-		// 	label: "Gulp",
-		// 	labelColor: "#ffffff",
-		// 	labelBgColor: "#d04647",
-		// 	logo: gulp,
-		// 	style: "for-the-badge",
-		// },
-		// {
-		// 	label: "Grunt",
-		// 	labelColor: "#ffffff",
-		// 	labelBgColor: "#faaa17",
-		// 	logo: grunt,
-		// 	style: "for-the-badge",
-		// },
-		// {
-		// 	label: "Babel",
-		// 	labelColor: "#333333",
-		// 	labelBgColor: "#f9dc3e",
-		// 	logo: babel,
-		// 	style: "for-the-badge",
-		// },
-		// {
-		// 	label: "Puppeteer",
-		// 	labelColor: "#ffffff",
-		// 	labelBgColor: "#40b5a4",
-		// 	logo: puppeteer,
-		// 	style: "for-the-badge",
-		// },
-		{
-			label: "Playwright",
-			labelColor: "#ffffff",
-			labelBgColor: "#2fad33",
-			logo: playwright,
-			style: "for-the-badge",
-		},
-		{
-			label: "Docker",
-			labelColor: "#ffffff",
-			labelBgColor: "#1D63ED",
-			logo: docker,
-			style: "for-the-badge",
-		},
-		{
-			label: "Core Web Vitals",
-			labelColor: "#ffffff",
-			labelBgColor: "#0f9d58",
-			logo: gauge,
-			style: "for-the-badge",
-		},
-		{
-			label: "Caching",
-			labelColor: "#ffffff",
-			labelBgColor: "#0ea5e9",
-			logo: layers,
-			style: "for-the-badge",
+			title: "Leadership",
+			skills: [
+				{ label: "Code Review", iconColor: "#64748b", logo: clipboardCheck },
+				{ label: "Team Mentorship", iconColor: "#0f766e", logo: users },
+				{ label: "Architecture", iconColor: "#4338ca", logo: sitemap },
+				{ label: "Agile / Scrum", iconColor: "#ea580c", logo: agile },
+			],
 		},
 	];
-
-	const aiSkills = [
-		{
-			label: "LLM API Integration",
-			labelColor: "#ffffff",
-			labelBgColor: "#4f46e5",
-			logo: llmApi,
-		},
-		{
-			label: "AI Agents & Function Calling",
-			labelColor: "#ffffff",
-			labelBgColor: "#7c3aed",
-			logo: aiAgents,
-		},
-		{
-			label: "Prompt Engineering",
-			labelColor: "#ffffff",
-			labelBgColor: "#0369a1",
-			logo: promptEngineering,
-		},
-		{
-			label: "AI Content Generation",
-			labelColor: "#ffffff",
-			labelBgColor: "#0f766e",
-			logo: aiContent,
-		},
-		{
-			label: "n8n",
-			labelColor: "#ffffff",
-			labelBgColor: "#ea4b71",
-			logo: n8n,
-		},
-		{
-			label: "OpenClaw",
-			labelColor: "#ffffff",
-			labelBgColor: "#ff4d4d",
-			logo: openclaw,
-		},
-	];
-
-	const leadershipSkills = [
-		{
-			label: "Code Review",
-			labelColor: "#ffffff",
-			labelBgColor: "#334155",
-			logo: clipboardCheck,
-		},
-		{
-			label: "Team Mentorship",
-			labelColor: "#ffffff",
-			labelBgColor: "#0f766e",
-			logo: users,
-		},
-		{
-			label: "Architecture",
-			labelColor: "#ffffff",
-			labelBgColor: "#4338ca",
-			logo: sitemap,
-		},
-		{
-			label: "Agile / Scrum",
-			labelColor: "#ffffff",
-			labelBgColor: "#ea580c",
-			logo: agile,
-		},
-	];
-
-	// not used in the overview section, but kept for reference
-	const otherSkills = [
-		{
-			label: "REST API",
-			labelColor: "#ffffff",
-			labelBgColor: "#008080",
-			logo: webhook,
-			style: "for-the-badge",
-		},
-		{
-			label: "WP-CLI",
-			labelColor: "#ffffff",
-			labelBgColor: "#212121",
-			logo: terminal,
-			style: "for-the-badge",
-		},
-		{
-			label: "Gutenberg",
-			labelColor: "#ffffff",
-			labelBgColor: "#333333",
-			logo: gutenberg,
-			style: "for-the-badge",
-		},
-		{
-			label: "WooCommerce",
-			labelColor: "#ffffff",
-			labelBgColor: "#7F54B3",
-			logo: woocommerce,
-			style: "for-the-badge",
-		},
-		{
-			label: "Full Site Editing",
-			labelColor: "#ffffff",
-			labelBgColor: "#21759b",
-			logo: gutenberg,
-			style: "for-the-badge",
-		},
-		{
-			label: "Plugin Development",
-			labelColor: "#ffffff",
-			labelBgColor: "#0073aa",
-			logo: plugin,
-			style: "for-the-badge",
-		},
-		{
-			label: "Theme Development",
-			labelColor: "#ffffff",
-			labelBgColor: "#0073aa",
-			logo: theme,
-			style: "for-the-badge",
-		},
-		{
-			label: "Elementor",
-			labelColor: "#ffffff",
-			labelBgColor: "#92003B",
-			logo: elementor,
-			style: "for-the-badge",
-		},
-		{
-			label: "ACF",
-			labelColor: "#1a1a1a",
-			labelBgColor: "#00D3AE",
-			logo: acf,
-			style: "for-the-badge",
-		},
-		{
-			label: "WP Hooks",
-			labelColor: "#ffffff",
-			labelBgColor: "#3858e9",
-			logo: wpHooks,
-			style: "for-the-badge",
-		},
-		{
-			label: "Multisite",
-			labelColor: "#ffffff",
-			labelBgColor: "#135e96",
-			logo: network,
-			style: "for-the-badge",
-		},
-		{
-			label: "WP Security",
-			labelColor: "#ffffff",
-			labelBgColor: "#1d4ed8",
-			logo: shield,
-			style: "for-the-badge",
-		},
-		{
-			label: "HTML 5",
-			labelColor: "#ffffff",
-			labelBgColor: "#E34F26",
-			logo: html5,
-			style: "for-the-badge",
-		},
-		{
-			label: "CSS 3",
-			labelColor: "#ffffff",
-			labelBgColor: "#1572B6",
-			logo: css3,
-			style: "for-the-badge",
-		},
-		{
-			label: "SASS",
-			labelColor: "#ffffff",
-			labelBgColor: "#CC6699",
-			logo: saas,
-			style: "for-the-badge",
-		},
-		{
-			label: "Bootstrap",
-			labelColor: "#ffffff",
-			labelBgColor: "#7952b3",
-			logo: bootstrap,
-			style: "for-the-badge",
-		},
-		{
-			label: "Tailwind CSS",
-			labelColor: "#ffffff",
-			labelBgColor: "#38b2ac",
-			logo: tailwind,
-			style: "for-the-badge",
-		},
-		{
-			label: "PHPUnit",
-			labelColor: "#ffffff",
-			labelBgColor: "#3b9cd7",
-			logo: php2,
-			style: "for-the-badge",
-		},
-		{
-			label: "PHP CodeSniffer",
-			labelColor: "#ffffff",
-			labelBgColor: "#777bb4",
-			logo: php2,
-			style: "for-the-badge",
-		},
-		{
-			label: "WPCS",
-			labelColor: "#ffffff",
-			labelBgColor: "#21759b",
-			logo: wordpressSimple,
-			style: "for-the-badge",
-		},
-	];
-
-	// merge 'otherSkills' with 'cmsFrameworksLibraries'
-	const cmsFrameworksLibrariesOtherSkills= [...cmsFrameworksLibraries, ...otherSkills];
 
 	return (
 		<section className="overview-section p-3 p-lg-5">
@@ -424,94 +142,17 @@ const Overview: FC = () => {
 					</a>.
 				</div>
 
-				<div className="row gap-1">
-					<h3 className="item-title">Programming Languages</h3>
-					<div className="my-skills">
-						{programmingLanguages.map((skill, index) => (
-							<span
-								className="skill-item rounded"
-								style={{
-									backgroundColor: skill.labelBgColor,
-									color: skill.labelColor,
-								}}
-								key={index}
-							>
-								{skill.logo} {skill.label}
-							</span>
-						))}
-					</div>
-				</div>
-
-				<div className="row gap-1 mt-4">
-					<h3 className="item-title">CMS, Frameworks, Libraries & Technicals</h3>
-					<div className="my-skills">
-						{cmsFrameworksLibrariesOtherSkills.map((skill, index) => (
-							<span
-								className="skill-item rounded"
-								style={{
-									backgroundColor: skill.labelBgColor,
-									color: skill.labelColor,
-								}}
-								key={index}
-							>
-								{skill.logo} {skill.label}
-							</span>
-						))}
-					</div>
-				</div>
-
-				<div className="row gap-1 mt-4">
-					<h3 className="item-title">Tools and Technologies</h3>
-					<div className="my-skills">
-						{toolsAndTechnologies.map((tool, index) => (
-							<span
-								className="skill-item rounded"
-								style={{
-									backgroundColor: tool.labelBgColor,
-									color: tool.labelColor,
-								}}
-								key={index}
-							>
-								{tool.logo} {tool.label}
-							</span>
-						))}
-					</div>
-				</div>
-
-				<div className="row gap-1 mt-4">
-					<h3 className="item-title">AI & Automation</h3>
-					<div className="my-skills">
-						{aiSkills.map((skill, index) => (
-							<span
-								className="skill-item rounded"
-								style={{
-									backgroundColor: skill.labelBgColor,
-									color: skill.labelColor,
-								}}
-								key={index}
-							>
-								{skill.logo} {skill.label}
-							</span>
-						))}
-					</div>
-				</div>
-
-				<div className="row gap-1 mt-4">
-					<h3 className="item-title">Technical Leadership</h3>
-					<div className="my-skills">
-						{leadershipSkills.map((skill, index) => (
-							<span
-								className="skill-item rounded"
-								style={{
-									backgroundColor: skill.labelBgColor,
-									color: skill.labelColor,
-								}}
-								key={index}
-							>
-								{skill.logo} {skill.label}
-							</span>
-						))}
-					</div>
+				<div className="skills-grid">
+					{skillGroups.map((group) => (
+						<div className="skill-group" key={group.title}>
+							<h3 className="item-title skill-group-title">{group.title}</h3>
+							<div className="my-skills">
+								{group.skills.map((skill) => (
+									<SkillChip key={skill.label} skill={skill} />
+								))}
+							</div>
+						</div>
+					))}
 				</div>
 
 				<div className="text-center pt-5 mb-3 d-none">

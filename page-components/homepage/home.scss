@@ -48,27 +48,104 @@
 		}
 	}
 
+	.skills-grid {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.skill-group {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		padding: 18px 0;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+
+		&:first-child {
+			padding-top: 6px;
+		}
+
+		&:last-child {
+			padding-bottom: 0;
+			border-bottom: 0;
+		}
+	}
+
+	.skill-group-title {
+		margin: 0;
+		padding: 0 0 0 10px;
+		border-left: 2px solid var(--bs-primary, #54b689);
+		font-size: 0.75rem;
+		letter-spacing: 0.06em;
+		line-height: 1.2;
+		text-transform: uppercase;
+	}
+
 	.my-skills {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: flex-start;
-		gap: 10px;
+		gap: 6px;
 
 		.skill-item {
-			display: flex;
+			display: inline-flex;
 			align-items: center;
 			gap: 5px;
-			height: 28px;
-			padding: 2px 8px;
-			text-transform: uppercase;
-			font-weight: 900;
-			font-size: 12px;
+			height: 22px;
+			padding: 0 8px 0 6px;
+			border: 1px solid #e4e7e5;
+			border-radius: 999px;
+			background: #f5f7f6;
+			color: #3f3f3f;
+			font-size: 11px;
+			font-weight: 600;
+			letter-spacing: 0.01em;
+			line-height: 1;
+			white-space: nowrap;
+			transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
 
 			svg {
-				width: 1.2em;
-				height: 1.2em;
-				fill: currentColor;
+				width: 11px;
+				height: 11px;
+				flex-shrink: 0;
+				fill: var(--skill-color, currentColor);
 			}
+
+			&:hover {
+				background: rgba(84, 182, 137, 0.08);
+				border-color: rgba(84, 182, 137, 0.35);
+				transform: translateY(-1px);
+			}
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.skill-item {
+			transition: none;
+
+			&:hover {
+				transform: none;
+			}
+		}
+	}
+}
+
+.dark-mode .overview-section {
+	.skill-group {
+		border-bottom-color: rgba(255, 255, 255, 0.08);
+	}
+
+	.skill-item {
+		background: rgba(255, 255, 255, 0.05);
+		border-color: rgba(255, 255, 255, 0.08);
+		color: rgba(255, 255, 255, 0.86);
+
+		&:hover {
+			background: rgba(84, 182, 137, 0.12);
+			border-color: rgba(84, 182, 137, 0.4);
+		}
+
+		&.is-dark-icon svg {
+			fill: #f2f4f6;
 		}
 	}
 }
