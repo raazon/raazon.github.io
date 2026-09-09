@@ -2,7 +2,7 @@ import Icon from '@/components/icon/Icon';
 import { siteConfig } from "@/utils/siteConfig";
 import Link from 'next/link';
 import { FC } from 'react';
-import { aiAgents, aiContent, anthropic, llmApi, n8n, openai, openclaw, promptEngineering } from './AiSkillIcons';
+import { aiAgents, llmApi, n8n, openclaw, promptEngineering } from './AiSkillIcons';
 import { bootstrap, css3, docker, gitAlt, gutenberg, html5, jQuery, js, nextjs, npm, php, php2, playwright, plugin, react, saas, shopify, tailwind, terminal, theme, ts, vscode, vue, webhook, webpack, wordpressSimple } from './SkillsIcons';
 
 const Overview: FC = () => {
@@ -157,30 +157,6 @@ const Overview: FC = () => {
 
 	const aiSkills = [
 		{
-			label: "OpenAI",
-			labelColor: "#ffffff",
-			labelBgColor: "#10a37f",
-			logo: openai,
-		},
-		{
-			label: "Anthropic",
-			labelColor: "#ffffff",
-			labelBgColor: "#d97757",
-			logo: anthropic,
-		},
-		{
-			label: "n8n",
-			labelColor: "#ffffff",
-			labelBgColor: "#ea4b71",
-			logo: n8n,
-		},
-		{
-			label: "OpenClaw",
-			labelColor: "#ffffff",
-			labelBgColor: "#ff4d4d",
-			logo: openclaw,
-		},
-		{
 			label: "LLM API Integration",
 			labelColor: "#ffffff",
 			labelBgColor: "#4f46e5",
@@ -199,10 +175,16 @@ const Overview: FC = () => {
 			logo: promptEngineering,
 		},
 		{
-			label: "AI Content & Form Generation",
+			label: "n8n",
 			labelColor: "#ffffff",
-			labelBgColor: "#be185d",
-			logo: aiContent,
+			labelBgColor: "#ea4b71",
+			logo: n8n,
+		},
+		{
+			label: "OpenClaw",
+			labelColor: "#ffffff",
+			labelBgColor: "#ff4d4d",
+			logo: openclaw,
 		},
 	];
 
