@@ -2,7 +2,7 @@ import Icon from '@/components/icon/Icon';
 import { siteConfig } from "@/utils/siteConfig";
 import Link from 'next/link';
 import { FC } from 'react';
-import { anthropic, n8n, openai, openclaw } from './AiSkillIcons';
+import { aiAgents, aiContent, anthropic, llmApi, n8n, openai, openclaw, promptEngineering } from './AiSkillIcons';
 import { bootstrap, css3, docker, gitAlt, gutenberg, html5, jQuery, js, nextjs, npm, php, php2, playwright, plugin, react, saas, shopify, tailwind, terminal, theme, ts, vscode, vue, webhook, webpack, wordpressSimple } from './SkillsIcons';
 
 const Overview: FC = () => {
@@ -179,6 +179,30 @@ const Overview: FC = () => {
 			labelColor: "#ffffff",
 			labelBgColor: "#ff4d4d",
 			logo: openclaw,
+		},
+		{
+			label: "LLM API Integration",
+			labelColor: "#ffffff",
+			labelBgColor: "#4f46e5",
+			logo: llmApi,
+		},
+		{
+			label: "AI Agents & Function Calling",
+			labelColor: "#ffffff",
+			labelBgColor: "#7c3aed",
+			logo: aiAgents,
+		},
+		{
+			label: "Prompt Engineering",
+			labelColor: "#ffffff",
+			labelBgColor: "#0369a1",
+			logo: promptEngineering,
+		},
+		{
+			label: "AI Content & Form Generation",
+			labelColor: "#ffffff",
+			labelBgColor: "#be185d",
+			logo: aiContent,
 		},
 	];
 
@@ -362,7 +386,7 @@ const Overview: FC = () => {
 				</div>
 
 				<div className="row gap-1 mt-4">
-					<h3 className="item-title">AI</h3>
+					<h3 className="item-title">AI & Automation</h3>
 					<div className="my-skills">
 						{aiSkills.map((skill, index) => (
 							<span
