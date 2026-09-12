@@ -38,7 +38,7 @@
 	//terminal
 	"terminal.integrated.fontSize": 16,
 	"terminal.integrated.fontWeight": "normal",
-	"terminal.integrated.fontFamily": "Fira Code, Operator Mono",
+	"terminal.integrated.fontFamily": "monospace",
 	"workbench.colorTheme": "Andromeda Colorizer",
 	"workbench.iconTheme": "vscode-icons",
 	// terminal customization
