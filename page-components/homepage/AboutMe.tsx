@@ -11,10 +11,10 @@ const AboutMe: FC = () => {
 				<div className="profile-teaser row">
 					<div className="col">
 						<h2 className="name font-weight-bold mb-1">
-							{siteConfig.name}
+							{siteConfig.homepageName}
 						</h2>
 						<div className="tagline mb-3">
-							{siteConfig.designation}
+							{siteConfig.tagline}
 						</div>
 						<div className="bio mb-4 ">
 							{siteConfig.bio}

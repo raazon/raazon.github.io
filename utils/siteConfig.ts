@@ -3,6 +3,8 @@ export const siteConfig = {
 	name: process.env.NEXT_PUBLIC_NAME || "Default Name",
 	designation: process.env.NEXT_PUBLIC_DESIGNATION || "",
 	shortBio: process.env.NEXT_PUBLIC_SHORT_BIO || "",
+	homepageName: process.env.NEXT_PUBLIC_HOMEPAGE_NAME || "",
+	tagline: process.env.NEXT_PUBLIC_TAGLINE || "",
 	bio: process.env.NEXT_PUBLIC_BIO || "",
 	description: process.env.SITE_DESCRIPTION || "",
 	links: {
