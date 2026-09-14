@@ -1,13 +1,34 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Razon Komar Pal | Senior Web Developer & WordPress Specialist",
-	description: "Razon Komar Pal is a highly experienced Senior Web Developer with expertise in WordPress development, modern web technologies, and creating responsive, high-performance websites.",
-	keywords: "Senior Web Developer, WordPress Specialist, Web Development, Responsive Design, Modern Web Technologies, WordPress Expert, High-Performance Websites, Razon Komar Pal",
+	title: "Razon Komar Pal | Full-Stack Web Developer",
+
+	description:
+		"Razon Komar Pal is a Full-Stack Web Developer specializing in PHP, WordPress, JavaScript, React, Gutenberg, WooCommerce, REST APIs, and AI/LLM integrations. Building and scaling web applications and WordPress products used by millions.",
+
+	keywords: [
+		"Razon Komar Pal",
+		"Full-Stack Web Developer",
+		"Senior Web Developer",
+		"WordPress Developer",
+		"PHP Developer",
+		"JavaScript Developer",
+		"React Developer",
+		"Gutenberg Developer",
+		"WooCommerce Developer",
+		"Frontend Developer",
+		"WordPress Plugin Development",
+		"REST API Development",
+		"AI LLM Integration",
+	],
+
 	openGraph: {
-		title: "Razon Komar Pal | Senior Web Developer & WordPress Specialist",
-		description: "Explore the portfolio of Razon Komar Pal, a Senior Web Developer and WordPress Specialist skilled in crafting responsive, high-performance websites using modern technologies.",
-		siteName: "Razon Komar Pal Portfolio",
+		title: "Razon Komar Pal | Full-Stack Web Developer",
+
+		description:
+			"Full-Stack Web Developer specializing in PHP, WordPress, JavaScript, React, Gutenberg, WooCommerce, REST APIs, and AI/LLM integrations.",
+
+		siteName: "Razon Komar Pal",
 		locale: "en_US",
 		type: "website",
 	},
