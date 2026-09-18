@@ -72,7 +72,7 @@ const Resume = () => {
 									/>
 								</div>
 								<div className="col text-start">
-									<p className="mb-0">{siteConfig.bio}</p>
+									{siteConfig.bio}
 								</div>
 							</div>
 						</div>

@@ -19,38 +19,6 @@ const AboutMe: FC = () => {
 						<div className="bio mb-4 ">
 							{siteConfig.bio}
 						</div>
-						<div className="bio mb-4 d-none">
-							{`With 12 years+ of experience in WordPress and web development, I have spearheaded the architecture and management of various WordPress plugins, including GutenKit and PopupKit. My expertise includes plugin development, team leadership, project lifecycle management, bug fixing and UX enhancement. I write about software development on `}
-
-							<Link
-								className="text-link text-decoration-none"
-								href="/blog"
-							>
-								my blog
-							</Link>
-
-							{`.`}
-
-							{` Want to know how I may help your project? Check out my project `}
-
-							<Link
-								className="text-link text-decoration-none"
-								href="/portfolio"
-							>
-								portfolio
-							</Link>
-
-							{` and `}
-
-							<Link
-								className="text-link text-decoration-none"
-								href="/resume"
-							>
-								online resume
-							</Link>
-
-							{`.`}
-						</div>
 						<div className="mb-4">
 							<Link
 								className="btn btn-primary me-2 mb-3"
