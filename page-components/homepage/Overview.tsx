@@ -109,9 +109,9 @@ const Overview: FC = () => {
 			skills: [
 				{ label: "Technical Leadership", iconColor: "#0f766e", logo: users },
 				{ label: "Software Architecture", iconColor: "#4338ca", logo: sitemap },
-				{ label: "Project & Product Management", iconColor: "#ea580c", logo: clipboardCheck },
+				{ label: "Project & Product", iconColor: "#ea580c", logo: clipboardCheck },
 				{ label: "Project Planning", iconColor: "#64748b", logo: clipboardCheck },
-				{ label: "Stakeholder Collaboration", iconColor: "#7c3aed", logo: users },
+				{ label: "Stakeholders", iconColor: "#7c3aed", logo: users },
 				{ label: "Agile / Scrum", iconColor: "#2563eb", logo: agile },
 				{ label: "Team Mentorship", iconColor: "#0891b2", logo: users },
 			],
