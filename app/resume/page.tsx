@@ -406,8 +406,9 @@ const Resume = () => {
 										<div className="item">
 											<h4 className="item-title">Professional</h4>
 											<ul className="list-unstyled resume-skills-list">
-												<li className="mb-2">Team leadership</li>
-												<li className="mb-2">Technical Architecture</li>
+												<li className="mb-2">Technical leadership</li>
+												<li className="mb-2">Project Coordination</li>
+												<li className="mb-2">Software Architecture</li>
 												<li className="mb-2">Code Review</li>
 												<li className="mb-2">Mentorship</li>
 												<li className="mb-2">Project Planning</li>
