@@ -22,19 +22,6 @@ const Projects = ({ hide = false }) => {
 			activeInstalls: 1000000,
 		},
 		{
-			title: "PR Review — AI Pull Request Reviewer",
-			slug: "pr-review",
-			category: "AI Web App",
-			author: "Razon",
-			banner: "/assets/images/projects/pr-review-banner-1544x500.webp",
-			link: "https://pr-review.razonkumar.workers.dev/",
-			// description: "PR Review is an AI-powered GitHub pull request reviewer. Paste a PR URL, pick a model, and get a structured verdict with findings you can copy or post back as a comment. API keys stay in your browser. It flags security and quality issues, then tells you whether the PR looks safe to merge or needs changes. Sign in to review private repos or post the result as a GitHub comment.",
-			description: "Review GitHub pull requests with Claude, OpenAI, Gemini, and free-tier providers. Visitors paste a PR URL; the review runs on a Cloudflare Worker (diff fetch, prompt, model call), not in the browser. Optional GitHub sign-in for private repos and posting the review as a comment.",
-			stat: "7 AI Providers",
-			// Banner overlay. Current types: 'sparkle' | 'aladdin'. Add more in animations/registry.ts.
-			animation: "sparkle",
-		},
-		{
 			title: "Forminator Forms — Form Builder",
 			slug: "forminator",
 			category: "WordPress Plugin",
@@ -84,6 +71,19 @@ const Projects = ({ hide = false }) => {
 		// 	description: "Fully Customizable. Multi - Media Integration. Synch Any Data Files. All Within Block Editor. That’s TableKit - Table Builder Block by Wpmet! An ultimate table builder solution that empowers you to create any type of table design without touching a single line of code. Generating highly functional",
 		// 	activeInstalls: 500,
 		// },
+		{
+			title: "PR Review — AI Pull Request Reviewer",
+			slug: "pr-review",
+			category: "AI Web App",
+			author: "Razon",
+			banner: "/assets/images/projects/pr-review-banner-1544x500.webp",
+			link: "https://pr-review.razonkumar.workers.dev/",
+			// description: "PR Review is an AI-powered GitHub pull request reviewer. Paste a PR URL, pick a model, and get a structured verdict with findings you can copy or post back as a comment. API keys stay in your browser. It flags security and quality issues, then tells you whether the PR looks safe to merge or needs changes. Sign in to review private repos or post the result as a GitHub comment.",
+			description: "Review GitHub pull requests with Claude, OpenAI, Gemini, and free-tier providers. Visitors paste a PR URL; the review runs on a Cloudflare Worker (diff fetch, prompt, model call), not in the browser. Optional GitHub sign-in for private repos and posting the review as a comment.",
+			stat: "7 AI Providers",
+			// Banner overlay. Current types: 'sparkle' | 'aladdin'. Add more in animations/registry.ts.
+			animation: "sparkle",
+		},
 	]);
 
 	useEffect(() => {
