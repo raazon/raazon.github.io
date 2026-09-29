@@ -1,5 +1,5 @@
 ---
-title: "PR Review — AI Pull Request Reviewer"
+title: "PR Review — AI Pull Request Reviewer for GitHub"
 description: "Review GitHub pull requests with Claude, OpenAI, Gemini, and free-tier providers. Visitors paste a PR URL; the review runs on a Cloudflare Worker (diff fetch, prompt, model call), not in the browser. Optional GitHub sign-in for private repos and posting the review as a comment."
 date: "Sep 09 2026"
 category: "AI Web App"
@@ -8,8 +8,6 @@ stat: "7 AI Providers"
 image: "/images/pr-review-banner.webp"
 demoURL: "https://pr-review.razonkumar.workers.dev/"
 ---
-
-![PR Review — AI Pull Request Reviewer](/images/pr-review-banner.webp)
 
 PR Review is an AI-powered GitHub pull request reviewer built as a full web application rather than a browser-side script. Paste any public PR URL and pick from Claude, OpenAI, Gemini, and several free-tier providers to get a structured verdict you can copy or post back as a GitHub comment.
 

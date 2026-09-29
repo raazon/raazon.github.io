@@ -22,7 +22,11 @@ const project = Astro.props;
 const { Content } = await project.render();
 ---
 
-<PageLayout title={project.data.title} description={project.data.description}>
+<PageLayout
+  title={project.data.title}
+  description={project.data.description}
+  image={project.data.image}
+>
   <Container>
     <div class="animate">
       <BackToPrev href="/projects">
@@ -71,7 +75,11 @@ const { Content } = await project.render();
       <img
         src={project.data.image}
         alt={project.data.title}
-        class="animate w-full rounded-lg border border-black/10 dark:border-white/10 mb-6"
+        width="1544"
+        height="500"
+        decoding="async"
+        style="aspect-ratio: 1544 / 500"
+        class="animate w-full object-cover rounded-lg border border-black/10 dark:border-white/10 mb-6"
       />
     )}
     <article class="animate">

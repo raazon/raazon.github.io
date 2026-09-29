@@ -1,10 +1,11 @@
 ---
-title: "ElementsKit Elementor Addons"
+title: "ElementsKit — Elementor Addons, Widgets & Templates"
 description: "ElementsKit is an all-in-one addons pack for Elementor with 90+ widgets, 18+ modules, and 900+ pre-designed templates, all accessible through a drag-and-drop interface including a header and footer builder."
 date: "Jul 06 2019"
 category: "WordPress Plugin"
 author: "Roxnor"
 stat: "1M+ Active Installs"
+image: "https://ps.w.org/elementskit-lite/assets/banner-1544x500.jpg"
 demoURL: "https://wordpress.org/plugins/elementskit-lite/"
 ---
 

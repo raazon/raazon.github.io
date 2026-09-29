@@ -1,10 +1,11 @@
 ---
-title: "Linked Variation for WooCommerce"
+title: "Linked Variation for WooCommerce — Link Products by Attribute"
 description: "A WooCommerce plugin that intelligently links products based on selected attributes, simplifying the management of complex product variations."
 date: "Nov 02 2020"
 category: "WordPress Plugin"
 author: "Razon Komar Pal"
 stat: "300+ Active Installs"
+image: "https://ps.w.org/linked-variation-for-woocommerce/assets/banner-1544x500.jpg"
 demoURL: "https://wordpress.org/plugins/linked-variation-for-woocommerce/"
 ---
 

@@ -1,10 +1,11 @@
 ---
-title: "ShopEngine — WooCommerce Builder for Elementor"
+title: "ShopEngine — Elementor WooCommerce Builder & Templates"
 description: "ShopEngine is an all-in-one WooCommerce builder for Elementor with drag-and-drop builders for the shop, cart, checkout, single product, and My Account pages."
 date: "Mar 29 2021"
 category: "WordPress Plugin"
 author: "Wpmet"
 stat: "100K+ Active Installs"
+image: "https://ps.w.org/shopengine/assets/banner-1544x500.png"
 demoURL: "https://wordpress.org/plugins/shopengine/"
 ---
 
