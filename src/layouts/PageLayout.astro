@@ -2,20 +2,23 @@
 import Head from "@components/Head.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
-import { SITE } from "@consts";
+import { SITE, HOME } from "@consts";
 
 type Props = {
   title: string;
   description: string;
+  image?: string;
 };
 
-const { title, description } = Astro.props;
+const { title, description, image } = Astro.props;
+
+const fullTitle = title === HOME.TITLE ? SITE.TITLE : `${title} | ${SITE.NAME}`;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <Head title={`${title} | ${SITE.NAME}`} description={description} />
+    <Head title={fullTitle} description={description} image={image} />
   </head>
   <body>
     <Header />
