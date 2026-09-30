@@ -1,7 +1,7 @@
 ---
 title: "PR Review — AI Pull Request Reviewer for GitHub"
 description: "Review GitHub pull requests with Claude, OpenAI, Gemini, and free-tier providers. Visitors paste a PR URL; the review runs on a Cloudflare Worker (diff fetch, prompt, model call), not in the browser. Optional GitHub sign-in for private repos and posting the review as a comment."
-date: "Sep 09 2026"
+date: "Nov 01 2025"
 category: "AI Web App"
 author: "Razon Komar Pal"
 stat: "7 AI Providers"

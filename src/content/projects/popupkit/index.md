@@ -1,7 +1,7 @@
 ---
 title: "PopupKit — WordPress Popup Builder & WooCommerce Triggers"
 description: "PopupKit is a popup builder plugin for WordPress that lets you build popups for conversions, sales, leads, offers, surveys and feedback from inside the block editor — no code required."
-date: "Oct 06 2024"
+date: "July 01 2025"
 category: "WordPress Plugin"
 author: "Wpmet"
 stat: "70K+ Active Installs"

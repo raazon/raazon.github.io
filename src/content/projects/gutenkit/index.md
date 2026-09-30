@@ -1,7 +1,7 @@
 ---
 title: "GutenKit — Gutenberg Page Builder Blocks & Templates"
 description: "GutenKit brings drag-and-drop page building to the WordPress block editor, with a full suite of Gutenberg blocks and templates — no coding expertise required."
-date: "Mar 04 2024"
+date: "Aug 01 2025"
 category: "WordPress Plugin"
 author: "Wpmet"
 stat: "80K+ Active Installs"

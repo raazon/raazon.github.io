@@ -1,7 +1,7 @@
 ---
 title: "Forminator — Contact, Payment & Form Builder for WordPress"
 description: "Forminator is a WordPress form builder for contact forms, order and payment forms, polls with real-time results, quizzes, surveys and registration forms with PayPal and Stripe payments."
-date: "Sep 04 2018"
+date: "Oct 01 2025"
 category: "WordPress Plugin"
 author: "WPMU DEV"
 stat: "600K+ Active Installs"
