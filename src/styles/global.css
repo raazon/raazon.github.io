@@ -71,3 +71,28 @@ html #back-to-top {
 html.scrolled #back-to-top {
   @apply opacity-100 pointer-events-auto;
 }
+
+.wave-hand {
+  display: inline-block;
+  transform-origin: 70% 85%;
+  will-change: transform;
+  animation: wave-hand 2.4s ease-in-out infinite;
+}
+
+@keyframes wave-hand {
+  0%, 100% { transform: rotate(0deg); }
+  6% { transform: rotate(18deg); }
+  12% { transform: rotate(-12deg); }
+  18% { transform: rotate(16deg); }
+  24% { transform: rotate(-9deg); }
+  30% { transform: rotate(13deg); }
+  36% { transform: rotate(-5deg); }
+  42% { transform: rotate(7deg); }
+  50% { transform: rotate(0deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wave-hand {
+    animation: none;
+  }
+}
