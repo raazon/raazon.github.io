@@ -2,15 +2,16 @@ import type { Site, Metadata, Socials } from "@types";
 
 export const SITE: Site = {
   NAME: "Razon Komar Pal",
-  TITLE: "Razon Komar Pal | Full-Stack Engineer | Full-Stack Web Developer",
+  TITLE: "Razon Komar Pal | Full Stack Developer",
   EMAIL: "raazzon@gmail.com",
   DESCRIPTION:
     "Full-Stack Engineer | WordPress, PHP, JavaScript, AI, LLM, React, Gutenberg & WooCommerce",
   KEYWORDS: [
     "Razon Komar Pal",
-    "Full-Stack Engineer",
+    "Full Stack Engineer",
+    "Full Stack Engineer",
     "Full Stack Developer",
-    "Full-Stack Web Developer",
+    "Full Stack Web Developer",
     "Senior Web Developer",
     "WordPress Developer",
     "PHP Developer",
