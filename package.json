@@ -13,7 +13,8 @@
     "preview:network": "astro preview --host",
     "astro": "astro",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "deploy": "npm run build && gh-pages-clean && gh-pages -d dist -b master"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -38,5 +39,8 @@
   },
   "allowScripts": {
     "esbuild": true
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
