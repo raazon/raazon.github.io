@@ -53,13 +53,13 @@ export const PROJECTS: Metadata = {
 
 export const SKILLS: string[] = [
   "PHP",
-  "WordPress",
+  "JavaScript",
+  "TypeScript",
   "REST APIs",
+  "WordPress",
   "MySQL",
   "Gutenberg / FSE",
   "WP-CLI",
-  "JavaScript",
-  "TypeScript",
   "React",
   "Next.js",
   "HTML / CSS / SASS",
