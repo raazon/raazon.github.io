@@ -1,0 +1,252 @@
+<!DOCTYPE html><html lang="en"> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="generator" content="Astro v5.18.2"><!-- Font preloads --><link rel="preload" href="/_astro/inter-latin-400-normal.C38fXH4l.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/_astro/inter-latin-600-normal.LgqL8muc.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/_astro/lora-latin-400-normal.DnxXpLNu.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/_astro/lora-latin-600-normal.B-3RcLOQ.woff2" as="font" type="font/woff2" crossorigin><!-- Canonical URL --><link rel="canonical" href="https://raazon.com/blog/01-my-journey-into-web-development/"><!-- Primary Meta Tags --><title>My Journey into Web Development: From HTML &amp; CSS to JavaScript Mastery | Razon Komar Pal</title><meta name="title" content="My Journey into Web Development: From HTML &#38; CSS to JavaScript Mastery | Razon Komar Pal"><meta name="description" content="How one book and a steady learning journey took me from my first HTML page to interactive JavaScript apps, a practical roadmap for beginners and career switchers."><meta name="keywords" content="Razon Komar Pal, Full Stack Engineer, Full Stack Engineer, Full Stack Developer, Full Stack Web Developer, Senior Web Developer, WordPress Developer, PHP Developer, JavaScript Developer, React Developer, Gutenberg Developer, WooCommerce Developer, Frontend Developer, WordPress Plugin Development, REST API Development, AI LLM Integration"><meta name="author" content="Razon Komar Pal"><meta name="robots" content="index, follow"><meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#171717" media="(prefers-color-scheme: dark)"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://raazon.com/blog/01-my-journey-into-web-development/"><meta property="og:site_name" content="Razon Komar Pal"><meta property="og:title" content="My Journey into Web Development: From HTML &#38; CSS to JavaScript Mastery | Razon Komar Pal"><meta property="og:description" content="How one book and a steady learning journey took me from my first HTML page to interactive JavaScript apps, a practical roadmap for beginners and career switchers."><meta property="og:image" content="https://raazon.com/images/profile.jpg"><meta property="og:locale" content="en_US"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://raazon.com/blog/01-my-journey-into-web-development/"><meta property="twitter:title" content="My Journey into Web Development: From HTML &#38; CSS to JavaScript Mastery | Razon Komar Pal"><meta property="twitter:description" content="How one book and a steady learning journey took me from my first HTML page to interactive JavaScript apps, a practical roadmap for beginners and career switchers."><meta property="twitter:image" content="https://raazon.com/images/profile.jpg"><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CDGfc0hd.js"></script><!-- RSS Link --><link rel="alternate" type="application/rss+xml" title="Razon Komar Pal" href="https://raazon.com/rss.xml"><!-- Google Analytics (GA4) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-4K5D9E2NQ1"></script><script>(function(){const gaId = "G-4K5D9E2NQ1";
+
+      if (!window.gtagLoaded) {
+        window.gtagLoaded = true;
+        window.dataLayer = window.dataLayer || [];
+        const gtag = function(){ window.dataLayer.push(arguments); };
+        window.gtag = gtag;
+        gtag("js", new Date());
+        gtag("config", gaId, { send_page_view: false });
+        document.addEventListener("astro:page-load", () => {
+          gtag("event", "page_view", {
+            page_path: window.location.pathname + window.location.search
+          });
+        });
+      }
+    })();</script><script type="module">document.addEventListener("astro:before-swap",e=>[...e.newDocument.head.querySelectorAll('link[as="font"]')].forEach(o=>o.remove()));</script><script>
+  function init() {
+    preloadTheme();
+    onScroll();
+    animate();
+
+    const backToTop = document.getElementById("back-to-top");
+    backToTop?.addEventListener("click", (event) => scrollToTop(event));
+
+    const backToPrev = document.getElementById("back-to-prev");
+    backToPrev?.addEventListener("click", () => window.history.back());
+
+    const lightThemeButton = document.getElementById("light-theme-button");
+    lightThemeButton?.addEventListener("click", () => {
+      localStorage.setItem("theme", "light");
+      toggleTheme(false);
+    });
+
+    const darkThemeButton = document.getElementById("dark-theme-button");
+    darkThemeButton?.addEventListener("click", () => {
+      localStorage.setItem("theme", "dark");
+      toggleTheme(true);
+    });
+
+    const systemThemeButton = document.getElementById("system-theme-button");
+    systemThemeButton?.addEventListener("click", () => {
+      localStorage.setItem("theme", "system");
+      toggleTheme(window.matchMedia("(prefers-color-scheme: dark)").matches);
+    });
+
+    window.matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", event => {
+        if (localStorage.theme === "system" || !localStorage.theme) {
+          toggleTheme(event.matches);
+        }
+      }
+    );
+
+    document.addEventListener("scroll", onScroll);
+  }
+
+  function animate() {
+    const animateElements = document.querySelectorAll(".animate");
+
+    animateElements.forEach((element, index) => {
+      setTimeout(() => {
+        element.classList.add("show");
+      }, index * 150);
+    });
+  }
+
+  function onScroll() {
+    if (window.scrollY > 0) {
+      document.documentElement.classList.add("scrolled");
+    } else {
+      document.documentElement.classList.remove("scrolled");
+    }
+  }
+
+  function scrollToTop(event) {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
+function toggleTheme(dark) {
+    const css = document.createElement("style");
+
+    css.appendChild(
+      document.createTextNode(
+        `* {
+             -webkit-transition: none !important;
+             -moz-transition: none !important;
+             -o-transition: none !important;
+             -ms-transition: none !important;
+             transition: none !important;
+          }
+        `,
+      )
+    );
+
+    document.head.appendChild(css);
+
+    if (dark) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+
+  window.getComputedStyle(css).opacity;
+    document.head.removeChild(css);
+  }
+
+  function preloadTheme() {
+    const userTheme = localStorage.theme;
+
+    if (userTheme === "light" || userTheme === "dark") {
+      toggleTheme(userTheme === "dark");
+    } else {
+      toggleTheme(window.matchMedia("(prefers-color-scheme: dark)").matches);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => init());
+  document.addEventListener("astro:after-swap", () => init());
+  preloadTheme();
+</script><link rel="stylesheet" href="/_astro/_slug_.BQ66LiTG.css"></head> <body> <header> <div class="mx-auto max-w-screen-sm px-5">  <div class="flex flex-wrap gap-y-2 justify-between"> <a href="/" target="_self" class="inline-block decoration-black/15 dark:decoration-white/30 hover:decoration-black/25 hover:dark:decoration-white/50 text-current hover:text-black hover:dark:text-white transition-colors duration-300 ease-in-out" aria-label="Razon Komar Pal">  <span class="group relative inline-flex select-none align-middle py-1" role="img" aria-label="Razon Komar Pal" title="Razon Komar Pal" data-astro-cid-vjqwbl62> <svg viewBox="0 0 128 128" class="size-7 rounded-full transition-transform duration-300 ease-out group-hover:scale-110" aria-hidden="true" data-astro-cid-vjqwbl62> <defs data-astro-cid-vjqwbl62> <clipPath id="avatar-portrait-clip" data-astro-cid-vjqwbl62> <circle cx="64" cy="64" r="63" data-astro-cid-vjqwbl62></circle> </clipPath> <linearGradient id="avatar-bg" x1="0" y1="0" x2="0" y2="1" data-astro-cid-vjqwbl62> <stop offset="0%" stop-color="#f8eee4" class="dark:[stop-color:#292a2b]" data-astro-cid-vjqwbl62></stop> <stop offset="100%" stop-color="#e9d8c7" class="dark:[stop-color:#171819]" data-astro-cid-vjqwbl62></stop> </linearGradient> <linearGradient id="avatar-skin" x1="0" y1="0" x2="0" y2="1" data-astro-cid-vjqwbl62> <stop offset="0%" stop-color="#fbcf9f" data-astro-cid-vjqwbl62></stop> <stop offset="60%" stop-color="#f0b17a" data-astro-cid-vjqwbl62></stop> <stop offset="100%" stop-color="#e0a068" data-astro-cid-vjqwbl62></stop> </linearGradient> <linearGradient id="avatar-neck" x1="0" y1="0" x2="0" y2="1" data-astro-cid-vjqwbl62> <stop offset="0%" stop-color="#b8763a" data-astro-cid-vjqwbl62></stop> <stop offset="45%" stop-color="#e59f62" data-astro-cid-vjqwbl62></stop> <stop offset="100%" stop-color="#f0ac6f" data-astro-cid-vjqwbl62></stop> </linearGradient> <radialGradient id="avatar-nose" cx="50%" cy="35%" r="70%" data-astro-cid-vjqwbl62> <stop offset="0%" stop-color="#f6c18f" data-astro-cid-vjqwbl62></stop> <stop offset="100%" stop-color="#e29e68" data-astro-cid-vjqwbl62></stop> </radialGradient> <linearGradient id="avatar-beard" x1="0" y1="0" x2="0.3" y2="1" data-astro-cid-vjqwbl62> <stop offset="0%" stop-color="#2c211a" data-astro-cid-vjqwbl62></stop> <stop offset="60%" stop-color="#1c1613" data-astro-cid-vjqwbl62></stop> <stop offset="100%" stop-color="#0f0d0b" data-astro-cid-vjqwbl62></stop> </linearGradient> <linearGradient id="avatar-shirt" x1="0" y1="0" x2="1" y2="0" data-astro-cid-vjqwbl62> <stop offset="0%" stop-color="#484847" data-astro-cid-vjqwbl62></stop> <stop offset="50%" stop-color="#5d5d5c" data-astro-cid-vjqwbl62></stop> <stop offset="100%" stop-color="#484847" data-astro-cid-vjqwbl62></stop> </linearGradient> <linearGradient id="avatar-hair" x1="0" y1="0" x2="0.8" y2="1" data-astro-cid-vjqwbl62> <stop offset="0%" stop-color="#1c1714" data-astro-cid-vjqwbl62></stop> <stop offset="100%" stop-color="#0a0908" data-astro-cid-vjqwbl62></stop> </linearGradient> <radialGradient id="avatar-eye" cx="45%" cy="40%" data-astro-cid-vjqwbl62> <stop offset="0%" stop-color="#9a6427" data-astro-cid-vjqwbl62></stop> <stop offset="65%" stop-color="#5a3313" data-astro-cid-vjqwbl62></stop> <stop offset="100%" stop-color="#1c130c" data-astro-cid-vjqwbl62></stop> </radialGradient> </defs> <circle cx="64" cy="64" r="63" fill="url(#avatar-bg)" class="stroke-black/10 dark:stroke-white/15" stroke-width="1" data-astro-cid-vjqwbl62></circle> <g clip-path="url(#avatar-portrait-clip)" data-astro-cid-vjqwbl62> <g transform="translate(64 66) scale(0.96) translate(-64 -60)" data-astro-cid-vjqwbl62> <!-- arms --> <path d="M12 118 H31 V128 H12Z" fill="#d99a5f" data-astro-cid-vjqwbl62></path> <path d="M96 118 H116 V128 H96Z" fill="#d99a5f" data-astro-cid-vjqwbl62></path> <!-- shirt --> <path d="M44 78.7 L23 89 Q13 100 11.5 120 Q21 125 31 125 L31.5 128 H96 L96.5 125 Q106 125 116 120 Q114 100 105 89 L84 80 Q64 108 44 78.7Z" fill="url(#avatar-shirt)" data-astro-cid-vjqwbl62></path> <path d="M23.7 89 Q29 105 31 125" fill="none" stroke="#3d3d3c" stroke-width=".8" opacity=".6" data-astro-cid-vjqwbl62></path> <path d="M104.3 89 Q99 105 96.5 125" fill="none" stroke="#3d3d3c" stroke-width=".8" opacity=".6" data-astro-cid-vjqwbl62></path> <path d="M44 78.7 Q64 108 84 80" fill="none" stroke="#454544" stroke-width=".9" opacity=".7" data-astro-cid-vjqwbl62></path> <!-- neck --> <path d="M48.5 68 L47 79.5 Q64 98.6 81 81 L79.5 68Z" fill="url(#avatar-neck)" data-astro-cid-vjqwbl62></path> <path d="M47 79.5 Q64 98.6 81 81" fill="none" stroke="#3f3f3e" stroke-width=".8" opacity=".55" data-astro-cid-vjqwbl62></path> <!-- ears --> <path d="M39.5 44 Q33 41.5 34.3 50 Q35 58 39.8 60Z" fill="url(#avatar-skin)" data-astro-cid-vjqwbl62></path> <path d="M88 44 Q94.5 41.5 93.2 50 Q92.5 58 88 60Z" fill="url(#avatar-skin)" data-astro-cid-vjqwbl62></path> <path d="M37.2 46 Q35.8 50 37.2 56" fill="none" stroke="#d3915a" stroke-width=".8" stroke-linecap="round" opacity=".55" data-astro-cid-vjqwbl62></path> <path d="M90.3 46 Q91.7 50 90.3 56" fill="none" stroke="#d3915a" stroke-width=".8" stroke-linecap="round" opacity=".55" data-astro-cid-vjqwbl62></path> <!-- face --> <path d="M39 38 Q38 26 44 22 Q52 18.5 64 18.8 Q76 18.5 84 22 Q90 26 89 38 L88.5 55 Q88 72 64 81 Q40 72 39.5 55Z" fill="url(#avatar-skin)" data-astro-cid-vjqwbl62></path> <!-- cheek blush --> <ellipse cx="45" cy="52" rx="7" ry="6" fill="#ee9f80" opacity=".28" data-astro-cid-vjqwbl62></ellipse> <ellipse cx="83" cy="52" rx="7" ry="6" fill="#ee9f80" opacity=".28" data-astro-cid-vjqwbl62></ellipse> <!-- hair --> <path d="M37.5 43 L36 27.5 Q36 18 44 12 Q52 6 62 5 Q74 4.5 82 10 Q88 14 88.6 19 L90.7 22.5 L90 37 L88 44 Q87 33 85.5 27 Q83 21 74 20 Q64 18.8 54 20.5 Q45 22 42.5 27 Q40 33 39.5 44Z" fill="url(#avatar-hair)" data-astro-cid-vjqwbl62></path> <path d="M46 11 Q58 5.5 72 6.8 Q80 8 85 13" fill="none" stroke="#3a322b" stroke-width="1.6" stroke-linecap="round" opacity=".7" data-astro-cid-vjqwbl62></path> <path d="M41 17 Q46 11 54 9" fill="none" stroke="#2e2822" stroke-width="1.2" stroke-linecap="round" opacity=".7" data-astro-cid-vjqwbl62></path> <path d="M86.5 15 L88.6 18 L87.6 21" fill="none" stroke="#0a0908" stroke-width="1.4" stroke-linecap="round" data-astro-cid-vjqwbl62></path> <!-- eyebrows --> <path d="M42.5 39.5 Q45 34.5 52 32.7 Q56 32.2 58.3 33.5 L58 36 Q52 35 47 37.3 Q44.5 38.5 43.3 40.8Z" fill="#241a14" data-astro-cid-vjqwbl62></path> <path d="M69 34 Q72 32.4 76 32.8 Q83 34.5 85 39.5 L83.7 40.8 Q81.5 37.5 76 36 Q72 35.5 69 36.2Z" fill="#241a14" data-astro-cid-vjqwbl62></path> <!-- eyes --> <g data-astro-cid-vjqwbl62> <ellipse cx="52" cy="44" rx="6.2" ry="4" fill="#fffaf4" data-astro-cid-vjqwbl62></ellipse> <ellipse cx="75" cy="44" rx="6.2" ry="4" fill="#fffaf4" data-astro-cid-vjqwbl62></ellipse> <circle cx="52" cy="44" r="3.6" fill="url(#avatar-eye)" data-astro-cid-vjqwbl62></circle> <circle cx="75" cy="44" r="3.6" fill="url(#avatar-eye)" data-astro-cid-vjqwbl62></circle> <circle cx="52" cy="44" r="1.7" fill="#0b0605" data-astro-cid-vjqwbl62></circle> <circle cx="75" cy="44" r="1.7" fill="#0b0605" data-astro-cid-vjqwbl62></circle> <circle cx="51" cy="42.9" r="1.1" fill="#fff" data-astro-cid-vjqwbl62></circle> <circle cx="74" cy="42.9" r="1.1" fill="#fff" data-astro-cid-vjqwbl62></circle> <circle cx="53.3" cy="45.4" r=".45" fill="#fff" opacity=".7" data-astro-cid-vjqwbl62></circle> <circle cx="76.3" cy="45.4" r=".45" fill="#fff" opacity=".7" data-astro-cid-vjqwbl62></circle> <path d="M45.7 44.2 Q52 39.2 58.2 43.8" fill="none" stroke="#3a2418" stroke-width=".9" stroke-linecap="round" data-astro-cid-vjqwbl62></path> <path d="M68.8 43.8 Q75 39.2 81.3 44.2" fill="none" stroke="#3a2418" stroke-width=".9" stroke-linecap="round" data-astro-cid-vjqwbl62></path> <g class="avatar-eyelids" fill="#f0b783" data-astro-cid-vjqwbl62> <ellipse cx="52" cy="44" rx="6.8" ry="4.5" data-astro-cid-vjqwbl62></ellipse> <ellipse cx="75" cy="44" rx="6.8" ry="4.5" data-astro-cid-vjqwbl62></ellipse> </g> </g> <!-- nose --> <ellipse cx="63.5" cy="52.6" rx="6" ry="4.8" fill="url(#avatar-nose)" data-astro-cid-vjqwbl62></ellipse> <path d="M58.5 55.5 Q63.5 58 68.5 55.5" fill="none" stroke="#cf8b55" stroke-width=".8" stroke-linecap="round" opacity=".5" data-astro-cid-vjqwbl62></path> <!-- beard --> <path d="M38.8 46 Q38.3 58 41.5 64 Q46 73 55 78 Q60 80.8 64 80.8 Q68 80.8 73 78 Q82 73 86.5 64 Q89.7 58 89 46 Q88.3 56 84 58 Q78 57.3 70 57.3 Q64 57 58 57.3 Q50 57.3 44 58 Q40 56 38.8 46Z" fill="url(#avatar-beard)" data-astro-cid-vjqwbl62></path> <path d="M48.5 60.5 Q50 57 56 57 Q64 56.2 72 57 Q78 57 79.5 60.5 Q76 61 72 61.4 Q64 60.4 56 61.4 Q51 61 48.5 60.5Z" fill="#120e0b" data-astro-cid-vjqwbl62></path> <path d="M60 72 Q64 74 68 72 Q68 77 64 78 Q60 77 60 72Z" fill="#0d0b09" opacity=".8" data-astro-cid-vjqwbl62></path> <!-- smile (rest) --> <g class="transition-opacity duration-300 ease-out group-hover:opacity-0" data-astro-cid-vjqwbl62> <path d="M51.5 61.2 Q64 63.6 76 61.2 Q74.5 69.2 64 69.6 Q53.5 69.2 51.5 61.2Z" fill="#dc9a78" data-astro-cid-vjqwbl62></path> <path d="M53.6 62.1 Q64 64.1 74.4 62.1 L73.4 65.3 Q64 67 54.6 65.3Z" fill="#fffaf3" data-astro-cid-vjqwbl62></path> <path d="M58.2 63.2 V66 M61.3 63.5 V66.4 M64 63.6 V66.5 M66.8 63.5 V66.4 M69.8 63.2 V66" fill="none" stroke="#e2d8cf" stroke-width=".5" opacity=".8" data-astro-cid-vjqwbl62></path> </g> <!-- smile (hover) --> <g class="opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100" data-astro-cid-vjqwbl62> <path d="M50.5 60.5 Q64 64.5 77.5 60.5 Q76 72 64 72.5 Q52 72 50.5 60.5Z" fill="#4a1c14" data-astro-cid-vjqwbl62></path> <path d="M52.5 61.6 Q64 65.4 75.5 61.6 L74.6 66 Q64 68.6 54.4 66Z" fill="#fffaf3" data-astro-cid-vjqwbl62></path> <path d="M56 69.6 Q64 67.6 72 69.6 Q70 72.3 64 72.4 Q58 72.3 56 69.6Z" fill="#d97562" data-astro-cid-vjqwbl62></path> </g> <!-- hover blush --> <g class="opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-40" fill="#d66d50" data-astro-cid-vjqwbl62> <ellipse cx="44" cy="55" rx="5" ry="2.5" data-astro-cid-vjqwbl62></ellipse> <ellipse cx="84" cy="55" rx="5" ry="2.5" data-astro-cid-vjqwbl62></ellipse> </g> </g> </g> <circle cx="64" cy="64" r="63" fill="none" class="stroke-black/10 dark:stroke-white/15" stroke-width="1" data-astro-cid-vjqwbl62></circle> </svg> </span>   </a> <nav class="flex gap-1"> <a href="/work" target="_self" class="inline-block decoration-black/15 dark:decoration-white/30 hover:decoration-black/25 hover:dark:decoration-white/50 text-current hover:text-black hover:dark:text-white transition-colors duration-300 ease-in-out underline underline-offset-2"> 
+work
+ </a> <span> / </span> <a href="/projects" target="_self" class="inline-block decoration-black/15 dark:decoration-white/30 hover:decoration-black/25 hover:dark:decoration-white/50 text-current hover:text-black hover:dark:text-white transition-colors duration-300 ease-in-out underline underline-offset-2"> 
+projects
+ </a> <span> / </span> <a href="/blog" target="_self" class="inline-block decoration-black/15 dark:decoration-white/30 hover:decoration-black/25 hover:dark:decoration-white/50 text-current hover:text-black hover:dark:text-white transition-colors duration-300 ease-in-out underline underline-offset-2"> 
+blog
+ </a> </nav> </div>  </div> </header> <main>  <div class="mx-auto max-w-screen-sm px-5">  <div class="animate"> <a href="/blog" class="relative group w-fit flex pl-7 pr-3 py-1.5 flex-nowrap rounded border border-black/15 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/5 hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="absolute top-1/2 left-2 -translate-y-1/2 size-4 stroke-2 fill-none stroke-current"> <line x1="5" y1="12" x2="19" y2="12" class="translate-x-2 group-hover:translate-x-0 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></line> <polyline points="12 5 5 12 12 19" class="translate-x-1 group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></polyline> </svg> <div class="text-sm"> 
+Back to blog
+ </div> </a> </div> <div class="space-y-1 my-10"> <div class="animate flex items-center gap-1.5"> <div class="font-base text-sm"> <time datetime="2012-06-14T18:00:00.000Z"> Jun 15, 2012 </time> </div>
+&bull;
+<div class="font-base text-sm"> 9 min read </div> </div> <div class="animate text-2xl font-semibold text-black dark:text-white"> My Journey into Web Development: From HTML &amp; CSS to JavaScript Mastery </div> </div> <article class="animate"> <p><img alt="Illustration: my journey into web development, from HTML and CSS to JavaScript" loading="lazy" decoding="async" fetchpriority="auto" width="1200" height="630" src="/_astro/thumbnail.BTmv2l0s_13q7bR.svg" ></p>
+<p>The first website I ever built was a single white page with a blue heading and my name typed in the middle. I opened it in a browser, pressed refresh about forty times, and still could not believe that the code I wrote in a plain text file was actually rendering on a screen. That small, slightly ugly page is where my programming learning started — and it eventually led me to a career in full-stack web development.</p>
+<p>This post is the honest version of that journey: what I read, what I practised, where I got stuck, and what I would do differently today. Whether you are a beginner deciding how to learn to code, a career switcher weighing a move into tech, or a hiring manager trying to understand what a real development background looks like, this learning journey should give you a useful map.</p>
+<h2 id="why-i-started-my-programming-learning-with-a-book">Why I Started My Programming Learning With a Book</h2>
+<p>When I decided to learn web development, I did exactly what most people do: I opened twenty browser tabs, watched four unfinished video courses, and saved a folder full of bookmarks I never reopened. Progress was slow because nothing was sequenced.</p>
+<p>So I changed tactics. I bought a single physical resource — <a href="https://www.rokomari.com/book/65799/complete-web-design-and-development">Complete Web Design and Development, available on Rokomari</a> — and I gave myself one rule: finish the book, chapter by chapter, before collecting anything new.</p>
+<h3 id="the-book-that-made-the-difference">The book that made the difference</h3>
+<p>That book provided a comprehensive guide to the fundamentals of web development. It started with markup, moved into styling, introduced programming logic, and finished with the pieces needed to publish a real site. Because everything lived in one place, I stopped hopping between tutorials and started building a mental model of how the web actually works.</p>
+<h3 id="why-one-structured-resource-beats-a-hundred-bookmarks">Why one structured resource beats a hundred bookmarks</h3>
+<p>A book forces sequencing. You cannot style a page you have not structured, and you cannot add behaviour to a page you cannot style. That order — HTML, then CSS, then JavaScript — is not an arbitrary teaching trick. It mirrors how browsers actually interpret a document, and following it meant every new lesson stacked on something I already understood.</p>
+<blockquote>
+<p>The fastest way to slow down your learning is to keep starting over with a new resource.</p>
+</blockquote>
+<h2 id="stage-1-html-and-the-moment-it-clicked">Stage 1: HTML and the Moment It Clicked</h2>
+<p>HTML felt unfamiliar for about two days. After that, it clicked, because HTML is really just structured writing. Headings, paragraphs, lists, links, images, forms — every element is a label that tells the browser what a piece of content <em>means</em>.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&#x3C;</span><span style="color:#85E89D">article</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;</span><span style="color:#85E89D">h1</span><span style="color:#E1E4E8">>My first web page&#x3C;/</span><span style="color:#85E89D">h1</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;</span><span style="color:#85E89D">p</span><span style="color:#E1E4E8">>I built this while learning HTML.&#x3C;/</span><span style="color:#85E89D">p</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;</span><span style="color:#85E89D">a</span><span style="color:#B392F0"> href</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"/about.html"</span><span style="color:#E1E4E8">>About me&#x3C;/</span><span style="color:#85E89D">a</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">&#x3C;/</span><span style="color:#85E89D">article</span><span style="color:#E1E4E8">></span></span></code></pre>
+<p>That semantic mindset changed how I read every website I visited. Instead of seeing a finished design, I started seeing outlines: navigation here, an article there, a footer at the bottom. Within a couple of weeks I had rebuilt the structure of three sites I admired as clean, semantic HTML — no styling, just honest markup.</p>
+<p>If you are starting in web development, spend your first two weeks here and resist the urge to jump ahead. Solid HTML is the single biggest long-term investment you will make in front-end development.</p>
+<h2 id="stage-2-css-and-learning-to-think-like-a-designer">Stage 2: CSS and Learning to Think Like a Designer</h2>
+<p>If HTML was writing, CSS was drawing. My early stylesheets were messy — dozens of class names, inline colours, and <code>!important</code> declarations used like duct tape. Slowly, I learned that CSS is a system, not a pile of rules.</p>
+<h3 id="boxes-boxes-everywhere">Boxes, boxes everywhere</h3>
+<p>The breakthrough was the box model. Once I understood that every element is a rectangle with content, padding, border, and margin, layout stopped feeling like magic and started feeling like arithmetic.</p>
+<h3 id="from-float-hacks-to-flexbox-and-grid">From float hacks to Flexbox and Grid</h3>
+<p>I learned CSS in the era when centring a div was a genuine rite of passage. When I finally sat down with Flexbox and Grid, entire categories of problems disappeared. Two layouts now cover most of what I build:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="css"><code><span class="line"><span style="color:#B392F0">.layout</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#79B8FF">  display</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">grid</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#79B8FF">  grid-template-columns</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">repeat</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">auto-fit</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">minmax</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">260</span><span style="color:#F97583">px</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">1</span><span style="color:#F97583">fr</span><span style="color:#E1E4E8">));</span></span>
+<span class="line"><span style="color:#79B8FF">  gap</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">1.5</span><span style="color:#F97583">rem</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#B392F0">.nav</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#79B8FF">  display</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">flex</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#79B8FF">  align-items</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">center</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#79B8FF">  justify-content</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">space-between</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<p>Responsive design came next: media queries, fluid type, and the habit of checking my work at 320px, 768px, and 1440px wide. Suddenly my pages worked on my phone, not just on my laptop.</p>
+<h2 id="milestone-shipping-my-first-website">Milestone: Shipping My First Website</h2>
+<p>About six weeks in, I bought a cheap domain, learned what a hosting control panel was, and uploaded my files over FTP. Seeing my own site at a real URL — accessible to anyone — was the moment web development stopped being a hobby exercise and started feeling like a craft.</p>
+<p>That first deployment also taught me my first debugging lesson: a missing slash in a file path breaks everything, and browsers cache more aggressively than you expect. I have shipped hundreds of features since then, but I still feel a small version of that same buzz every time a release goes live.</p>
+<h2 id="stage-3-javascript-where-pages-come-alive">Stage 3: JavaScript, Where Pages Come Alive</h2>
+<p>HTML gave my pages a voice and CSS gave them a look. JavaScript gave them a pulse. Learning programming with JavaScript was a genuine step change: for the first time, I was writing logic — variables, conditions, loops, functions — instead of only describing content and presentation.</p>
+<h3 id="dom-manipulation-changed-everything">DOM manipulation changed everything</h3>
+<p>The first concept that opened up a whole new world was DOM manipulation. Selecting an element, changing its text, adding a class, creating a node from scratch — these small actions add up to every interactive interface on the modern web.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="js"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> button</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> document.</span><span style="color:#B392F0">querySelector</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"#subscribe"</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> status</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> document.</span><span style="color:#B392F0">querySelector</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"#status"</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">button.</span><span style="color:#B392F0">addEventListener</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"click"</span><span style="color:#E1E4E8">, () </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">  status.textContent </span><span style="color:#F97583">=</span><span style="color:#9ECBFF"> "Thanks for subscribing!"</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#E1E4E8">  button.disabled </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> true</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#E1E4E8">});</span></span></code></pre>
+<p>Ten lines of code, and a static page started responding to people. I was amazed at how I could manipulate the DOM and create engaging user experiences from scratch.</p>
+<h3 id="events-state-and-real-user-experience">Events, state, and real user experience</h3>
+<p>After the DOM came events, form validation, fetching data from APIs, and the hard part: organising code so it stays readable as it grows. I rebuilt the same small projects — a todo app, a weather widget, a quiz — each time with a cleaner structure. That repetition, not any single tutorial, is where the programming finally stuck.</p>
+<h2 id="what-this-learning-journey-taught-me-about-learning-to-code">What This Learning Journey Taught Me About Learning to Code</h2>
+<p>Three lessons survived every project I have worked on since:</p>
+<ol>
+<li><strong>Consistency beats intensity.</strong> Ninety focused minutes a day outperformed one heroic weekend every time.</li>
+<li><strong>Build, break, rebuild.</strong> I learned more from a broken stylesheet I fixed myself than from any walkthrough.</li>
+<li><strong>Read other people’s code.</strong> Open-source projects taught me naming, structure, and testing habits no beginner tutorial covered.</li>
+</ol>
+<p><img alt="The learning path I followed: HTML for structure, CSS for style, JavaScript for behaviour" loading="lazy" decoding="async" fetchpriority="auto" width="1200" height="520" src="/_astro/learning-path.DtzAmKht_uzI7N.svg" ></p>
+<h2 id="why-this-story-matters-to-recruiters-and-business-owners">Why This Story Matters to Recruiters and Business Owners</h2>
+<p>For hiring managers, HR professionals, and small business owners, a learning journey like this translates into practical signals:</p>
+<ul>
+<li><strong>Fundamentals-first foundations.</strong> Developers who learned HTML and CSS properly tend to write accessible, maintainable, SEO-friendly markup — the kind that avoids expensive rework later.</li>
+<li><strong>Evidence of self-direction.</strong> Finishing a book and shipping a live site without a instructor is a reliable indicator of the discipline remote and small teams depend on.</li>
+<li><strong>Breadth with depth.</strong> According to W3Techs, around 98% of websites use JavaScript on the client side, and roughly three-quarters of sites with a known server-side language run PHP. A developer comfortable across HTML, CSS, JavaScript, and a server-side stack can own a feature end to end instead of passing it between three people.</li>
+<li><strong>Compounding experience.</strong> Stack Overflow’s developer surveys have listed JavaScript among the most commonly used languages for over a decade. The basics never expired — the same HTML and CSS foundations I learned years ago still underpin every framework built since.</li>
+</ul>
+<p>In short: a candidate or contractor who mastered the fundamentals and kept shipping is lower risk than one who only knows a single framework’s abstractions.</p>
+<h2 id="a-practical-roadmap-if-you-are-starting-today">A Practical Roadmap If You Are Starting Today</h2>
+<p>If you want to follow a similar path, here is the compressed version of what worked for me:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Phase</th><th>Focus</th><th>Outcome</th></tr></thead><tbody><tr><td>Months 1–2</td><td>HTML + CSS fundamentals</td><td>Three responsive static pages</td></tr><tr><td>Month 3</td><td>JavaScript basics + DOM</td><td>Interactive forms and small widgets</td></tr><tr><td>Month 4</td><td>APIs, Git, and tooling</td><td>A data-driven project on GitHub</td></tr><tr><td>Month 5</td><td>A real project from idea to deploy</td><td>A live site on your own domain</td></tr><tr><td>Month 6</td><td>Portfolio, cleanup, and interviews</td><td>A presentable body of work</td></tr></tbody></table>
+<p>Three rules make the plan work: build something every week, deploy early rather than perfectly, and finish projects before starting new ones.</p>
+<h2 id="conclusion-start-with-one-page">Conclusion: Start With One Page</h2>
+<p>My web development journey did not begin with a bootcamp, a computer science degree, or an expensive course. It began with one book, one plain text editor, and one very simple page that I refreshed forty times in a row. HTML taught me how the web is written, CSS taught me how it is designed, and JavaScript taught me how it thinks — and each stage made the next one obvious.</p>
+<p><strong>Ready to start, or hiring someone who has?</strong> If you are beginning your own learning journey, open a text file and write your first <code>&#x3C;h1></code> today. And if you are building a product and need a full-stack engineer who learned the fundamentals the hard way, <a href="mailto:raazzon@gmail.com">get in touch</a> — I am happy to talk about your project, or point you to more writing on <a href="/blog">my blog</a>.</p> </article>  </div>  </main> <footer class="animate"> <div class="mx-auto max-w-screen-sm px-5">  <div class="relative"> <div class="absolute right-0 -top-20"> <button id="back-to-top" class="relative group w-fit flex pl-8 pr-3 py-1.5 flex-nowrap rounded border border-black/15 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/5 hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="absolute top-1/2 left-2 -translate-y-1/2 size-4 stroke-2 fill-none stroke-current rotate-90"> <line x1="5" y1="12" x2="19" y2="12" class="translate-x-2 group-hover:translate-x-0 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></line> <polyline points="12 5 5 12 12 19" class="translate-x-1 group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></polyline> </svg> <div class="text-sm">
+Back to top
+</div> </button> </div> </div> <div class="flex justify-between items-center"> <div>
+&copy; 2026 | Razon Komar Pal </div> <div class="flex flex-wrap gap-1 items-center"> <button id="light-theme-button" aria-label="Light theme" class="group size-8 flex items-center justify-center rounded-full"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:stroke-black group-hover:dark:stroke-white transition-colors duration-300 ease-in-out"> <circle cx="12" cy="12" r="5"></circle> <line x1="12" y1="1" x2="12" y2="3"></line> <line x1="12" y1="21" x2="12" y2="23"></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line> <line x1="1" y1="12" x2="3" y2="12"></line> <line x1="21" y1="12" x2="23" y2="12"></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line> </svg> </button> <button id="dark-theme-button" aria-label="Dark theme" class="group size-8 flex items-center justify-center rounded-full"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:stroke-black group-hover:dark:stroke-white transition-colors duration-300 ease-in-out"> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path> </svg> </button> <button id="system-theme-button" aria-label="System theme" class="group size-8 flex items-center justify-center rounded-full"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:stroke-black group-hover:dark:stroke-white transition-colors duration-300 ease-in-out"> <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect> <line x1="8" y1="21" x2="16" y2="21"></line> <line x1="12" y1="17" x2="12" y2="21"></line> </svg> </button> </div> </div>  </div> </footer> </body></html>

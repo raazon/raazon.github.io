@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://raazon.com/sitemap-index.xml
