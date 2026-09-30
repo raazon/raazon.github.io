@@ -5,7 +5,7 @@ role: "Full-Stack WordPress Developer"
 location: "Dhaka, Bangladesh"
 dateStart: "11/01/2017"
 dateEnd: "01/31/2021"
-dateLabel: "2017 - 2021"
+dateLabel: "Nov 2017 - Jan 2021 (3 years 3 months)"
 ---
 
 - Delivered 65+ WordPress sites as sole developer by converting PSD and Figma designs and managing each project end to end.
