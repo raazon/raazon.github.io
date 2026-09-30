@@ -42,15 +42,10 @@ const work = await Promise.all(
             I work on the boring parts of the web that keep things running.
           </p>
           <p class="animate">
-            I turn complex business problems into reliable web products and lead them from
-            architecture and development through delivery and deployment. With 12+ years in web
-            engineering and technical leadership, I work across frontend, backend, infrastructure,
-            and cross-functional product delivery.
+			I turn complex business problems into reliable web products, leading them from architecture to deployment. With 12+ years in web engineering and technical leadership, I work across frontend, backend, infrastructure, and product delivery.
           </p>
           <p class="animate">
-            I've helped scale products used by millions, including leading the growth of
-            <Link href="/projects/elementskit"> ElementsKit </Link> from 700K to nearly 2M active installations. I bring deep experience in
-            building, scaling, and maintaining production-grade web products.
+			I've helped scale products used by millions, including leading <Link href="/projects/elementskit"> ElementsKit </Link> from 700K to nearly 2M active installations.
           </p>
         </article>
       </section>
@@ -58,41 +53,16 @@ const work = await Promise.all(
       <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
           <h5 class="font-semibold text-black dark:text-white">
-            Skills
+            Selected projects
           </h5>
-          <Link href="/work">
-            See my experience
-          </Link>
-        </div>
-        <article>
-          <p>
-            My experience spans full-stack web development, WordPress engineering, frontend
-            development, and technical leadership. I use these technologies to build scalable
-            products, improve development workflows, and solve business and product needs.
-          </p>
-        </article>
-        <ul class="flex flex-wrap gap-2 text-sm">
-          {SKILLS.map(SKILL => (
-            <li class="px-3 py-1 rounded-full border border-black/15 dark:border-white/20">
-              {SKILL}
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section class="animate space-y-6">
-        <div class="flex flex-wrap gap-y-2 items-center justify-between">
-          <h5 class="font-semibold text-black dark:text-white">
-            Latest posts
-          </h5>
-          <Link href="/blog">
-            See all posts
+          <Link href="/projects">
+            See all projects
           </Link>
         </div>
         <ul class="flex flex-col gap-4">
-          {blog.map(post => (
+          {projects.map(project => (
             <li>
-              <ArrowCard entry={post} />
+              <ArrowCard entry={project} />
             </li>
           ))}
         </ul>
@@ -134,16 +104,41 @@ const work = await Promise.all(
       <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
           <h5 class="font-semibold text-black dark:text-white">
-            Recent projects
+            Skills
           </h5>
-          <Link href="/projects">
-            See all projects
+          <Link href="/work">
+            See my experience
+          </Link>
+        </div>
+        <article>
+          <p>
+            My experience spans full-stack web development, WordPress engineering, frontend
+            development, and technical leadership. I use these technologies to build scalable
+            products, improve development workflows, and solve business and product needs.
+          </p>
+        </article>
+        <ul class="flex flex-wrap gap-2 text-sm">
+          {SKILLS.map(SKILL => (
+            <li class="px-3 py-1 rounded-full border border-black/15 dark:border-white/20">
+              {SKILL}
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section class="animate space-y-6">
+        <div class="flex flex-wrap gap-y-2 items-center justify-between">
+          <h5 class="font-semibold text-black dark:text-white">
+            Latest posts
+          </h5>
+          <Link href="/blog">
+            See all posts
           </Link>
         </div>
         <ul class="flex flex-col gap-4">
-          {projects.map(project => (
+          {blog.map(post => (
             <li>
-              <ArrowCard entry={project} />
+              <ArrowCard entry={post} />
             </li>
           ))}
         </ul>
