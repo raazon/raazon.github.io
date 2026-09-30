@@ -9,6 +9,7 @@ export const SITE: Site = {
   KEYWORDS: [
     "Razon Komar Pal",
     "Full-Stack Engineer",
+    "Full Stack Developer",
     "Full-Stack Web Developer",
     "Senior Web Developer",
     "WordPress Developer",
