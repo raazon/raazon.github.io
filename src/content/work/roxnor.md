@@ -4,8 +4,8 @@ companyURL: "https://roxnor.com/"
 role: "Senior Full-Stack Web Developer"
 location: "Dhaka, Bangladesh"
 dateStart: "01/01/2021"
-dateEnd: "01/31/2026"
-dateLabel: "Jan 2021 - Jan 2026 (5 years 1 month)"
+dateEnd: "04/30/2026"
+dateLabel: "Jan 2021 - Apr 2026 (5 years 4 months)"
 ---
 
 - Grew [ElementsKit](/projects/elementskit/) from 700K to ~2M active installs (~2.8x), improving performance 35% and feature adoption 60%, by leading roadmap prioritization and performance refactoring.

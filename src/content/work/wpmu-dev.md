@@ -2,9 +2,9 @@
 company: "WPMU DEV"
 companyURL: "https://wpmudev.com/"
 role: "WordPress Developer"
-dateStart: "01/01/2026"
+dateStart: "12/01/2025"
 dateEnd: "08/31/2026"
-dateLabel: "Jan 2026 - Aug 2026 (8 months)"
+dateLabel: "Dec 2025 - Aug 2026 (8 months)"
 ---
 
 - Delivered new features, complex bug fixes and payment gateway integrations in [Forminator](/projects/forminator/) (600K+ active installs), reducing bug support tickets by 80% by reproducing edge cases and shipping targeted PHP/JS fixes.
